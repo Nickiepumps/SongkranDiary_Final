@@ -1,0 +1,716 @@
+fileFormatVersion: 2
+guid: 3e02b4a7dfd64fc4e9894dd3f3f3d8cd
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FountainandTank_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 0
+        width: 455
+        height: 678
+      alignment: 9
+      pivot: {x: 0.485, y: 0.01}
+      border: {x: 0, y: 26, z: 0, w: 542}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9010954796d47e043b69500e663b403f
+      internalID: 1448830517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FountainandTank_1
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 2
+        width: 455
+        height: 678
+      alignment: 9
+      pivot: {x: 0.5, y: 0.01}
+      border: {x: 0, y: 36, z: 0, w: 542}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa4796ea751917489a5677c3973a3c8
+      internalID: -914038039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FountainandTank_2
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 0
+        width: 455
+        height: 678
+      alignment: 9
+      pivot: {x: 0.5, y: 0.01}
+      border: {x: 0, y: 34, z: 0, w: 543}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5581e474dbbe57c429dfddc74767c0ae
+      internalID: -25475742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FountainandTank_3
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 0
+        width: 455
+        height: 678
+      alignment: 9
+      pivot: {x: 0.5, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e2a6b765e6d4bc4fa960d0bba144168
+      internalID: 1620925950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe
+      rect:
+        serializedVersion: 2
+        x: 2034
+        y: 102
+        width: 431
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153586e1154bc4f438a3eaa3b05ab21e
+      internalID: 705987288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PipeHead
+      rect:
+        serializedVersion: 2
+        x: 2349
+        y: 366
+        width: 87
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 43, z: 0, w: 82}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc9e88854fedbd41ae366acd903cff9
+      internalID: -1325436662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tank
+      rect:
+        serializedVersion: 2
+        x: 2667
+        y: 0
+        width: 539
+        height: 689
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2f55aeba578f843aed06d9dacf9eab
+      internalID: -1389796050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FountainandTank_4
+      rect:
+        serializedVersion: 2
+        x: 3394
+        y: 18
+        width: 1028
+        height: 342
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 286, y: 0, z: 289, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 313c952e2e368de4299af3ecabcaedb5
+      internalID: 1878259357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FountainandTank_5
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 964
+        width: 209
+        height: 799
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f10778c3971834aa49d56cf15d896a
+      internalID: 1969354762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FountainandTank_6
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 964
+        width: 356
+        height: 799
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 671}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1fb874265f37ea48a761558ccb90b04
+      internalID: -35456651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FountainandTank_7
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 965
+        width: 475
+        height: 799
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 671}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce2778eed07b6949b1ba88ac403e943
+      internalID: 1912072468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FountainandTank_8
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 965
+        width: 588
+        height: 799
+      alignment: 9
+      pivot: {x: 0.475, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 671}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387f346938375c548b8f4b9401b8e4cf
+      internalID: -992320532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FountainandTank_9
+      rect:
+        serializedVersion: 2
+        x: 2167
+        y: 965
+        width: 528
+        height: 799
+      alignment: 9
+      pivot: {x: 0.49, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 671}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529e42a8ea015de4bb905c3d173dc948
+      internalID: -978993111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FountainandTank_10
+      rect:
+        serializedVersion: 2
+        x: 2826
+        y: 967
+        width: 528
+        height: 799
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 671}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88e6ee615aeeaa54ab8841bc0f912876
+      internalID: 921446855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FountainandTank_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1906
+        width: 253
+        height: 172
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa74be60b2c1444594328be9991e913
+      internalID: 1552871469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FountainandTank_12
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 1906
+        width: 316
+        height: 207
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703a9e5932757864ca19f6cbb9ff7e87
+      internalID: 1224596543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FountainandTank_13
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 1906
+        width: 340
+        height: 215
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6817dfaf1c6008c40919a2d70e6e57fb
+      internalID: 2023115223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FountainandTank_14
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 1906
+        width: 345
+        height: 222
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9b81e9cb74d604b8850843e98758e8
+      internalID: 1699617574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FountainandTank_15
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 2207
+        width: 159
+        height: 128
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa4b3d7f95193b45a92862d365741aa
+      internalID: -1482548916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FountainandTank_16
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 2207
+        width: 176
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d045bcf76732bc48846c3143f7bf32d
+      internalID: 1743374583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FountainandTank_17
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 2207
+        width: 199
+        height: 128
+      alignment: 9
+      pivot: {x: 0.48, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9492a33ccd0a8694aa9cd0498de12570
+      internalID: 1244073899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FountainandTank_18
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 2207
+        width: 216
+        height: 128
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8397264d6719748a9f17f834bb80d3
+      internalID: 1496996514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FountainandTank_19
+      rect:
+        serializedVersion: 2
+        x: 3962
+        y: 970
+        width: 460
+        height: 635
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9f2d471164cbc4d868b0c8b8960090
+      internalID: -1176415225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FountainandTank_20
+      rect:
+        serializedVersion: 2
+        x: 3474
+        y: 970
+        width: 26
+        height: 635
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8a3dbd65e6e754bae44e9a121a623e
+      internalID: 789435158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FountainandTank_21
+      rect:
+        serializedVersion: 2
+        x: 3908
+        y: 970
+        width: 26
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f3d2c45214a4c4bb130d37b53f3d12
+      internalID: 501311877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      FountainandTank_0: 1448830517
+      FountainandTank_1: -914038039
+      FountainandTank_10: 921446855
+      FountainandTank_11: 1552871469
+      FountainandTank_12: 1224596543
+      FountainandTank_13: 2023115223
+      FountainandTank_14: 1699617574
+      FountainandTank_15: -1482548916
+      FountainandTank_16: 1743374583
+      FountainandTank_17: 1244073899
+      FountainandTank_18: 1496996514
+      FountainandTank_19: -1176415225
+      FountainandTank_2: -25475742
+      FountainandTank_20: 789435158
+      FountainandTank_21: 501311877
+      FountainandTank_3: 1620925950
+      FountainandTank_4: 1878259357
+      FountainandTank_5: 1969354762
+      FountainandTank_6: -35456651
+      FountainandTank_7: 1912072468
+      FountainandTank_8: -992320532
+      FountainandTank_9: -978993111
+      Pipe: 705987288
+      PipeHead: -1325436662
+      Tank: -1389796050
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

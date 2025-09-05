@@ -1,0 +1,968 @@
+fileFormatVersion: 2
+guid: 10da111e42a590f40a90039b2c6379b0
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_10
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 3662
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.6728, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ef942c7891aa6b459cf87323ff2476e
+      internalID: 1403784966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_11
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 3662
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.6764, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f9dc87fd2ae2d4684467da0292ac24
+      internalID: 1167446209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_12
+      rect:
+        serializedVersion: 2
+        x: 3059
+        y: 3662
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.679, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa2a3d19e735a84ba337cc9eabffe26
+      internalID: -631493530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_13
+      rect:
+        serializedVersion: 2
+        x: 4368
+        y: 3662
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.6818, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a151022ead8e04cbdcd2e4faf80469
+      internalID: 404478175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_14
+      rect:
+        serializedVersion: 2
+        x: 5614
+        y: 3664
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.6835, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d29e37d8efbe34aafbba6cc80ad751
+      internalID: 1835050190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_15
+      rect:
+        serializedVersion: 2
+        x: 6892
+        y: 3662
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.679, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c35edfbb9439d4c9593fc928233196
+      internalID: 484944930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_16
+      rect:
+        serializedVersion: 2
+        x: 8241
+        y: 3662
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.6765, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8bfff552093734eac842d9d1d52cdf
+      internalID: 685682412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_17
+      rect:
+        serializedVersion: 2
+        x: 9483
+        y: 3662
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.677, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d14734c702b2bb4793c87cfe438e95a
+      internalID: -8720689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_26
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 2611
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.6728, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8484ff39119a2d439985a582ec862c7
+      internalID: -926827064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_27
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 2611
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.6764, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9ece92cddcc3a4b9601d0486b7e6f2
+      internalID: -1476446562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_28
+      rect:
+        serializedVersion: 2
+        x: 3039
+        y: 2611
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.679, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7de0a8a18c44a346b0473365c8521a6
+      internalID: -1796105579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_29
+      rect:
+        serializedVersion: 2
+        x: 4329
+        y: 2611
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.6817, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0e38ecb0de76a4d9a9a9725690bb05
+      internalID: -609708723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_30
+      rect:
+        serializedVersion: 2
+        x: 5599
+        y: 2611
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.6835, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25a9fd6fe36ca29499ce473ec9b3553b
+      internalID: 289757925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_31
+      rect:
+        serializedVersion: 2
+        x: 6914
+        y: 2611
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.679, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b6c8c9a96c0164da4feb08004798f6
+      internalID: -1780575271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_32
+      rect:
+        serializedVersion: 2
+        x: 8248
+        y: 2615
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.6764, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 078bbad1aa1eda74da3abbc26aca9aba
+      internalID: 583676629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_33
+      rect:
+        serializedVersion: 2
+        x: 9452
+        y: 2611
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.6773, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88acca139617712468e497d7668bf18a
+      internalID: -619975959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_42
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 1436
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.673, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b31b9ed99b7e25a4aa2fc83925777a35
+      internalID: -946572026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_43
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 1436
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.6765, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b71f377397e94e4baf0a0cc69cc1494
+      internalID: 511276449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_44
+      rect:
+        serializedVersion: 2
+        x: 3027
+        y: 1436
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.679, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2586c44e1550f4b8e99b34a88fa1c5
+      internalID: -1823359338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_45
+      rect:
+        serializedVersion: 2
+        x: 4322
+        y: 1436
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.6817, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31cac513b61d322469977b1e1011bad4
+      internalID: -660245325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_46
+      rect:
+        serializedVersion: 2
+        x: 5582
+        y: 1436
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.6835, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4446a66dddb6b714eb8e4d5bc80fa50f
+      internalID: -1849387613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_47
+      rect:
+        serializedVersion: 2
+        x: 6910
+        y: 1436
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.679, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efffde99451ad444eb334f813c732f6e
+      internalID: -1091613977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_48
+      rect:
+        serializedVersion: 2
+        x: 8235
+        y: 1436
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.6764, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5f9e9cf0653ab4092534db22196188
+      internalID: -297692198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_49
+      rect:
+        serializedVersion: 2
+        x: 9484
+        y: 1436
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.6773, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf207dfa0be6e84478d9b8a9e98a9fc5
+      internalID: 646037841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_58
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 130
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.6728, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a03b9edb55c74eb4c92261ca5cbb68aa
+      internalID: -1496259634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_59
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 130
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.6764, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d66a894c3048f42bbc74c5e46821d1
+      internalID: -661167408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_60
+      rect:
+        serializedVersion: 2
+        x: 3068
+        y: 130
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.6791, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cece9a8626c183d4eada7d77f3f147e6
+      internalID: 1933102263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_61
+      rect:
+        serializedVersion: 2
+        x: 4289
+        y: 130
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.679, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb9082916365e24d850f717d0f0acca
+      internalID: 298654964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_62
+      rect:
+        serializedVersion: 2
+        x: 5537
+        y: 130
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.6817, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258b07ee333b3bd48a072b0bcda39bb4
+      internalID: -1061989931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_63
+      rect:
+        serializedVersion: 2
+        x: 6887
+        y: 146
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.671, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ab70f0234f05648a3920715af64574
+      internalID: -1781621212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_66
+      rect:
+        serializedVersion: 2
+        x: 8235
+        y: 156
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.6647, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5cd6965566e634983afafc7a4071d0
+      internalID: -443974708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_68
+      rect:
+        serializedVersion: 2
+        x: 9552
+        y: 156
+        width: 1121
+        height: 911
+      alignment: 9
+      pivot: {x: 0.6645, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9886c83be687aa5479856798f82e2fc9
+      internalID: 1912664615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_69
+      rect:
+        serializedVersion: 2
+        x: 10799
+        y: 160
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.6674, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394838201514a3b48b7987dc5f30c055
+      internalID: -353439701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_AtkandUltkid_70
+      rect:
+        serializedVersion: 2
+        x: 12023
+        y: 156
+        width: 1122
+        height: 911
+      alignment: 9
+      pivot: {x: 0.669, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b5cb0cb0c08814439e9985906213957
+      internalID: -2049443909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Boss3_AtkandUltkid_0: 179748996
+      Boss3_AtkandUltkid_1: -348867833
+      Boss3_AtkandUltkid_10: 1403784966
+      Boss3_AtkandUltkid_11: 1167446209
+      Boss3_AtkandUltkid_12: -631493530
+      Boss3_AtkandUltkid_13: 404478175
+      Boss3_AtkandUltkid_14: 1835050190
+      Boss3_AtkandUltkid_15: 484944930
+      Boss3_AtkandUltkid_16: 685682412
+      Boss3_AtkandUltkid_17: -8720689
+      Boss3_AtkandUltkid_18: -1096531286
+      Boss3_AtkandUltkid_19: -1158533987
+      Boss3_AtkandUltkid_2: -339423488
+      Boss3_AtkandUltkid_20: 1672331696
+      Boss3_AtkandUltkid_21: 2054563743
+      Boss3_AtkandUltkid_22: -1059172116
+      Boss3_AtkandUltkid_23: 374638661
+      Boss3_AtkandUltkid_24: -1458737413
+      Boss3_AtkandUltkid_25: 1077698466
+      Boss3_AtkandUltkid_26: -926827064
+      Boss3_AtkandUltkid_27: -1476446562
+      Boss3_AtkandUltkid_28: -1796105579
+      Boss3_AtkandUltkid_29: -609708723
+      Boss3_AtkandUltkid_3: -680750565
+      Boss3_AtkandUltkid_30: 289757925
+      Boss3_AtkandUltkid_31: -1780575271
+      Boss3_AtkandUltkid_32: 583676629
+      Boss3_AtkandUltkid_33: -619975959
+      Boss3_AtkandUltkid_34: -699549909
+      Boss3_AtkandUltkid_35: 906551818
+      Boss3_AtkandUltkid_36: -674011551
+      Boss3_AtkandUltkid_37: 962760270
+      Boss3_AtkandUltkid_38: 805246411
+      Boss3_AtkandUltkid_39: 594281385
+      Boss3_AtkandUltkid_4: -1985227845
+      Boss3_AtkandUltkid_40: -1525416712
+      Boss3_AtkandUltkid_41: 572854960
+      Boss3_AtkandUltkid_42: -946572026
+      Boss3_AtkandUltkid_43: 511276449
+      Boss3_AtkandUltkid_44: -1823359338
+      Boss3_AtkandUltkid_45: -660245325
+      Boss3_AtkandUltkid_46: -1849387613
+      Boss3_AtkandUltkid_47: -1091613977
+      Boss3_AtkandUltkid_48: -297692198
+      Boss3_AtkandUltkid_49: 646037841
+      Boss3_AtkandUltkid_5: -1605310625
+      Boss3_AtkandUltkid_50: 1126710188
+      Boss3_AtkandUltkid_51: -1689530897
+      Boss3_AtkandUltkid_52: -1895926310
+      Boss3_AtkandUltkid_53: 2056134979
+      Boss3_AtkandUltkid_54: 1773057012
+      Boss3_AtkandUltkid_55: -248902120
+      Boss3_AtkandUltkid_56: -973749513
+      Boss3_AtkandUltkid_57: -1313291587
+      Boss3_AtkandUltkid_58: -1496259634
+      Boss3_AtkandUltkid_59: -661167408
+      Boss3_AtkandUltkid_6: -1850687146
+      Boss3_AtkandUltkid_60: 1933102263
+      Boss3_AtkandUltkid_61: 298654964
+      Boss3_AtkandUltkid_62: -1061989931
+      Boss3_AtkandUltkid_63: -1781621212
+      Boss3_AtkandUltkid_64: 1117894543
+      Boss3_AtkandUltkid_65: 258612034
+      Boss3_AtkandUltkid_66: -443974708
+      Boss3_AtkandUltkid_67: -24141766
+      Boss3_AtkandUltkid_68: 1912664615
+      Boss3_AtkandUltkid_69: -353439701
+      Boss3_AtkandUltkid_7: 1319111461
+      Boss3_AtkandUltkid_70: -2049443909
+      Boss3_AtkandUltkid_71: -577979317
+      Boss3_AtkandUltkid_72: -758440517
+      Boss3_AtkandUltkid_73: 1516507724
+      Boss3_AtkandUltkid_74: -55554454
+      Boss3_AtkandUltkid_75: 418904135
+      Boss3_AtkandUltkid_76: -1186984605
+      Boss3_AtkandUltkid_77: -878221778
+      Boss3_AtkandUltkid_78: 113265231
+      Boss3_AtkandUltkid_79: 1713536127
+      Boss3_AtkandUltkid_8: 1020552707
+      Boss3_AtkandUltkid_80: -30058256
+      Boss3_AtkandUltkid_81: 1964599773
+      Boss3_AtkandUltkid_82: -1981406936
+      Boss3_AtkandUltkid_83: 1404092043
+      Boss3_AtkandUltkid_84: 1328745864
+      Boss3_AtkandUltkid_85: -897333810
+      Boss3_AtkandUltkid_86: 919538308
+      Boss3_AtkandUltkid_87: 1388247152
+      Boss3_AtkandUltkid_9: -470994372
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

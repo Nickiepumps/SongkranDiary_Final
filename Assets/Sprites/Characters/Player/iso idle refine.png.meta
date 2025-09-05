@@ -1,0 +1,1046 @@
+fileFormatVersion: 2
+guid: 4a5bc55161229294b900762d39c77579
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: iso idle refine_0
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1903
+        width: 172
+        height: 323
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a73725faa1d7746b885a5f5a45b665
+      internalID: 520756705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_1
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 1903
+        width: 172
+        height: 323
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246b4d73e6ba7134ea559a0cf1716e1e
+      internalID: 1982991005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_2
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 1903
+        width: 173
+        height: 323
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55af0bf63baf454488febed5be549abd
+      internalID: 1100047393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_3
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 1903
+        width: 172
+        height: 323
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d42e29162eadc024ebc4eb0c67d88774
+      internalID: -1596587893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_4
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 1901
+        width: 172
+        height: 323
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13ef63bbd8f0b74499cdd8a0236e657
+      internalID: 1188646912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_5
+      rect:
+        serializedVersion: 2
+        x: 1718
+        y: 1902
+        width: 172
+        height: 323
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88498727ca12f3c4a997f5a213781202
+      internalID: -766534361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_6
+      rect:
+        serializedVersion: 2
+        x: 2072
+        y: 1901
+        width: 172
+        height: 323
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7483934ffd0766f4d84befe7531e7795
+      internalID: -1909120624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_7
+      rect:
+        serializedVersion: 2
+        x: 2391
+        y: 1903
+        width: 171
+        height: 323
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50404f631f7179844bc27543e8a00ec0
+      internalID: -626336902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_8
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1415
+        width: 167
+        height: 334
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc7bfe64f06b05e40bc39b957dbb79e5
+      internalID: 408808460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_9
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 1415
+        width: 166
+        height: 334
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d7acbe759681e46b462143e4f4a429
+      internalID: 2096097518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_10
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 1415
+        width: 167
+        height: 334
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74dd3315c5234c4ebf1f0ede743337a
+      internalID: 1427553748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_11
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 1415
+        width: 166
+        height: 334
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43aee6b0a8387e4c8651812455d5caf
+      internalID: -1399120201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_12
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 1415
+        width: 167
+        height: 334
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb0c21c2e21860545871f60c22fe6465
+      internalID: 1286991258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_13
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 1415
+        width: 166
+        height: 334
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56afcac4cc665334f9ef755909e91d6d
+      internalID: 1757607182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_14
+      rect:
+        serializedVersion: 2
+        x: 2031
+        y: 1415
+        width: 167
+        height: 334
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d385e323ee906ad45920d05b2d884f17
+      internalID: 723725140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_15
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 1415
+        width: 166
+        height: 334
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96167cb6d114bce47ba03de1797e98f4
+      internalID: 1738408708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_16
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 933
+        width: 177
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3213401e71989a4386955249d2c01c4
+      internalID: -1063457861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_17
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 933
+        width: 175
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb0ce770d1cbde46b756ac8d07f3c57
+      internalID: 1901551319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_18
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 933
+        width: 177
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76bccf4b7e8fd354896cb67ee817be0f
+      internalID: 1253065514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_19
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 933
+        width: 177
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba93e77b316ead4fbc36614c788a18c
+      internalID: 1159308708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_20
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 933
+        width: 177
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb0751ea3cf567488a8af91eb5a1323
+      internalID: 217238682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_21
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 933
+        width: 177
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e59e7bdf3bc0164f863c7312865e743
+      internalID: 1989062263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_22
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 933
+        width: 174
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb15e9517d6329947b2ab2eb4fefebd3
+      internalID: -214370637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_23
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 933
+        width: 174
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb9dd3cd7a87eb439ee393448fba16d
+      internalID: 169532528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_24
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 486
+        width: 184
+        height: 331
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e3f0833e6c8df4b90e2cf453e7c7af
+      internalID: 1787207250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_25
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 486
+        width: 182
+        height: 331
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a979c90bb6a344c8b64f3df7d5c7b0
+      internalID: 694314125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_26
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 486
+        width: 185
+        height: 331
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc38cd292b9b8d40a540ad284ede138
+      internalID: 505192312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_27
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 486
+        width: 185
+        height: 331
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d9cc260231c8e499deee9d81e36a3b
+      internalID: 2082057974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_28
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 486
+        width: 184
+        height: 331
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e80a4f548f92f846b53a10fc5f922fe
+      internalID: 430203611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_29
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 486
+        width: 184
+        height: 331
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c5c51bf4b2b8444a44338251b54015
+      internalID: -1516535435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_30
+      rect:
+        serializedVersion: 2
+        x: 1929
+        y: 486
+        width: 184
+        height: 331
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8551329c58fce4845b93e5244f95651c
+      internalID: -1419536120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_31
+      rect:
+        serializedVersion: 2
+        x: 2291
+        y: 486
+        width: 184
+        height: 331
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509d429a9f03a4c4c9b37b96a546f70a
+      internalID: 1937345070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_32
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 58
+        width: 192
+        height: 331
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66426a83f7e2d6e45a398cd37ee617be
+      internalID: -472930753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_33
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 58
+        width: 192
+        height: 331
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac37e4deed689446a75dc15a9846ee4
+      internalID: 808073842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_34
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 58
+        width: 192
+        height: 331
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d1f743d07230c43b816a2d6ef8d3b3
+      internalID: -152005494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_35
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 58
+        width: 193
+        height: 331
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec8d47dd5ab2a24ca66abb477e2f81b
+      internalID: 708505525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_36
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 58
+        width: 192
+        height: 331
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5af76305a7a814d95cf855cf1d105f
+      internalID: -1888323649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_37
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 58
+        width: 192
+        height: 331
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ad582bd6c2c674090459495b0f82a3
+      internalID: 1621497538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_38
+      rect:
+        serializedVersion: 2
+        x: 1908
+        y: 58
+        width: 193
+        height: 331
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9928826c2befc234e91db1bcbab9b9d3
+      internalID: 1364149178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iso idle refine_39
+      rect:
+        serializedVersion: 2
+        x: 2239
+        y: 58
+        width: 193
+        height: 331
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eedbfac428475bd4089306d4091e365e
+      internalID: -376000092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      iso idle refine_0: 520756705
+      iso idle refine_1: 1982991005
+      iso idle refine_10: 1427553748
+      iso idle refine_11: -1399120201
+      iso idle refine_12: 1286991258
+      iso idle refine_13: 1757607182
+      iso idle refine_14: 723725140
+      iso idle refine_15: 1738408708
+      iso idle refine_16: -1063457861
+      iso idle refine_17: 1901551319
+      iso idle refine_18: 1253065514
+      iso idle refine_19: 1159308708
+      iso idle refine_2: 1100047393
+      iso idle refine_20: 217238682
+      iso idle refine_21: 1989062263
+      iso idle refine_22: -214370637
+      iso idle refine_23: 169532528
+      iso idle refine_24: 1787207250
+      iso idle refine_25: 694314125
+      iso idle refine_26: 505192312
+      iso idle refine_27: 2082057974
+      iso idle refine_28: 430203611
+      iso idle refine_29: -1516535435
+      iso idle refine_3: -1596587893
+      iso idle refine_30: -1419536120
+      iso idle refine_31: 1937345070
+      iso idle refine_32: -472930753
+      iso idle refine_33: 808073842
+      iso idle refine_34: -152005494
+      iso idle refine_35: 708505525
+      iso idle refine_36: -1888323649
+      iso idle refine_37: 1621497538
+      iso idle refine_38: 1364149178
+      iso idle refine_39: -376000092
+      iso idle refine_4: 1188646912
+      iso idle refine_5: -766534361
+      iso idle refine_6: -1909120624
+      iso idle refine_7: -626336902
+      iso idle refine_8: 408808460
+      iso idle refine_9: 2096097518
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

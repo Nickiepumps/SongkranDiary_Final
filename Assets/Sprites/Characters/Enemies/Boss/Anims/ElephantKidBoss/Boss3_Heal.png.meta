@@ -1,0 +1,536 @@
+fileFormatVersion: 2
+guid: 76f43d31bd58479469113dba6895300e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boss3_Heal 1_0
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 1546
+        width: 1041
+        height: 882
+      alignment: 9
+      pivot: {x: 0.6473, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf4636b537a391c46a62c2efdbeb0de2
+      internalID: -929643604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_Heal 1_1
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 1546
+        width: 1041
+        height: 882
+      alignment: 9
+      pivot: {x: 0.6512, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a9d8251e97db64bbc95deecf07e562
+      internalID: 960573086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_Heal 1_2
+      rect:
+        serializedVersion: 2
+        x: 2643
+        y: 1546
+        width: 1041
+        height: 882
+      alignment: 9
+      pivot: {x: 0.654, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2c7b0b915b4064fbd8b0b5061905da
+      internalID: -85646333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_Heal 1_3
+      rect:
+        serializedVersion: 2
+        x: 3960
+        y: 1546
+        width: 1041
+        height: 882
+      alignment: 9
+      pivot: {x: 0.657, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e76fe3f29d0094c84022bf5ea7ec7d
+      internalID: 1489495332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_Heal 1_4
+      rect:
+        serializedVersion: 2
+        x: 5250
+        y: 1546
+        width: 1041
+        height: 882
+      alignment: 9
+      pivot: {x: 0.659, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a3068cc6f1344241936aedf8ee0bac4
+      internalID: 1746021402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_Heal 1_5
+      rect:
+        serializedVersion: 2
+        x: 6545
+        y: 1546
+        width: 1041
+        height: 882
+      alignment: 9
+      pivot: {x: 0.654, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc2af0991a7c82469aaabfde199cb1e
+      internalID: -870522918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_Heal 1_7
+      rect:
+        serializedVersion: 2
+        x: 7884
+        y: 1546
+        width: 1041
+        height: 882
+      alignment: 9
+      pivot: {x: 0.6512, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700b2231b914eaf41ba60acf5135a209
+      internalID: -1417572696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_Heal 1_8
+      rect:
+        serializedVersion: 2
+        x: 9115
+        y: 1546
+        width: 1041
+        height: 882
+      alignment: 9
+      pivot: {x: 0.6522, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2750fa547e0e79d4fa93b9c8c541a17c
+      internalID: -386766478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_Heal 1_17
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 345
+        width: 1041
+        height: 882
+      alignment: 9
+      pivot: {x: 0.6474, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7a6ca442187bb4d98ae739ebf548ad
+      internalID: -783398748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_Heal 1_18
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 345
+        width: 1041
+        height: 882
+      alignment: 9
+      pivot: {x: 0.6513, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3fd303799cf40d4a8d24b3f72469c83
+      internalID: 440118821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_Heal 1_19
+      rect:
+        serializedVersion: 2
+        x: 2744
+        y: 345
+        width: 1041
+        height: 882
+      alignment: 9
+      pivot: {x: 0.654, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f207603af536b4e9157a9400b86916
+      internalID: 1227597389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_Heal 1_20
+      rect:
+        serializedVersion: 2
+        x: 4069
+        y: 345
+        width: 1041
+        height: 882
+      alignment: 9
+      pivot: {x: 0.657, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 566c4003224801546ad9e6acbe0d1b74
+      internalID: 1233945830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_Heal 1_22
+      rect:
+        serializedVersion: 2
+        x: 5530
+        y: 345
+        width: 1041
+        height: 882
+      alignment: 9
+      pivot: {x: 0.659, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e51814141fb368a4b8009f48eec4734c
+      internalID: 582855470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_Heal 1_23
+      rect:
+        serializedVersion: 2
+        x: 6934
+        y: 345
+        width: 1041
+        height: 882
+      alignment: 9
+      pivot: {x: 0.654, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a992e46e39c95248a89efed222309e0
+      internalID: 1811229306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_Heal 1_24
+      rect:
+        serializedVersion: 2
+        x: 8399
+        y: 345
+        width: 1041
+        height: 882
+      alignment: 9
+      pivot: {x: 0.651, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4e2116284a0cd44b649a208e56e155
+      internalID: 24661443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_Heal 1_25
+      rect:
+        serializedVersion: 2
+        x: 9917
+        y: 345
+        width: 1041
+        height: 882
+      alignment: 9
+      pivot: {x: 0.6522, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d78a5e27bae3f4ea9f5790ad61618b
+      internalID: -1708134609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Boss3_Heal 1_0: -929643604
+      Boss3_Heal 1_1: 960573086
+      Boss3_Heal 1_10: -550750036
+      Boss3_Heal 1_11: -1933366030
+      Boss3_Heal 1_12: -477350440
+      Boss3_Heal 1_13: 1089227330
+      Boss3_Heal 1_14: -1508202107
+      Boss3_Heal 1_15: 158416223
+      Boss3_Heal 1_16: -78926995
+      Boss3_Heal 1_17: -783398748
+      Boss3_Heal 1_18: 440118821
+      Boss3_Heal 1_19: 1227597389
+      Boss3_Heal 1_2: -85646333
+      Boss3_Heal 1_20: 1233945830
+      Boss3_Heal 1_21: -1751719161
+      Boss3_Heal 1_22: 582855470
+      Boss3_Heal 1_23: 1811229306
+      Boss3_Heal 1_24: 24661443
+      Boss3_Heal 1_25: -1708134609
+      Boss3_Heal 1_26: -1952744280
+      Boss3_Heal 1_27: -1245351141
+      Boss3_Heal 1_28: 1946440233
+      Boss3_Heal 1_29: -104007998
+      Boss3_Heal 1_3: 1489495332
+      Boss3_Heal 1_30: 2127278150
+      Boss3_Heal 1_31: -1292955208
+      Boss3_Heal 1_32: 1267549386
+      Boss3_Heal 1_33: 1046128099
+      Boss3_Heal 1_4: 1746021402
+      Boss3_Heal 1_5: -870522918
+      Boss3_Heal 1_6: -540072885
+      Boss3_Heal 1_7: -1417572696
+      Boss3_Heal 1_8: -386766478
+      Boss3_Heal 1_9: -52941802
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

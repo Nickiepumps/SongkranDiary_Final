@@ -1,0 +1,565 @@
+fileFormatVersion: 2
+guid: 725422768485c014dbfa88d3e65f4f55
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boss Animation_0
+      rect:
+        serializedVersion: 2
+        x: 1912
+        y: 2511
+        width: 872
+        height: 885
+      alignment: 9
+      pivot: {x: 0.72, y: 0.07}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9fa65d051462a54c8b7a957f8ae62e3
+      internalID: 467748272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Animation_1
+      rect:
+        serializedVersion: 2
+        x: 2919
+        y: 2511
+        width: 872
+        height: 885
+      alignment: 9
+      pivot: {x: 0.68, y: 0.07}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f8eb2fdacde6046bbac69abdcc5760
+      internalID: -849610122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Animation_3
+      rect:
+        serializedVersion: 2
+        x: 3925
+        y: 2511
+        width: 872
+        height: 885
+      alignment: 9
+      pivot: {x: 0.65, y: 0.07}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222e399b39bdecc4390705bfb0e03eea
+      internalID: 1887356741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Animation_4
+      rect:
+        serializedVersion: 2
+        x: 4874
+        y: 2511
+        width: 872
+        height: 885
+      alignment: 9
+      pivot: {x: 0.75, y: 0.07}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b03b4878a44a6df47a2622f8acc6f947
+      internalID: 1850658468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Animation_5
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 2513
+        width: 872
+        height: 885
+      alignment: 9
+      pivot: {x: 0.83, y: 0.07}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c8266d71eb9bc43901c4b462fc641c
+      internalID: -741774950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Animation_6
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 2511
+        width: 872
+        height: 885
+      alignment: 9
+      pivot: {x: 0.83, y: 0.07}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a5ed33493268e4b85899fbae0cd112
+      internalID: 474841258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Animation_8
+      rect:
+        serializedVersion: 2
+        x: 5815
+        y: 2511
+        width: 872
+        height: 885
+      alignment: 9
+      pivot: {x: 0.83, y: 0.07}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b971bf9c84b926743bf94e582cc6a20e
+      internalID: 382918138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Animation_9
+      rect:
+        serializedVersion: 2
+        x: 6695
+        y: 2511
+        width: 872
+        height: 885
+      alignment: 9
+      pivot: {x: 0.83, y: 0.07}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5037db8626138b544bd986cbb5bdec3a
+      internalID: 545822476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Animation_11
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 1376
+        width: 872
+        height: 881
+      alignment: 9
+      pivot: {x: 0.78, y: 0.07}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a7f37fd01b4b94494edbe2b8583c1b
+      internalID: 342124678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Animation_12
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 1376
+        width: 872
+        height: 881
+      alignment: 9
+      pivot: {x: 0.78, y: 0.07}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f3dd97c58943e44aef19a63c3e1f30
+      internalID: 1872128422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Animation_13
+      rect:
+        serializedVersion: 2
+        x: 2323
+        y: 1388
+        width: 872
+        height: 881
+      alignment: 9
+      pivot: {x: 0.78, y: 0.07}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9579f1597492f7444a285a52a264d23c
+      internalID: -705404980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Animation_14
+      rect:
+        serializedVersion: 2
+        x: 3467
+        y: 1389
+        width: 872
+        height: 881
+      alignment: 9
+      pivot: {x: 0.78, y: 0.07}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be866bd32311ea64bb3c12b7078e22d6
+      internalID: -966968342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Animation_15
+      rect:
+        serializedVersion: 2
+        x: 4673
+        y: 1387
+        width: 872
+        height: 881
+      alignment: 9
+      pivot: {x: 0.78, y: 0.07}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 046d9b24c93efd24daecff572f0f0614
+      internalID: 1670276607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Animation_16
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 347
+        width: 872
+        height: 885
+      alignment: 9
+      pivot: {x: 0.83, y: 0.07}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219f3f7ba98ab2e418f9ba4d3dc95128
+      internalID: -39472850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Animation_17
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 347
+        width: 872
+        height: 885
+      alignment: 9
+      pivot: {x: 0.83, y: 0.07}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd5e8b3b1b48a340b5795f6b0c6dac3
+      internalID: -538390045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Animation_18
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 347
+        width: 872
+        height: 885
+      alignment: 9
+      pivot: {x: 0.83, y: 0.07}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee90fa3146be0904b9a17fcb487af3c6
+      internalID: 1956496153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Animation_19
+      rect:
+        serializedVersion: 2
+        x: 2916
+        y: 347
+        width: 872
+        height: 885
+      alignment: 9
+      pivot: {x: 0.83, y: 0.07}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6680d0bce17c740a5fbe89f49a78dc
+      internalID: -1758063436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Animation_20
+      rect:
+        serializedVersion: 2
+        x: 3898
+        y: 347
+        width: 872
+        height: 885
+      alignment: 9
+      pivot: {x: 0.83, y: 0.07}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3e3610d1cd54248bc9a464216efa8c
+      internalID: -338152577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Boss Animation_0: 467748272
+      Boss Animation_1: -849610122
+      Boss Animation_10: -1346104786
+      Boss Animation_11: 342124678
+      Boss Animation_12: 1872128422
+      Boss Animation_13: -705404980
+      Boss Animation_14: -966968342
+      Boss Animation_15: 1670276607
+      Boss Animation_16: -39472850
+      Boss Animation_17: -538390045
+      Boss Animation_18: 1956496153
+      Boss Animation_19: -1758063436
+      Boss Animation_2: -135742126
+      Boss Animation_20: -338152577
+      Boss Animation_3: 1887356741
+      Boss Animation_4: 1850658468
+      Boss Animation_5: -741774950
+      Boss Animation_6: 474841258
+      Boss Animation_7: 1511243243
+      Boss Animation_8: 382918138
+      Boss Animation_9: 545822476
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,874 @@
+fileFormatVersion: 2
+guid: ef789eb037b43fc45919ef5b1ac7949f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3711
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8af38c09bc4524e82ffff8bfc027e3
+      internalID: -1491085478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_1
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 3711
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.42, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d208d40bc948f4bb0724143aef672c
+      internalID: -1949145158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_2
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 3711
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c8143e3426d28a4dbcdb2fd3527ff88
+      internalID: -1317724730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_3
+      rect:
+        serializedVersion: 2
+        x: 2007
+        y: 3711
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e12b448022038408f20485a716fb7c
+      internalID: -1873225347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_4
+      rect:
+        serializedVersion: 2
+        x: 2676
+        y: 3711
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.43, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e3543e380052540b0a3372fa9bbfc0
+      internalID: 2125315390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_5
+      rect:
+        serializedVersion: 2
+        x: 3345
+        y: 3711
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1b24b25ec102940a35b0e2f0607bc3
+      internalID: 773886091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_6
+      rect:
+        serializedVersion: 2
+        x: 4014
+        y: 3711
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.38, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d55263c04b3232f4086be49aeed7a1fd
+      internalID: 266056827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_7
+      rect:
+        serializedVersion: 2
+        x: 4683
+        y: 3711
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3453c9cb259840428182983a6c7874c
+      internalID: -88660667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_8
+      rect:
+        serializedVersion: 2
+        x: 5352
+        y: 3711
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.42, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96ed8aa659a0444aa5bacd5c1772825
+      internalID: -1498266327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2474
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.42, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6142308ea37439b4ca69cbf31ba79a00
+      internalID: 813239977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_10
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 2474
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7a35b02bd3d154e95ef844577a1fb6
+      internalID: -324686636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_11
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 2474
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008735e379fb7aa489f8c4f67114b24e
+      internalID: -1698351488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_12
+      rect:
+        serializedVersion: 2
+        x: 2007
+        y: 2474
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.42, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 810217a3dd9978c488f8d82633fd011d
+      internalID: 589256998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_13
+      rect:
+        serializedVersion: 2
+        x: 2676
+        y: 2474
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c748fd80f90baab4db6e7728262a95d9
+      internalID: -1861079712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_14
+      rect:
+        serializedVersion: 2
+        x: 3345
+        y: 2474
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.38, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b2106e8f236744285149fd04d96868
+      internalID: -1363323614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_15
+      rect:
+        serializedVersion: 2
+        x: 4014
+        y: 2474
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb3b4fc12b3b3840bbf18b69ef8f336
+      internalID: -1166777806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1237
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.41, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f705452686db644bb039cde04891ebf
+      internalID: 1606690572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_19
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 1237
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.42, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f602833217d44b4982beda1d9c91622
+      internalID: -1063220353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_20
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 1237
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a283b865441a1c4bbabb504657c9838
+      internalID: 130566136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_21
+      rect:
+        serializedVersion: 2
+        x: 2007
+        y: 1237
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e91edc5bcef5b646ae3e0f2b316b27c
+      internalID: 1368835465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_22
+      rect:
+        serializedVersion: 2
+        x: 2676
+        y: 1237
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.43, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382aa5c719976c54e98a466c4d8d36dd
+      internalID: 621459188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_23
+      rect:
+        serializedVersion: 2
+        x: 3345
+        y: 1237
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67bb81c4e1661d541814a188f096950d
+      internalID: 778631906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_24
+      rect:
+        serializedVersion: 2
+        x: 4014
+        y: 1237
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.38, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e58d21ad398c94dab2b33336eba63b
+      internalID: -395428812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_25
+      rect:
+        serializedVersion: 2
+        x: 4683
+        y: 1237
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc950878a0f3ad746a1cb325a98317ab
+      internalID: -1079749407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_26
+      rect:
+        serializedVersion: 2
+        x: 5352
+        y: 1237
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.41, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5901d224cc2794ab0fdc98f0695872
+      internalID: -472090176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.42, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d75b50db9d72446af4b6ec98c53d8a
+      internalID: 179746567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_28
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 0
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cfa1c299d64afb42a2bcd19387c6602
+      internalID: 270931345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_29
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 0
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca6a2dccc0ef35459e73c07c138a6f9
+      internalID: 203176046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_30
+      rect:
+        serializedVersion: 2
+        x: 2007
+        y: 0
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.44, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44253f8954c02540934aa289e402815
+      internalID: -1378838466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_31
+      rect:
+        serializedVersion: 2
+        x: 2676
+        y: 0
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 881ae99ddf6ad6f49a5b90aacbae7658
+      internalID: -1789997980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_32
+      rect:
+        serializedVersion: 2
+        x: 3345
+        y: 0
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.38, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1bcc91a13415f4089f461338c8bab1
+      internalID: 1806977692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2_BarrelNormalAtk_33
+      rect:
+        serializedVersion: 2
+        x: 4014
+        y: 0
+        width: 669
+        height: 1237
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1578030533cfc4479ab22aaddcc709d
+      internalID: -2076811758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Boss2_BarrelNormalAtk_0: -1491085478
+      Boss2_BarrelNormalAtk_1: -1949145158
+      Boss2_BarrelNormalAtk_10: -324686636
+      Boss2_BarrelNormalAtk_11: -1698351488
+      Boss2_BarrelNormalAtk_12: 589256998
+      Boss2_BarrelNormalAtk_13: -1861079712
+      Boss2_BarrelNormalAtk_14: -1363323614
+      Boss2_BarrelNormalAtk_15: -1166777806
+      Boss2_BarrelNormalAtk_16: 1608309798
+      Boss2_BarrelNormalAtk_17: -1646123051
+      Boss2_BarrelNormalAtk_18: 1606690572
+      Boss2_BarrelNormalAtk_19: -1063220353
+      Boss2_BarrelNormalAtk_2: -1317724730
+      Boss2_BarrelNormalAtk_20: 130566136
+      Boss2_BarrelNormalAtk_21: 1368835465
+      Boss2_BarrelNormalAtk_22: 621459188
+      Boss2_BarrelNormalAtk_23: 778631906
+      Boss2_BarrelNormalAtk_24: -395428812
+      Boss2_BarrelNormalAtk_25: -1079749407
+      Boss2_BarrelNormalAtk_26: -472090176
+      Boss2_BarrelNormalAtk_27: 179746567
+      Boss2_BarrelNormalAtk_28: 270931345
+      Boss2_BarrelNormalAtk_29: 203176046
+      Boss2_BarrelNormalAtk_3: -1873225347
+      Boss2_BarrelNormalAtk_30: -1378838466
+      Boss2_BarrelNormalAtk_31: -1789997980
+      Boss2_BarrelNormalAtk_32: 1806977692
+      Boss2_BarrelNormalAtk_33: -2076811758
+      Boss2_BarrelNormalAtk_34: -758539114
+      Boss2_BarrelNormalAtk_35: 444760438
+      Boss2_BarrelNormalAtk_4: 2125315390
+      Boss2_BarrelNormalAtk_5: 773886091
+      Boss2_BarrelNormalAtk_6: 266056827
+      Boss2_BarrelNormalAtk_7: -88660667
+      Boss2_BarrelNormalAtk_8: -1498266327
+      Boss2_BarrelNormalAtk_9: 813239977
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

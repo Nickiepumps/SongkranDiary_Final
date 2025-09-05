@@ -1,0 +1,1202 @@
+fileFormatVersion: 2
+guid: 25efd3f1330ca134898eaf8ed9e7180a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boss 2 Stand_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3230
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.167, y: 0.048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b01b834cd5a6044c9a8f061e1051a95
+      internalID: 26651454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_1
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 3230
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.175, y: 0.048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa81375444051914fb4a140ba961a854
+      internalID: -1079705490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_2
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 3230
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.185, y: 0.048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3980df37178a7a249b165d075b53c96e
+      internalID: -358042050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_3
+      rect:
+        serializedVersion: 2
+        x: 2211
+        y: 3230
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.19, y: 0.048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5adebbedeb4144947a9f394cc17a644f
+      internalID: 1025372024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_4
+      rect:
+        serializedVersion: 2
+        x: 2948
+        y: 3230
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.195, y: 0.048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5860c74be75f284a8548e545f725179
+      internalID: 1470767400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_5
+      rect:
+        serializedVersion: 2
+        x: 3685
+        y: 3230
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.185, y: 0.048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90fd3791d23bfe94ab1c59b1438f6c7b
+      internalID: 1152819822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_6
+      rect:
+        serializedVersion: 2
+        x: 4422
+        y: 3230
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.165, y: 0.048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7566d031d012be64f813f966a7c0e7f8
+      internalID: 1159113559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_7
+      rect:
+        serializedVersion: 2
+        x: 5159
+        y: 3230
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.157, y: 0.048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc035035d7e8a048800b60851eb4220
+      internalID: -1406726905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_8
+      rect:
+        serializedVersion: 2
+        x: 5896
+        y: 3230
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.163, y: 0.048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ad35b04b1e26545bae4351784bf775
+      internalID: -143523775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_9
+      rect:
+        serializedVersion: 2
+        x: 6633
+        y: 3230
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.18, y: 0.048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15577790125464842b9a4fe20058b419
+      internalID: 990517798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_10
+      rect:
+        serializedVersion: 2
+        x: 7370
+        y: 3230
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.18, y: 0.048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e6a549247c25542a0984fe640b15ab
+      internalID: -1151263900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_11
+      rect:
+        serializedVersion: 2
+        x: 8107
+        y: 3230
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.17, y: 0.048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41513567de142e9439a78b71c164d3ca
+      internalID: 576887058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2428
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.17, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab56cdc700c6284daedba4e1accbd98
+      internalID: 1143275645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_14
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 2428
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.175, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8fa932f7df5fd409b7172124a429bd
+      internalID: -1762311705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_15
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 2428
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.185, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d32c2ca7cc8e9743a1a6e043d083f8b
+      internalID: 208058304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_16
+      rect:
+        serializedVersion: 2
+        x: 2211
+        y: 2428
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.19, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c57e3901b2bc56546b348643ed88f63e
+      internalID: -1007452329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_17
+      rect:
+        serializedVersion: 2
+        x: 2948
+        y: 2428
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.195, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0273b23e137c240b0244cf183cf8e6
+      internalID: -498262461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_18
+      rect:
+        serializedVersion: 2
+        x: 3685
+        y: 2428
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.185, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e12ac1587d1f8ab4fa24d1e5f8e0013e
+      internalID: 1314898693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_19
+      rect:
+        serializedVersion: 2
+        x: 4422
+        y: 2428
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.165, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d1937f9e046504ab18c96cb97d18c1
+      internalID: -487231818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_20
+      rect:
+        serializedVersion: 2
+        x: 5159
+        y: 2428
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.148, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67cd0528035b4744aaddb6b5bea77b75
+      internalID: -2013193529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_21
+      rect:
+        serializedVersion: 2
+        x: 5896
+        y: 2428
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.148, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c57ecf7c749874c802f6886558f216
+      internalID: -985725659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_22
+      rect:
+        serializedVersion: 2
+        x: 6633
+        y: 2428
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.17, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ef1d92374082448a3943489a8ef852
+      internalID: 1201441362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_23
+      rect:
+        serializedVersion: 2
+        x: 7370
+        y: 2428
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.155, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b703092dfd4f0439172ae91571a840
+      internalID: 1298060972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_24
+      rect:
+        serializedVersion: 2
+        x: 8107
+        y: 2428
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.165, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74a1d17cc08df648b00d08774b22cb6
+      internalID: -2144864796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_25
+      rect:
+        serializedVersion: 2
+        x: 8844
+        y: 2428
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.165, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 452dcc4f6a31bf841bf93ac0ebb87e1e
+      internalID: -1823736975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1626
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.145, y: 0.048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf797ba9d441e745ba2d58afe6cb8c5
+      internalID: 987702362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_27
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 1626
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.133, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6c0a913031cd549af7331da8a6d507
+      internalID: 60785741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_28
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 1626
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.15, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc15b33d51ed75644946cd2f55e27e99
+      internalID: -1750648677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_29
+      rect:
+        serializedVersion: 2
+        x: 2211
+        y: 1626
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.15, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97d1683baef7e645b3377ce4f533515
+      internalID: 736606697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_30
+      rect:
+        serializedVersion: 2
+        x: 2948
+        y: 1626
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.17, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d517831a47933245a7e0f90f6821d3e
+      internalID: 367265292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_31
+      rect:
+        serializedVersion: 2
+        x: 3685
+        y: 1626
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.17, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 757999b551156d84592b78cace1e5994
+      internalID: 1481519291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 802
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.19, y: 0.103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e86b9eb0a8885418788c271131bc4c
+      internalID: -1796652973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_34
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 802
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.185, y: 0.103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e4e49b9783cc954b9613b60e35c0eaf
+      internalID: -1548002298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_35
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 802
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.185, y: 0.103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c3cf938e435844a885f0aacfcc52d4
+      internalID: -258178363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_36
+      rect:
+        serializedVersion: 2
+        x: 2211
+        y: 802
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.185, y: 0.103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e6904ee81a7554998b5049f4bfd92a
+      internalID: -2143661382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_37
+      rect:
+        serializedVersion: 2
+        x: 2948
+        y: 802
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.185, y: 0.103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc80f3c2a647c141b1e1b99b5b03c90
+      internalID: 1105473308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_38
+      rect:
+        serializedVersion: 2
+        x: 3685
+        y: 802
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.185, y: 0.102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299671253cc08ff46954afe5c22190b5
+      internalID: 902437131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_39
+      rect:
+        serializedVersion: 2
+        x: 4422
+        y: 802
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.172, y: 0.102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa13ca57243513449d0aceb5db74417
+      internalID: -818139113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_40
+      rect:
+        serializedVersion: 2
+        x: 5159
+        y: 802
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.153, y: 0.102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e169573a106b61f47b9719042d5e1036
+      internalID: 659520046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_41
+      rect:
+        serializedVersion: 2
+        x: 5896
+        y: 802
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.153, y: 0.102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab06b83de1b510e43920223089a1dbfd
+      internalID: 1755675707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_42
+      rect:
+        serializedVersion: 2
+        x: 6633
+        y: 804
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.153, y: 0.102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39526785a6c440f489ac97006a3a37c2
+      internalID: 45193803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_43
+      rect:
+        serializedVersion: 2
+        x: 7370
+        y: 802
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.153, y: 0.102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c28e47b5e5df24aba194e0262ba98e
+      internalID: 1742583105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_44
+      rect:
+        serializedVersion: 2
+        x: 8107
+        y: 802
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.153, y: 0.102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2c40fae41e57043a2dcc7ef2b2c3b1
+      internalID: -1775642631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_45
+      rect:
+        serializedVersion: 2
+        x: 8844
+        y: 802
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.153, y: 0.102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cbc3ddeaceced544b0fa75083cc56d2
+      internalID: 1034892366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.153, y: 0.102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d87bfe5548e64c49b19c1f5b37b39c2
+      internalID: 1677816694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_47
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 0
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.153, y: 0.102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1d3ba4973c61c4cb05130b72923d19
+      internalID: 204162750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2 Stand_48
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 0
+        width: 737
+        height: 802
+      alignment: 9
+      pivot: {x: 0.153, y: 0.102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35b718ac2d63064fab4b7ce795d0154
+      internalID: 900317278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Boss 2 Stand_0: 26651454
+      Boss 2 Stand_1: -1079705490
+      Boss 2 Stand_10: -1151263900
+      Boss 2 Stand_11: 576887058
+      Boss 2 Stand_12: 1029485660
+      Boss 2 Stand_13: 1143275645
+      Boss 2 Stand_14: -1762311705
+      Boss 2 Stand_15: 208058304
+      Boss 2 Stand_16: -1007452329
+      Boss 2 Stand_17: -498262461
+      Boss 2 Stand_18: 1314898693
+      Boss 2 Stand_19: -487231818
+      Boss 2 Stand_2: -358042050
+      Boss 2 Stand_20: -2013193529
+      Boss 2 Stand_21: -985725659
+      Boss 2 Stand_22: 1201441362
+      Boss 2 Stand_23: 1298060972
+      Boss 2 Stand_24: -2144864796
+      Boss 2 Stand_25: -1823736975
+      Boss 2 Stand_26: 987702362
+      Boss 2 Stand_27: 60785741
+      Boss 2 Stand_28: -1750648677
+      Boss 2 Stand_29: 736606697
+      Boss 2 Stand_3: 1025372024
+      Boss 2 Stand_30: 367265292
+      Boss 2 Stand_31: 1481519291
+      Boss 2 Stand_32: 278372469
+      Boss 2 Stand_33: -1796652973
+      Boss 2 Stand_34: -1548002298
+      Boss 2 Stand_35: -258178363
+      Boss 2 Stand_36: -2143661382
+      Boss 2 Stand_37: 1105473308
+      Boss 2 Stand_38: 902437131
+      Boss 2 Stand_39: -818139113
+      Boss 2 Stand_4: 1470767400
+      Boss 2 Stand_40: 659520046
+      Boss 2 Stand_41: 1755675707
+      Boss 2 Stand_42: 45193803
+      Boss 2 Stand_43: 1742583105
+      Boss 2 Stand_44: -1775642631
+      Boss 2 Stand_45: 1034892366
+      Boss 2 Stand_46: 1677816694
+      Boss 2 Stand_47: 204162750
+      Boss 2 Stand_48: 900317278
+      Boss 2 Stand_5: 1152819822
+      Boss 2 Stand_6: 1159113559
+      Boss 2 Stand_7: -1406726905
+      Boss 2 Stand_8: -143523775
+      Boss 2 Stand_9: 990517798
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

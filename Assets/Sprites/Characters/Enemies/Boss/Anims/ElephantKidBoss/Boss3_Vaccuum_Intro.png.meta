@@ -1,0 +1,352 @@
+fileFormatVersion: 2
+guid: bb11fc86f55f7f54fb6efbce52994e4b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boss3_Vaccuum_Intro_0
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 70
+        width: 1122
+        height: 882
+      alignment: 9
+      pivot: {x: 0.6728, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1e00bdc904ca049b34529deca98014
+      internalID: 501583670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_Vaccuum_Intro_1
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 70
+        width: 1122
+        height: 882
+      alignment: 9
+      pivot: {x: 0.6729, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9357dba4bf7c99643a67aa4086d3031e
+      internalID: -1682537079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_Vaccuum_Intro_2
+      rect:
+        serializedVersion: 2
+        x: 2669
+        y: 70
+        width: 1122
+        height: 882
+      alignment: 9
+      pivot: {x: 0.6755, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97298c2c09ad62547a73c4eaa27d80b8
+      internalID: 213444020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_Vaccuum_Intro_3
+      rect:
+        serializedVersion: 2
+        x: 3938
+        y: 70
+        width: 1122
+        height: 882
+      alignment: 9
+      pivot: {x: 0.679, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6fad1239dc61d4f9dd35a6b8a0c382
+      internalID: -1349289621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_Vaccuum_Intro_5
+      rect:
+        serializedVersion: 2
+        x: 5237
+        y: 70
+        width: 1122
+        height: 882
+      alignment: 9
+      pivot: {x: 0.6728, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee62448bb7b2c94e984a9cfc909656a
+      internalID: 203851281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_Vaccuum_Intro_6
+      rect:
+        serializedVersion: 2
+        x: 6498
+        y: 70
+        width: 1122
+        height: 882
+      alignment: 9
+      pivot: {x: 0.6693, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65fab090603c004bb31d7d094af9f87
+      internalID: 1342402527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_Vaccuum_Intro_7
+      rect:
+        serializedVersion: 2
+        x: 7833
+        y: 70
+        width: 1122
+        height: 882
+      alignment: 9
+      pivot: {x: 0.6693, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c9c7c26dd1f1a4794c8c03b10d9bde
+      internalID: -1443616629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss3_Vaccuum_Intro_8
+      rect:
+        serializedVersion: 2
+        x: 9098
+        y: 70
+        width: 1122
+        height: 882
+      alignment: 9
+      pivot: {x: 0.6773, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cced6a065d9e6974abadf2c0b2649bf8
+      internalID: -786612184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Boss3_Vaccuum_Intro_0: 501583670
+      Boss3_Vaccuum_Intro_1: -1682537079
+      Boss3_Vaccuum_Intro_10: 228700912
+      Boss3_Vaccuum_Intro_11: 1675015925
+      Boss3_Vaccuum_Intro_12: 738989708
+      Boss3_Vaccuum_Intro_13: -1285027269
+      Boss3_Vaccuum_Intro_14: 667937722
+      Boss3_Vaccuum_Intro_15: 1250336621
+      Boss3_Vaccuum_Intro_16: 195500382
+      Boss3_Vaccuum_Intro_17: 235906177
+      Boss3_Vaccuum_Intro_2: 213444020
+      Boss3_Vaccuum_Intro_3: -1349289621
+      Boss3_Vaccuum_Intro_4: 714387132
+      Boss3_Vaccuum_Intro_5: 203851281
+      Boss3_Vaccuum_Intro_6: 1342402527
+      Boss3_Vaccuum_Intro_7: -1443616629
+      Boss3_Vaccuum_Intro_8: -786612184
+      Boss3_Vaccuum_Intro_9: 350732503
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
