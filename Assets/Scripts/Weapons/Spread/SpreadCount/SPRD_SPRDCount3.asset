@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f94e85909a60406429229c649a3e7e87, type: 3}
+  m_Name: SPRD_SPRDCount3
+  m_EditorClassIdentifier: 
+  upgradeType: 3
+  bulletType: 1
+  icon: {fileID: -1438507393, guid: 4c9b9a62dbf76fa43bc0a654f5b65c32, type: 3}
+  upgradeName: 
+  upgradeDescription: 
+  upgradeCost: 1
+  level: 3
+  aspd: 1
+  travelSpeed: 15
+  spreadCount: 5
+  ultCount: 0
+  ultChargingSpeed: 0

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b28739cdf3e63b45bbbefe16d89e2da, type: 3}
+  m_Name: Run1
+  m_EditorClassIdentifier: 
+  levelName: RunNGun1
+  unitySceneName: Run_1
+  levelImagePostcard: {fileID: 0}
+  isoLevelBoundary:
+  - {fileID: 2124297373547204099, guid: 6c1f79fc79a0b6949842377a97a4ee3f, type: 3}
+  nextLevel: {fileID: 4368920941680911592, guid: 2b0acb941a7fcb44992c30b39ab4067d, type: 3}
+  isClear: 0
+  isClearFirstTime: 1

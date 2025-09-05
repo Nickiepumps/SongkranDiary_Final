@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f94e85909a60406429229c649a3e7e87, type: 3}
+  m_Name: Normal_ASPD3
+  m_EditorClassIdentifier: 
+  upgradeType: 0
+  bulletType: 1
+  icon: {fileID: 21300000, guid: 19a151858011a3d4bb9f7bf7ffd6cf17, type: 3}
+  upgradeName: "\u0E01\u0E23\u0E30\u0E1A\u0E2D\u0E01\u0E2A\u0E39\u0E1A\u0E19\u0E49\u0E33\u0E02\u0E31\u0E49\u0E19
+    3"
+  upgradeDescription: "\u0E04\u0E27\u0E32\u0E21\u0E40\u0E23\u0E47\u0E27\u0E01\u0E32\u0E23\u0E22\u0E34\u0E07\u0E40\u0E23\u0E47\u0E27\u0E02\u0E36\u0E49\u0E19"
+  upgradeCost: 1
+  level: 3
+  aspd: 0.15
+  travelSpeed: 20
+  spreadCount: 1
+  ultCount: 0
+  ultChargingSpeed: 0

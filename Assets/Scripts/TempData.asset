@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8391d2c7eb53e894ab23063ed1ed2cd6, type: 3}
+  m_Name: TempData
+  m_EditorClassIdentifier: 
+  maxPlayerHP: {fileID: 0}
+  currentPlayerHP: {fileID: 11400000, guid: 21788c81d36a60c4f9a49313a2807b7b, type: 2}
+  maxPlayerUltCharge: {fileID: 0}
+  currentPlayerUltCharge: {fileID: 11400000, guid: 0051d1f528765464f96396c4b4740120, type: 2}
+  currentPlayerUltAmount: {fileID: 0}
+  currentNormalASPD: {fileID: 11400000, guid: 99f957aa8f4c3b747adc2600c8cd7ff9, type: 2}
+  maxNormalASPD: {fileID: 0}
+  currentWeaponTravelSpeed: {fileID: 11400000, guid: bcc1f3142732375429d23c04d01d1814, type: 2}
+  maxWeaponTravelSpeed: {fileID: 0}
+  currentSprdBulletASPD: {fileID: 11400000, guid: c7c7616b0ff3cad449d32a4831f54bf5, type: 2}
+  maxSprdBulletASPD: {fileID: 0}
+  currentWeaponSprdCount: {fileID: 11400000, guid: 7466a3e31a3592049840d1af2be5b82a, type: 2}
+  maxWeaponSprdCount: {fileID: 0}
+  currentLsrBulletASPD: {fileID: 11400000, guid: 5720ac2d05678de49a29285cea972d29, type: 2}
+  maxLsrBulletASPD: {fileID: 0}
+  maxPlayerUltAmount: {fileID: 0}
+  maxUltimateTravelSpeed: {fileID: 0}
