@@ -16,6 +16,8 @@ public class ElephantKid_BossIdleState : BossStateMachine
         elephantKidBoss.bossAnimator.SetFloat("prepareVariant", 0);
         elephantKidBoss.bossAnimator.SetFloat("attackIdleVariant", 0);
         elephantKidBoss.bossAnimator.SetFloat("ultVariant", 0);
+
+        elephantKidBoss.isNormalIdle = true;
         currentIdleTime = elephantKidBoss.bossScriptableObject.idleTime;
     }
     public override void Update()
@@ -27,24 +29,25 @@ public class ElephantKid_BossIdleState : BossStateMachine
         
         if (currentIdleTime <= 0)
         {
+            elephantKidBoss.isNormalIdle = false;
             if (elephantKidBoss.normalAttackCount >= 3)
             {
                 elephantKidBoss.normalAttackCount = 0;
                 int attackType = Random.Range(0, 3);
                 if(attackType == 0)
                 {
-                    //elephantKidBoss.StartCoroutine(elephantKidBoss.Boss_ElephantKidNormalAtk_Outro(new ElephantKid_UnderGroundlAttackState(elephantKidBoss)));
-                    elephantKidBoss.BossStateTransition(new ElephantKid_UnderGroundlAttackState(elephantKidBoss));
+                    elephantKidBoss.StartCoroutine(elephantKidBoss.Boss_ElephantKidNormalAtk_Outro(new ElephantKid_UnderGroundlAttackState(elephantKidBoss)));
+                    currentIdleTime = elephantKidBoss.bossScriptableObject.idleTime;
                 }
                 else if(attackType == 1)
                 {
                     elephantKidBoss.StartCoroutine(elephantKidBoss.Boss_ElephantKidNormalAtk_Outro(new ElephantKid_BossUlt1State(elephantKidBoss)));
-                    //elephantKidBoss.BossStateTransition(new ElephantKid_BossUlt1State(elephantKidBoss));
+                    currentIdleTime = elephantKidBoss.bossScriptableObject.idleTime;
                 }
                 else
                 {
                     elephantKidBoss.StartCoroutine(elephantKidBoss.Boss_ElephantKidNormalAtk_Outro(new ElephantKid_BossUlt2State(elephantKidBoss)));
-                    //elephantKidBoss.BossStateTransition(new ElephantKid_BossUlt2State(elephantKidBoss));
+                    currentIdleTime = elephantKidBoss.bossScriptableObject.idleTime;
                 }
             }
             else
@@ -59,7 +62,6 @@ public class ElephantKid_BossIdleState : BossStateMachine
         {
             elephantKidBoss.healCount++;
             elephantKidBoss.StartCoroutine(elephantKidBoss.StartBossHealAnimation());
-            //elephantKidBoss.BossStateTransition(new ElephantKid_BossHealState(elephantKidBoss));
         }
         if(elephantKidBoss.bossHP.currentBossHP <= 0)
         {

@@ -9,7 +9,8 @@ public class BossHealthObserver : MonoBehaviour, IBossObserver
     [SerializeField] private BossSubject bossSubject;
     [Header("Audio Reference")]
     [SerializeField] private AudioClip[] enemyAudioClipArr;
-    [SerializeField] private AudioSource enemyAudioSource;
+    [SerializeField] private AudioSource bossStatusAudioSource;
+    [SerializeField] private AudioSource bossHealAudioSource;
     [Header("Boss Health Properties")]
     [SerializeField] private BossHealth bossHealth;
     public int bossMaxHP; // Used for game controller to check boss progression
@@ -38,25 +39,24 @@ public class BossHealthObserver : MonoBehaviour, IBossObserver
                 if (bossHealth.currentBossArmor <= 0)
                 {
                     bossHealth.currentBossHP--;
-                    enemyAudioSource.clip = enemyAudioClipArr[0];
-                    enemyAudioSource.Play();
+                    bossStatusAudioSource.clip = enemyAudioClipArr[0];
+                    bossStatusAudioSource.Play();
                 }
                 else
                 {
                     bossHealth.currentBossArmor--;
-                    enemyAudioSource.clip = enemyAudioClipArr[1];
-                    enemyAudioSource.Play();
+                    bossStatusAudioSource.clip = enemyAudioClipArr[1];
+                    bossStatusAudioSource.Play();
                 }
                 return;
             case (BossAction.Heal):
-                Debug.Log("Boss heal");
                 bossHealth.currentBossHP += bossHealth.bossStats.healAmount;
-                enemyAudioSource.clip = enemyAudioClipArr[3];
-                enemyAudioSource.Play();
+                bossHealAudioSource.clip = enemyAudioClipArr[3];
+                bossHealAudioSource.Play();
                 return;
             case (BossAction.Die):
-                enemyAudioSource.clip = enemyAudioClipArr[2];
-                enemyAudioSource.Play();
+                bossStatusAudioSource.clip = enemyAudioClipArr[2];
+                bossStatusAudioSource.Play();
                 return;
         }
     }

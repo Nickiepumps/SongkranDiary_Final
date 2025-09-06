@@ -9,11 +9,12 @@ public class ElephantKid_NormalAttack1State : BossStateMachine
     private int shotCount = 0;
     public override void Start()
     {
-        // Play Idle anim when attack timing > 0
+        // Play normal attack anim both idle and active variant
         if(elephantKidBoss.normalAttackCount == 1)
         {
             elephantKidBoss.StartCoroutine(elephantKidBoss.Boss_ElephantKidNormalAtk_Intro());
         }
+        elephantKidBoss.isNormalAttack = true;
         currentAttackTime = elephantKidBoss.bossScriptableObject.aspd;
     }
     public override void Update()
@@ -30,14 +31,17 @@ public class ElephantKid_NormalAttack1State : BossStateMachine
         }
         else if(shotCount >= 3)
         {
+            elephantKidBoss.isNormalAttack = false;
             elephantKidBoss.BossStateTransition(new ElephantKid_BossIdleState(elephantKidBoss));
         }
-        if (elephantKidBoss.bossHP.currentBossHP <= elephantKidBoss.bossHP.bossMaxHP - ((elephantKidBoss.bossHP.bossMaxHP * 25) / 100) * elephantKidBoss.healCount
-            && elephantKidBoss.healCount < 4)
+        if(elephantKidBoss.isShoot == false)
         {
-            elephantKidBoss.healCount++;
-            elephantKidBoss.StartCoroutine(elephantKidBoss.StartBossHealAnimation());
-            //elephantKidBoss.BossStateTransition(new ElephantKid_BossHealState(elephantKidBoss));
+            if (elephantKidBoss.bossHP.currentBossHP <= elephantKidBoss.bossHP.bossMaxHP - ((elephantKidBoss.bossHP.bossMaxHP * 25) / 100) * elephantKidBoss.healCount
+            && elephantKidBoss.healCount < 4)
+            {
+                elephantKidBoss.healCount++;
+                elephantKidBoss.StartCoroutine(elephantKidBoss.StartBossHealAnimation());
+            }
         }
         if (elephantKidBoss.bossHP.currentBossHP <= 0)
         {

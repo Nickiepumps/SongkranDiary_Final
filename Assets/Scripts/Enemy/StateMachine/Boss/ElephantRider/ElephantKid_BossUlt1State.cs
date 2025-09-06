@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ElephantKid_BossUlt1State : BossStateMachine
@@ -28,14 +26,17 @@ public class ElephantKid_BossUlt1State : BossStateMachine
         }
         if(currentUltTime <= 0)
         {
+            elephantKidBoss.bossUlt1 = false;
             elephantKidBoss.BossStateTransition(new ElephantKid_BossIdleState(elephantKidBoss));
         }
-        if (elephantKidBoss.bossHP.currentBossHP <= elephantKidBoss.bossHP.bossMaxHP - ((elephantKidBoss.bossHP.bossMaxHP * 25) / 100) * elephantKidBoss.healCount
-            && elephantKidBoss.healCount < 4)
+        if(elephantKidBoss.bossUlt1 == true)
         {
-            elephantKidBoss.healCount++;
-            elephantKidBoss.StartCoroutine(elephantKidBoss.StartBossHealAnimation());
-            //elephantKidBoss.BossStateTransition(new ElephantKid_BossHealState(elephantKidBoss));
+            if (elephantKidBoss.bossHP.currentBossHP <= elephantKidBoss.bossHP.bossMaxHP - ((elephantKidBoss.bossHP.bossMaxHP * 25) / 100) * elephantKidBoss.healCount
+            && elephantKidBoss.healCount < 4)
+            {
+                elephantKidBoss.healCount++;
+                elephantKidBoss.StartCoroutine(elephantKidBoss.StartBossHealAnimation());
+            }
         }
     }
     public override void FixedUpdate()

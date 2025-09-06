@@ -86,12 +86,12 @@ public class ElephantKid_BossObserverController : MonoBehaviour, IBossObserver, 
     }
     private IEnumerator Boss_KidShoot()
     {
-        elephantKidStateController.isKidAttack = true;
-
+        elephantKidStateController.isShoot = true;
         elephantKidBossAnimator.SetBool("isPrepareToAttack", false);
         elephantKidBossAnimator.SetBool("isIdle", false);
         elephantKidBossAnimator.SetBool("isAttack", true);
         elephantKidBossAnimator.SetBool("isShoot", true);
+        elephantKidBossAnimator.SetFloat("attackIdleVariant", 0);
         elephantKidBossAnimator.SetFloat("prepareVariant", 0);
         yield return new WaitForSeconds(0.4f);
         Boss_KidShootBulletSpawner(kidBulletSpawner);
@@ -101,7 +101,8 @@ public class ElephantKid_BossObserverController : MonoBehaviour, IBossObserver, 
         elephantKidBossAnimator.SetBool("isAttack", true);
         elephantKidBossAnimator.SetBool("isShoot", false);
         elephantKidBossAnimator.SetFloat("attackIdleVariant", 0);
-        elephantKidStateController.isKidAttack = false;
+        elephantKidBossAnimator.SetFloat("prepareVariant", 0);
+        elephantKidStateController.isShoot = false;
     }
     private void Boss_KidShootBulletSpawner(Transform spawnPos)
     {

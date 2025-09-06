@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class ElephantKid_BossStateController : BossSubject
 {
@@ -29,10 +28,13 @@ public class ElephantKid_BossStateController : BossSubject
     // Hide in inspector
     public bool isDead = false;
     public bool isBossInvulnerable = false;
+    public bool isBossPreparetoAttack = false;
+    public bool isNormalIdle = false;
     public bool isHeal = false;
-    public bool isKidAttack = false;
     public bool isElephantAttack = false;
     public bool isGameStart = false;
+    public bool isShoot = false;
+    public bool isNormalAttack = false;
     public int normalAttackPattern = 0;
     public int normalAttackCount = 0;
     public int healCount = 0;
@@ -84,14 +86,34 @@ public class ElephantKid_BossStateController : BossSubject
     public IEnumerator StartBossHealAnimation()
     {
         isHeal = true;
-        bossAnimator.SetBool("isIdle", true);
-        bossAnimator.SetBool("isAttack", true);
-        bossAnimator.SetBool("isHeal", true);
-        yield return new WaitForSeconds(2f);
+        // Check current state; idle, normal attack, and baby elephant ult
+        if(isNormalAttack == true)
+        {
+            bossAnimator.SetBool("isIdle", true);
+            bossAnimator.SetBool("isAttack", true);
+            bossAnimator.SetBool("isHeal", true);
+        }
+        else if(bossUlt1 == true || isNormalIdle == true)
+        {
+            bossAnimator.SetBool("isIdle", true);
+            bossAnimator.SetBool("isAttack", false);
+            bossAnimator.SetBool("isHeal", true);
+        }
+        yield return new WaitForSeconds(1.3f);
         NotifyBoss(BossAction.Heal);
-        bossAnimator.SetBool("isHeal", false);
+        if (isNormalAttack == true)
+        {
+            bossAnimator.SetBool("isIdle", true);
+            bossAnimator.SetBool("isAttack", true);
+            bossAnimator.SetBool("isHeal", false);
+        }
+        else if (bossUlt1 == true || isNormalIdle == true)
+        {
+            bossAnimator.SetBool("isIdle", true);
+            bossAnimator.SetBool("isAttack", false);
+            bossAnimator.SetBool("isHeal", false);
+        }
         isHeal = false;
-        //BossStateTransition(new ElephantKid_BossIdleState(this));
     }
     public IEnumerator StartBossVacuumAnimation()
     {
@@ -111,6 +133,7 @@ public class ElephantKid_BossStateController : BossSubject
         bossAnimator.SetBool("isPrepareToAttack", true);
         bossAnimator.SetBool("isIdle", false);
         bossAnimator.SetBool("isAttack", false);
+        bossAnimator.SetBool("isHeal", false);
         bossAnimator.SetBool("isShoot", false);
         bossAnimator.SetFloat("prepareVariant", 1);
         yield return new WaitForSeconds(0.7f);
@@ -123,6 +146,7 @@ public class ElephantKid_BossStateController : BossSubject
         bossAnimator.SetFloat("prepareVariant", 0);
         bossAnimator.SetFloat("attackIdleVariant", 0);
         bossAnimator.SetFloat("ultVariant", 0);
+        yield return new WaitForSeconds(0.1f);
         BossStateTransition(newState);
     }
     public IEnumerator Boss_ElephantKidNormalAtk_Intro()
@@ -142,13 +166,6 @@ public class ElephantKid_BossStateController : BossSubject
     }
     public IEnumerator Boss_ElephantKidUndergroundAtk_Intro()
     {
-        bossAnimator.SetBool("isHeal", false);
-        bossAnimator.SetBool("isPrepareToAttack", true);
-        bossAnimator.SetBool("isIdle", false);
-        bossAnimator.SetBool("isAttack", false);
-        bossAnimator.SetBool("isShoot", false);
-        bossAnimator.SetFloat("prepareVariant", 1);
-        yield return new WaitForSeconds(0.7f);
         bossAnimator.SetBool("isPrepareToAttack", true);
         bossAnimator.SetBool("isIdle", false);
         bossAnimator.SetBool("isAttack", false);
@@ -172,8 +189,10 @@ public class ElephantKid_BossStateController : BossSubject
         bossAnimator.SetBool("isPrepareToAttack", true);
         bossAnimator.SetBool("isIdle", false);
         bossAnimator.SetBool("isAttack", false);
+        bossAnimator.SetBool("isHeal", false);
         bossAnimator.SetBool("isShoot", false);
         bossAnimator.SetFloat("prepareVariant", 3);
+        bossAnimator.SetFloat("attackIdleVariant", 0);
         yield return new WaitForSeconds(0.7f);
         BossStateTransition(new ElephantKid_BossIdleState(this));
     }
@@ -198,6 +217,7 @@ public class ElephantKid_BossStateController : BossSubject
         bossAnimator.SetBool("isUlt", false);
         bossAnimator.SetBool("isPrepareToAttack", false);
         bossAnimator.SetFloat("ultVariant", 0);
+        bossUlt1 = true;
     }
     #region Underground Attack Pattern
     [System.Serializable]
