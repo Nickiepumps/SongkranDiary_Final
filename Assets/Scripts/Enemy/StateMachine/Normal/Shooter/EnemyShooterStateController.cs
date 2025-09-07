@@ -41,6 +41,8 @@ public class EnemyShooterStateController : NormalEnemySubject
     private Camera cam;
     private void OnEnable()
     {
+        shooterEnemyAnimator.SetBool("isRun", true);
+        shooterEnemyAnimator.SetBool("isDead", false);
         isDead = false;
         enemyHitBox.enabled = true;
         enemySpriteRenderer.enabled = true;
@@ -115,5 +117,14 @@ public class EnemyShooterStateController : NormalEnemySubject
     {
         enemyCurrentState = newEnemyState;
         enemyCurrentState.Start();
+    }
+    public IEnumerator EnemyDead()
+    {
+        shooterEnemyAnimator.SetBool("isRun", false);
+        shooterEnemyAnimator.SetBool("isDead", true);
+        enemyHitBox.enabled = false;
+        yield return new WaitForSeconds(0.2f);
+        enemySpriteRenderer.enabled = false;
+        gameObject.SetActive(false);
     }
 }

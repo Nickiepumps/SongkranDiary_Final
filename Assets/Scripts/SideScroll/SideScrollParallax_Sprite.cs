@@ -100,6 +100,18 @@ public class SideScrollParallax_Sprite : MonoBehaviour
                     mainSpriteTransform.GetChild(currentSprite).position.y);
                 currentSprite--;
             }
+            /*if(currentSprite < mainSpriteTransform.childCount - 1)
+            {
+                mainSpriteTransform.GetChild(currentSprite).position = new Vector2(mainSpriteTransform.GetChild(mainSpriteTransform.childCount - 1).position.x + connectOffset,
+                    mainSpriteTransform.GetChild(currentSprite).position.y);
+                currentSprite++;
+            }
+            else
+            {
+                mainSpriteTransform.GetChild(currentSprite).position = new Vector2(mainSpriteTransform.GetChild(currentSprite - 1).position.x + connectOffset,
+                    mainSpriteTransform.GetChild(currentSprite).position.y);
+                currentSprite--;
+            }*/
         }
         else if (spriteCurrentPos.x >= 1 && isLeft == true)
         {

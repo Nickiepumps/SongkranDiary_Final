@@ -8,6 +8,9 @@ public class EnemyBomberExplodeState : EnemyStateMachine
     public override void Start()
     {
         bomberEnemy.isDead = true;
+        bomberEnemy.enemyHitBox.enabled = false;
+        bomberEnemy.enemyAudioSource.clip = bomberEnemy.enemyAudioClipArr[1];
+        bomberEnemy.enemyAudioSource.Play();
         bomberEnemy.NotifyNormalEnemy(EnemyAction.Explode); // Play explode animation
     }
     public override void Update()

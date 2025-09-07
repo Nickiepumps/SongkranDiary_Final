@@ -7,6 +7,7 @@ public class EnemyShooterDeadState : EnemyStateMachine
     public EnemyShooterDeadState(EnemyShooterStateController shooterEnemy) : base(shooterEnemy) { }
     public override void Start()
     {
+        shooterEnemy.StartCoroutine(shooterEnemy.EnemyDead());
         shooterEnemy.isDead = true;
         shooterEnemy.enemyAudioSource.clip = shooterEnemy.enemyAudioClipArr[1];
         shooterEnemy.enemyAudioSource.Play();
