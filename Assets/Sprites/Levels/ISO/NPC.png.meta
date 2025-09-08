@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0a44119cf4ed4e444a6ddd60c3a4d8db
+guid: 7459217b2b021f543914e2a2a46e129d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -149,13 +149,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FLAG ALL_0
+      name: NPC_0
       rect:
         serializedVersion: 2
-        x: 104
-        y: 576
-        width: 113
-        height: 228
+        x: 95
+        y: 74
+        width: 201
+        height: 320
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86c0bbecdbc5a5943889c98c5da20f26
-      internalID: -1668986337
+      spriteID: a657a686f2790a34c854c033c330282d
+      internalID: 811312157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLAG ALL_1
+      name: NPC_1
       rect:
         serializedVersion: 2
-        x: 351
-        y: 576
-        width: 113
-        height: 222
+        x: 317
+        y: 80
+        width: 228
+        height: 348
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd4fd092678aaf9499504a3cb8df5005
-      internalID: -260694825
+      spriteID: c4d255dce3b9b7d4180421b180c15be7
+      internalID: 492594231
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLAG ALL_2
+      name: NPC_2
       rect:
         serializedVersion: 2
-        x: 585
-        y: 576
-        width: 114
-        height: 214
+        x: 596
+        y: 92
+        width: 161
+        height: 323
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e5e83084210ba9428238f533e8f498b
-      internalID: -741026403
+      spriteID: 3cfdbc82a18cbc1458ea4eb4ce279d78
+      internalID: -146410432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLAG ALL_3
+      name: NPC_3
       rect:
         serializedVersion: 2
-        x: 833
-        y: 576
-        width: 111
-        height: 207
+        x: 816
+        y: 92
+        width: 198
+        height: 334
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,20 +226,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc548cdec14bd9948898d955db56774b
-      internalID: -1279936875
+      spriteID: 07a4589e7420a794a978ada67fe49ac8
+      internalID: 660827434
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLAG ALL_4
+      name: NPC_4
       rect:
         serializedVersion: 2
-        x: 1096
-        y: 576
-        width: 113
-        height: 213
+        x: 1070
+        y: 94
+        width: 205
+        height: 284
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,20 +247,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58ea501135d3a154d988b0bd6adfb36a
-      internalID: 1705147693
+      spriteID: ca04d043778e76448a3d4164364aa385
+      internalID: 796868312
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLAG ALL_5
+      name: NPC_5
       rect:
         serializedVersion: 2
-        x: 104
-        y: 270
-        width: 113
-        height: 228
+        x: 1337
+        y: 104
+        width: 238
+        height: 335
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,20 +268,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 742b0c876a644cd4abcccc544cce5e04
-      internalID: 248429315
+      spriteID: 9825ba45370e3134c848c211cbfebb89
+      internalID: 1891292262
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLAG ALL_6
+      name: NPC_7
       rect:
         serializedVersion: 2
-        x: 351
-        y: 270
-        width: 113
-        height: 222
+        x: 1646
+        y: 103
+        width: 146
+        height: 221
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,20 +289,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 084c59b898623fb4ab7f61f5b3293617
-      internalID: 335323832
+      spriteID: 31e1441fa5cbe3f45ba3ad25c8df12b6
+      internalID: 797394880
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLAG ALL_7
+      name: NPC_8
       rect:
         serializedVersion: 2
-        x: 585
-        y: 270
-        width: 114
-        height: 214
+        x: 1911
+        y: 101
+        width: 162
+        height: 279
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 041e51f14cc9b1445b0687c2cb5c76bd
-      internalID: -911578063
+      spriteID: 13cac81d5adf75d4997188d26690c977
+      internalID: -934335349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLAG ALL_8
+      name: NPC_9
       rect:
         serializedVersion: 2
-        x: 833
-        y: 270
-        width: 111
-        height: 207
+        x: 2175
+        y: 92
+        width: 161
+        height: 323
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,155 +331,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6d3eeefb5ffd5341bd148acaa16e7a7
-      internalID: 11480530
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FLAG ALL_9
-      rect:
-        serializedVersion: 2
-        x: 1096
-        y: 270
-        width: 113
-        height: 213
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 07f512833d0abe1439e6bafe1ea5eb35
-      internalID: -780873499
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FLAG ALL_10
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 45
-        width: 163
-        height: 103
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c192179c7b700d4e9b5e9ec21024cf0
-      internalID: 686354365
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FLAG ALL_11
-      rect:
-        serializedVersion: 2
-        x: 295
-        y: 45
-        width: 163
-        height: 103
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ecab99a49ef006b46802e6af9441bcc3
-      internalID: -20334376
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FLAG ALL_12
-      rect:
-        serializedVersion: 2
-        x: 518
-        y: 45
-        width: 163
-        height: 103
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7515474fdfa45444f9638f7545904215
-      internalID: 1533615193
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FLAG ALL_13
-      rect:
-        serializedVersion: 2
-        x: 757
-        y: 45
-        width: 163
-        height: 103
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 52ffe15add30b8b459d8e24a7cd356cd
-      internalID: 1091045378
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FLAG ALL_14
-      rect:
-        serializedVersion: 2
-        x: 950
-        y: 45
-        width: 163
-        height: 103
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c7304fa6075c3f4e83ff100c2ca0fd7
-      internalID: -1268785365
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FLAG ALL_15
-      rect:
-        serializedVersion: 2
-        x: 1189
-        y: 45
-        width: 163
-        height: 103
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c2234bd7d7f3b4d45ae6737d31b71cb2
-      internalID: 1896832859
+      spriteID: 9b475f9ee2602894a8ffdafb69b71df3
+      internalID: -133287017
       vertices: []
       indices: 
       edges: []
@@ -495,22 +348,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FLAG ALL_0: -1668986337
-      FLAG ALL_1: -260694825
-      FLAG ALL_10: 686354365
-      FLAG ALL_11: -20334376
-      FLAG ALL_12: 1533615193
-      FLAG ALL_13: 1091045378
-      FLAG ALL_14: -1268785365
-      FLAG ALL_15: 1896832859
-      FLAG ALL_2: -741026403
-      FLAG ALL_3: -1279936875
-      FLAG ALL_4: 1705147693
-      FLAG ALL_5: 248429315
-      FLAG ALL_6: 335323832
-      FLAG ALL_7: -911578063
-      FLAG ALL_8: 11480530
-      FLAG ALL_9: -780873499
+      NPC_0: 811312157
+      NPC_1: 492594231
+      NPC_2: -146410432
+      NPC_3: 660827434
+      NPC_4: 796868312
+      NPC_5: 1891292262
+      NPC_6: -2023774177
+      NPC_7: 797394880
+      NPC_8: -934335349
+      NPC_9: -133287017
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
