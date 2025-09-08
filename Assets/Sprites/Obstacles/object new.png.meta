@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0a44119cf4ed4e444a6ddd60c3a4d8db
+guid: 4ddf5f618f32c4d4895e647b198cb9c9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -149,13 +149,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FLAG ALL_0
+      name: Motorcycle
       rect:
         serializedVersion: 2
-        x: 104
-        y: 576
-        width: 114
-        height: 228
+        x: 461
+        y: 165
+        width: 548
+        height: 521
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86c0bbecdbc5a5943889c98c5da20f26
-      internalID: -1668986337
+      spriteID: 2afe293cb37c5f742a1f97317a92e0d4
+      internalID: 484473412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLAG ALL_1
+      name: object new_1
       rect:
         serializedVersion: 2
-        x: 351
-        y: 576
-        width: 114
-        height: 222
+        x: 2158
+        y: 113
+        width: 1092
+        height: 787
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd4fd092678aaf9499504a3cb8df5005
-      internalID: -260694825
+      spriteID: aadad3740dbf5a548851e553b069e854
+      internalID: 1589722705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLAG ALL_2
+      name: Balloon
       rect:
         serializedVersion: 2
-        x: 585
-        y: 576
-        width: 114
-        height: 214
+        x: 3389
+        y: 403
+        width: 165
+        height: 337
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e5e83084210ba9428238f533e8f498b
-      internalID: -741026403
+      spriteID: ceecef45c8d5165439a61e2d5b22a267
+      internalID: -1305101838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLAG ALL_3
+      name: Platform_New
       rect:
         serializedVersion: 2
-        x: 833
-        y: 576
-        width: 114
-        height: 207
+        x: 3705
+        y: 415
+        width: 706
+        height: 141
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,20 +226,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc548cdec14bd9948898d955db56774b
-      internalID: -1279936875
+      spriteID: fd4c338349319e941a59e597d2e9d1fb
+      internalID: -1569041569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLAG ALL_4
+      name: object new_4
       rect:
         serializedVersion: 2
-        x: 1096
-        y: 576
-        width: 114
-        height: 213
+        x: 4638
+        y: 158
+        width: 278
+        height: 421
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,20 +247,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58ea501135d3a154d988b0bd6adfb36a
-      internalID: 1705147693
+      spriteID: 041db2be6dd1e1347b3aa6db14b5593c
+      internalID: -1219673388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLAG ALL_5
+      name: object new_5
       rect:
         serializedVersion: 2
-        x: 104
-        y: 270
-        width: 114
-        height: 228
+        x: 5105
+        y: 131
+        width: 1699
+        height: 616
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,20 +268,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 742b0c876a644cd4abcccc544cce5e04
-      internalID: 248429315
+      spriteID: c48fdfd69a6398f4c817cfe6011174b0
+      internalID: -1136093111
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLAG ALL_6
+      name: object new_6
       rect:
         serializedVersion: 2
-        x: 351
-        y: 270
-        width: 114
-        height: 222
+        x: 6986
+        y: 154
+        width: 549
+        height: 399
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,20 +289,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 084c59b898623fb4ab7f61f5b3293617
-      internalID: 335323832
+      spriteID: 99e1af759c845b74aabf064ac2f8733b
+      internalID: 1921674770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLAG ALL_7
+      name: object new_7
       rect:
         serializedVersion: 2
-        x: 585
-        y: 270
-        width: 114
-        height: 214
+        x: 8595
+        y: 123
+        width: 1046
+        height: 806
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 041e51f14cc9b1445b0687c2cb5c76bd
-      internalID: -911578063
+      spriteID: f5be582848617b448b5e35f065251d34
+      internalID: 948386145
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLAG ALL_8
+      name: object new_8
       rect:
         serializedVersion: 2
-        x: 833
-        y: 270
-        width: 114
-        height: 207
+        x: 9860
+        y: 123
+        width: 1047
+        height: 806
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,41 +331,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6d3eeefb5ffd5341bd148acaa16e7a7
-      internalID: 11480530
+      spriteID: f12b4fc7f90555645b10b351973d7430
+      internalID: 292301676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLAG ALL_9
+      name: Wheel
       rect:
         serializedVersion: 2
-        x: 1096
-        y: 270
-        width: 114
-        height: 213
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 183
+        y: 121
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07f512833d0abe1439e6bafe1ea5eb35
-      internalID: -780873499
+      spriteID: 35bf278745e6eea40807bda4c0581aba
+      internalID: 67665751
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLAG ALL_10
+      name: object new_10
       rect:
         serializedVersion: 2
-        x: 56
-        y: 45
-        width: 163
-        height: 103
+        x: 472
+        y: 150
+        width: 8
+        height: 5
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,20 +373,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c192179c7b700d4e9b5e9ec21024cf0
-      internalID: 686354365
+      spriteID: 0cc3696ec3d3ef34898e6e3d72fe7a05
+      internalID: -688832669
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLAG ALL_11
+      name: object new_11
       rect:
         serializedVersion: 2
-        x: 295
-        y: 45
-        width: 163
-        height: 103
+        x: 1094
+        y: 125
+        width: 267
+        height: 244
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,20 +394,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecab99a49ef006b46802e6af9441bcc3
-      internalID: -20334376
+      spriteID: 28faa85a88ac38540b7d627f1d9d8e49
+      internalID: 1862453315
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLAG ALL_12
+      name: object new_12
       rect:
         serializedVersion: 2
-        x: 518
-        y: 45
-        width: 163
-        height: 103
+        x: 1541
+        y: 113
+        width: 456
+        height: 301
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,20 +415,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7515474fdfa45444f9638f7545904215
-      internalID: 1533615193
+      spriteID: 47738256c4f1f594e9208a5145e6a222
+      internalID: 73504586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLAG ALL_13
+      name: object new_13
       rect:
         serializedVersion: 2
-        x: 757
-        y: 45
-        width: 163
-        height: 103
+        x: 7780
+        y: 154
+        width: 549
+        height: 217
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,50 +436,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52ffe15add30b8b459d8e24a7cd356cd
-      internalID: 1091045378
+      spriteID: e0302745aeef8964bb48fa978f02d144
+      internalID: 1619771219
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLAG ALL_14
+      name: object new_0
       rect:
         serializedVersion: 2
-        x: 950
-        y: 45
-        width: 163
-        height: 103
+        x: 3423
+        y: 780
+        width: 61
+        height: 240
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 96, z: 0, w: 123}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c7304fa6075c3f4e83ff100c2ca0fd7
-      internalID: -1268785365
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FLAG ALL_15
-      rect:
-        serializedVersion: 2
-        x: 1189
-        y: 45
-        width: 163
-        height: 103
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c2234bd7d7f3b4d45ae6737d31b71cb2
-      internalID: 1896832859
+      spriteID: 30abfbdfc4a452443bc838a80c9c091d
+      internalID: 266236140
       vertices: []
       indices: 
       edges: []
@@ -495,22 +474,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FLAG ALL_0: -1668986337
-      FLAG ALL_1: -260694825
-      FLAG ALL_10: 686354365
-      FLAG ALL_11: -20334376
-      FLAG ALL_12: 1533615193
-      FLAG ALL_13: 1091045378
-      FLAG ALL_14: -1268785365
-      FLAG ALL_15: 1896832859
-      FLAG ALL_2: -741026403
-      FLAG ALL_3: -1279936875
-      FLAG ALL_4: 1705147693
-      FLAG ALL_5: 248429315
-      FLAG ALL_6: 335323832
-      FLAG ALL_7: -911578063
-      FLAG ALL_8: 11480530
-      FLAG ALL_9: -780873499
+      Balloon: -1305101838
+      Motorcycle: 484473412
+      Platform_New: -1569041569
+      Wheel: 67665751
+      object new_0: 266236140
+      object new_1: 1589722705
+      object new_10: -688832669
+      object new_11: 1862453315
+      object new_12: 73504586
+      object new_13: 1619771219
+      object new_14: 962409282
+      object new_4: -1219673388
+      object new_5: -1136093111
+      object new_6: 1921674770
+      object new_7: 948386145
+      object new_8: 292301676
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

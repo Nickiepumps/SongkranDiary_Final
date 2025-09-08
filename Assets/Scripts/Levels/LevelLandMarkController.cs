@@ -18,9 +18,11 @@ public class LevelLandMarkController : MonoBehaviour, IGameObserver, IPlayerObse
     [Header("Scene Controller Reference")]
     [SerializeField] private SceneController sceneController; // For scene loading and transition
 
+
     [Header("Game UI Controller Reference")]
-    [SerializeField] private GameUIController gameUIController; // For ISO scene transtion
-    
+    [Tooltip("For ISO scene transtion only")]
+    [SerializeField] private GameUIController gameUIController; // For ISO scene transtion only
+
     [Header("Level Postcard and Notif References")]
     //[SerializeField] private GameObject levelPostcardCanvas; // Level Postcard Canvas
     [SerializeField] private PostcardWindow levelPostcard; // Level Postcard
@@ -33,6 +35,9 @@ public class LevelLandMarkController : MonoBehaviour, IGameObserver, IPlayerObse
     [SerializeField] private string landmarkName;
     [SerializeField] private string sceneName;
     [SerializeField] private Transform newMapStartPoint;
+    [SerializeField] private GameObject flag;
+    [SerializeField] private LevelDataSO levelDataSO; // Node's level data. Use for checking stage clear status when loaded
+    [SerializeField] private Animator landmarkAnimator;
 
     private void OnEnable()
     {
@@ -43,6 +48,34 @@ public class LevelLandMarkController : MonoBehaviour, IGameObserver, IPlayerObse
     {
         isometricGameSubject.RemoveGameObserver(this);
         playerSubject.RemovePlayerObserver(this);
+    }
+    private void Start()
+    {
+        if(landmarkType != LandmarkType.Tutorial && landmarkType != LandmarkType.MapTransition)
+        {
+            StageClearData stageclearData = SideScroll_StageClearDataHandler.instance.LoadSideScrollStageClear();
+            if (stageclearData != null)
+            {
+                for (int i = 0; i < stageclearData.levelDataSOLists.Count; i++)
+                {
+                    if (stageclearData.levelDataSOLists[i] == levelDataSO)
+                    {
+                        flag.SetActive(true);
+                        break;
+                    }
+                }
+            }
+            else
+            {
+                flag.SetActive(false);
+            }
+        }
+        else
+        {
+            landmarkAnimator.SetFloat("nodeVariant", 1);
+            landmarkAnimator.SetFloat("flagVariant", 1);
+        }
+
     }
     public void OnGameNotify(IsometricGameState isoGameState)
     {

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b28739cdf3e63b45bbbefe16d89e2da, type: 3}
   m_Name: Run2
   m_EditorClassIdentifier: 
+  levelNumber: 2
   levelName: RunNGun2
   unitySceneName: Run_2
   levelImagePostcard: {fileID: 0}

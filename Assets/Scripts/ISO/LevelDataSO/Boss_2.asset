@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b28739cdf3e63b45bbbefe16d89e2da, type: 3}
   m_Name: Boss_2
   m_EditorClassIdentifier: 
-  levelNumber: 0
+  levelNumber: 3
   levelName: BucketKidBoss
   unitySceneName: Boss_2
   levelImagePostcard: {fileID: 0}
   isoLevelBoundary: []
-  nextLevel: {fileID: 7801682343020925593, guid: 26791fe66543da5409ca31424d6afdb3, type: 3}
+  nextLevel: {fileID: 5196912837627068995, guid: 762fa372ba84d3443ba0a8ddf81f43c6, type: 3}
   isClear: 0
   isClearFirstTime: 1

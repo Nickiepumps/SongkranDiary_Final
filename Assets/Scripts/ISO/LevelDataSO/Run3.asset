@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b28739cdf3e63b45bbbefe16d89e2da, type: 3}
-  m_Name: Run1
+  m_Name: Run3
   m_EditorClassIdentifier: 
-  levelNumber: 0
-  levelName: RunNGun1
-  unitySceneName: Run_1
+  levelNumber: 4
+  levelName: RunNGun3
+  unitySceneName: Run_3
   levelImagePostcard: {fileID: 0}
   isoLevelBoundary:
-  - {fileID: 2124297373547204099, guid: 6c1f79fc79a0b6949842377a97a4ee3f, type: 3}
-  nextLevel: {fileID: 8129825810464509259, guid: 55ac34ee80ac874449af6444a56cfb20, type: 3}
+  - {fileID: 0}
+  nextLevel: {fileID: 3919939998096335435, guid: 9d34669961854be42b0f49baa29faaf8, type: 3}
   isClear: 0
   isClearFirstTime: 1

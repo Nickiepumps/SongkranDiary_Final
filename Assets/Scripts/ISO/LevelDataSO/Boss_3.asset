@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b28739cdf3e63b45bbbefe16d89e2da, type: 3}
-  m_Name: Run1
+  m_Name: Boss_3
   m_EditorClassIdentifier: 
-  levelNumber: 0
-  levelName: RunNGun1
-  unitySceneName: Run_1
+  levelNumber: 5
+  levelName: ElephantKidBoss
+  unitySceneName: Boss_3
   levelImagePostcard: {fileID: 0}
-  isoLevelBoundary:
-  - {fileID: 2124297373547204099, guid: 6c1f79fc79a0b6949842377a97a4ee3f, type: 3}
-  nextLevel: {fileID: 8129825810464509259, guid: 55ac34ee80ac874449af6444a56cfb20, type: 3}
+  isoLevelBoundary: []
+  nextLevel: {fileID: 7801682343020925593, guid: 26791fe66543da5409ca31424d6afdb3, type: 3}
   isClear: 0
   isClearFirstTime: 1
