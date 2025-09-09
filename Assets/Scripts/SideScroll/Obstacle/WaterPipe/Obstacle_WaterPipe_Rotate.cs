@@ -22,7 +22,7 @@ public class Obstacle_WaterPipe_Rotate : MonoBehaviour
         currentASPD -= Time.deltaTime;
         if (currentASPD <= 0)
         {
-            GameObject enemyBullet = enemyBulletPooler.EnableIncomingBullet();
+            GameObject enemyBullet = enemyBulletPooler.EnableObstacleBullet();
             if (enemyBullet != null)
             {
                 enemyBullet.transform.position = transform.position;

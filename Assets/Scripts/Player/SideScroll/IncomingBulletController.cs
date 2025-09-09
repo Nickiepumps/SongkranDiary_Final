@@ -18,6 +18,7 @@ public class IncomingBulletController : MonoBehaviour
     [SerializeField] private IncomingBulletPatternList incomingBulletPatternList = new IncomingBulletPatternList();
     [HideInInspector] public int startPatternRange;
     [HideInInspector] public int endPatternRange;
+    public bool useIncomingBulletVariant = false;
     public bool startRainingBullet = false;
     private float currentCooldown;
     private int pattern;
@@ -63,11 +64,22 @@ public class IncomingBulletController : MonoBehaviour
     {
         for(int i = 0; i < incomingBulletPatternList.PatternList[pattern].incomingBullet.Count; i++)
         {
-            GameObject bullet = enemyBulletPooler.EnableIncomingBullet();
-            bullet.GetComponent<EnemyBullet>().bulletDirection = incomingBulletPatternList.PatternList[pattern].incomingBullet[i].transform.localRotation * Vector2.up;
-            bullet.transform.position = incomingBulletPatternList.PatternList[pattern].incomingBullet[i].transform.position;
-            bullet.transform.localRotation = incomingBulletPatternList.PatternList[pattern].incomingBullet[i].transform.localRotation;
-            bullet.SetActive(true);
+            if (useIncomingBulletVariant == false)
+            {
+                GameObject bullet = enemyBulletPooler.EnableIncomingBullet();
+                bullet.GetComponent<EnemyBullet>().bulletDirection = incomingBulletPatternList.PatternList[pattern].incomingBullet[i].transform.localRotation * Vector2.up;
+                bullet.transform.position = incomingBulletPatternList.PatternList[pattern].incomingBullet[i].transform.position;
+                bullet.transform.localRotation = incomingBulletPatternList.PatternList[pattern].incomingBullet[i].transform.localRotation;
+                bullet.SetActive(true);
+            }
+            else
+            {
+                GameObject bullet = enemyBulletPooler.EnableIncomingBulletVariant2();
+                bullet.GetComponent<EnemyBullet>().bulletDirection = incomingBulletPatternList.PatternList[pattern].incomingBullet[i].transform.localRotation * Vector2.up;
+                bullet.transform.position = incomingBulletPatternList.PatternList[pattern].incomingBullet[i].transform.position;
+                bullet.transform.localRotation = incomingBulletPatternList.PatternList[pattern].incomingBullet[i].transform.localRotation;
+                bullet.SetActive(true);
+            }
         }
         bulletwarningDisplay.DisableWarningSign();
         startWarning = false;

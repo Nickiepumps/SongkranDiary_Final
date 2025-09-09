@@ -5,11 +5,12 @@ public abstract class SideScroll_TriggerEvent : MonoBehaviour
     /// Start bullet raining when the player enter this trigger
     /// </summary>
     /// <param name="controller"></param>
-    public void Trigger_RainingBullet(IncomingBulletController controller, bool rainingStatus, int startPatternRange, int endPatternRange, float newSpawnTime)
+    public void Trigger_RainingBullet(IncomingBulletController controller, bool rainingStatus, bool useBulletVariant, int startPatternRange, int endPatternRange, float newSpawnTime)
     {
         if(rainingStatus == true)
         {
             controller.enabled = true;
+            controller.useIncomingBulletVariant = useBulletVariant;
             controller.startRainingBullet = true;
             controller.startPatternRange = startPatternRange;
             controller.endPatternRange = endPatternRange;

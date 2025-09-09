@@ -6,7 +6,8 @@ public enum BossBulletType
 {
     straight,
     homing,
-    boomerang
+    boomerang,
+    babyElephant
 }
 public class EnemyBullet : MonoBehaviour
 {
@@ -39,12 +40,31 @@ public class EnemyBullet : MonoBehaviour
     public Animator bulletAnimator;
     private void OnEnable()
     {
-        if(isHealBullet == false)
+        if (isHealBullet == false)
         {
             damageCollider.enabled = true;
             healCollider.enabled = false;
-            bulletAnimator.SetBool("isHit", false);
-            bulletAnimator.SetFloat("Variant", 0);
+            if (bulletType == BossBulletType.boomerang)
+            {
+                currentHoldTime = holdTime;
+                bulletAnimator.SetBool("isHit", false);
+                bulletAnimator.SetFloat("Variant", 1);
+            }
+            else if (bulletType == BossBulletType.babyElephant)
+            {
+                bulletAnimator.SetBool("isHit", false);
+                bulletAnimator.SetFloat("Variant", 1);
+                if(transform.localRotation.eulerAngles.z == 270)
+                {
+                    bulletSpriteRenderer.flipX = true;
+                    transform.localRotation = Quaternion.Euler(0, 0, 90);
+                }
+            }
+            else
+            {
+                bulletAnimator.SetBool("isHit", false);
+                bulletAnimator.SetFloat("Variant", 0);
+            }
         }
         else
         {
@@ -53,18 +73,14 @@ public class EnemyBullet : MonoBehaviour
             bulletAnimator.SetBool("isHit", false);
             bulletAnimator.SetFloat("Variant", 1);
         }
-        if(bulletType == BossBulletType.boomerang)
-        {
-            currentHoldTime = holdTime;
-            bulletAnimator.SetBool("isHit", false);
-            bulletAnimator.SetFloat("Variant", 1);
-        }
     }
     private void OnDisable()
     {
+        bulletSpriteRenderer.flipX = false;
         isHealBullet = false;
         damageCollider.enabled = true;
         healCollider.enabled = false;
+        transform.localRotation = Quaternion.Euler(Vector3.zero);
         bulletAnimator.SetBool("isHit", false);
         bulletAnimator.SetFloat("Variant", 0);
     }
@@ -99,6 +115,23 @@ public class EnemyBullet : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            if (bulletType == BossBulletType.babyElephant)
+            {
+                if (camToViewportPoint.x <= -0.3f || camToViewportPoint.x >= 1.25f || camToViewportPoint.y <= 0 || camToViewportPoint.y >= 1.25f)
+                {
+                    gameObject.SetActive(false);
+                }
+            }
+            else
+            {
+                if (camToViewportPoint.x <= 0 || camToViewportPoint.x >= 1.1f || camToViewportPoint.y <= 0 || camToViewportPoint.y >= 1.1f)
+                {
+                    gameObject.SetActive(false);
+                }
+            }
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -106,13 +139,16 @@ public class EnemyBullet : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
-        if(collision.tag == "Player")
+        if(bulletType != BossBulletType.babyElephant)
         {
-            StartCoroutine(DeactivateBullet()); // Play bullet splash anim
-        }
-        if (collision.tag == "PlayerBullet" && canBulletBeDestroy == true)
-        {
-            StartCoroutine(DeactivateBullet()); // Play bullet splash anim
+            if (collision.tag == "Player")
+            {
+                StartCoroutine(DeactivateBullet()); // Play bullet splash anim
+            }
+            if (collision.tag == "PlayerBullet" && canBulletBeDestroy == true)
+            {
+                StartCoroutine(DeactivateBullet()); // Play bullet splash anim
+            }
         }
     }
     private void Bullet_BoomerangTravel()

@@ -214,7 +214,8 @@ public class BucketKid_BossObserverController : MonoBehaviour, IBossObserver, IG
     }
     private void StartBulletRain(Transform minSpawnPos, Transform maxSpawnPos)
     {
-        GameObject rainBullet = enemyBulletPooler.EnableIncomingBullet();
+        //GameObject rainBullet = enemyBulletPooler.EnableIncomingBullet();
+        GameObject rainBullet = enemyBulletPooler.EnableObstacleBullet();
         if(rainBullet != null)
         {
             Vector3 camPos = Camera.main.WorldToViewportPoint(Camera.main.transform.position);

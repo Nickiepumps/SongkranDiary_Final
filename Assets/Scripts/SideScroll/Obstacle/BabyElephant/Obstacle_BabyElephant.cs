@@ -28,12 +28,6 @@ public class Obstacle_BabyElephant : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
-    private void FixedUpdate()
-    {
-        /*Vector2 direction = Vector2.MoveTowards(transform.position, destination.position, travelSpeed * Time.fixedDeltaTime);
-        rb.MovePosition(direction);*/
-        //rb.velocity = Vector2.left * travelSpeed;
-    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.transform.tag == "Player" && transform.GetChild(2).GetComponent<BoxCollider2D>().usedByEffector == true)

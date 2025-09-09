@@ -7,6 +7,7 @@ public class EnemyBulletPooler : MonoBehaviour
     [Header("Enemy Bullet Prefab")]
     [SerializeField] private GameObject enemyBulletPrefab;
     [SerializeField] private GameObject incomingBulletPrefab;
+    [SerializeField] private GameObject incomingBulletVariant2Prefab; // To do: Use array on incomingbullet later
     [SerializeField] private GameObject obstacleBulletPrefab;
 
     [Header("Pooling Property")]
@@ -15,9 +16,11 @@ public class EnemyBulletPooler : MonoBehaviour
     [SerializeField] private int obstacleBulletamountTopool; // Amount of bullet for any obstacle that can shoot
     [SerializeField] private Transform pooledEnemyBulletGroup; // Prevent too many enemy bullet gameObjects appear in Hierachy
     [SerializeField] private Transform pooledIncomingBulletGroup; // Pooled incoming bullet group
+    [SerializeField] private Transform pooledIncomingBulletVariant2Group; // Pooled incoming bullet group
     [SerializeField] private Transform pooledObstacleBulletGroup; // Pooled obstacle bullet group
     private List<GameObject> pooledEnemyBulletList = new List<GameObject>();
     private List<GameObject> pooledIncomingBulletList = new List<GameObject>();
+    private List<GameObject> pooledIncomingBulletVariant2List = new List<GameObject>();
     private List<GameObject> pooledObstacleBulletList = new List<GameObject>();
     private void Start()
     {
@@ -33,7 +36,19 @@ public class EnemyBulletPooler : MonoBehaviour
             pooledIncomingBulletList.Add(incomingBullet);
             incomingBullet.SetActive(false);
         }
-        if(obstacleBulletPrefab != null)
+
+        // Delete this when incomingbullet update
+        if (incomingBulletVariant2Prefab != null)
+        {
+            for (int i = 0; i < incomingBulletamountTopool; i++)
+            {
+                GameObject incomingBulletVariant2 = Instantiate(incomingBulletVariant2Prefab, pooledIncomingBulletVariant2Group);
+                pooledIncomingBulletVariant2List.Add(incomingBulletVariant2);
+                incomingBulletVariant2.SetActive(false);
+            }
+        }
+
+        if (obstacleBulletPrefab != null)
         {
             for (int i = 0; i < obstacleBulletamountTopool; i++)
             {
@@ -61,6 +76,17 @@ public class EnemyBulletPooler : MonoBehaviour
             if (pooledIncomingBulletList[i].activeSelf == false)
             {
                 return pooledIncomingBulletList[i];
+            }
+        }
+        return null;
+    }
+    public GameObject EnableIncomingBulletVariant2()
+    {
+        for (int i = 0; i < pooledIncomingBulletVariant2List.Count; i++)
+        {
+            if (pooledIncomingBulletVariant2List[i].activeSelf == false)
+            {
+                return pooledIncomingBulletVariant2List[i];
             }
         }
         return null;

@@ -1531,7 +1531,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyBulletPooler: {fileID: 567625175}
   bulletSpawner: {fileID: 748038425}
-  playerSideScrollStateController: {fileID: 0}
+  playerSideScrollStateController: {fileID: 1455158447}
   aspd: 0.6
   rotateSpeed: 3
 --- !u!1 &1053613674
@@ -3558,6 +3558,10 @@ PrefabInstance:
     - target: {fileID: 3118244270404747809, guid: 388652f6e8c806946bd3fbb419adc05b, type: 3}
       propertyPath: incomingBulletPrefab
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3118244270404747809, guid: 388652f6e8c806946bd3fbb419adc05b, type: 3}
+      propertyPath: obstacleBulletPrefab
+      value: 
       objectReference: {fileID: 2069092517997350802, guid: c730d54d216dba4428b748e05a576760, type: 3}
     - target: {fileID: 3118244270404747809, guid: 388652f6e8c806946bd3fbb419adc05b, type: 3}
       propertyPath: pooledIncomingBulletGroup
@@ -3565,6 +3569,10 @@ PrefabInstance:
       objectReference: {fileID: 1792998348}
     - target: {fileID: 3118244270404747809, guid: 388652f6e8c806946bd3fbb419adc05b, type: 3}
       propertyPath: incomingBulletamountTopool
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3118244270404747809, guid: 388652f6e8c806946bd3fbb419adc05b, type: 3}
+      propertyPath: obstacleBulletamountTopool
       value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 5322182574740490851, guid: 388652f6e8c806946bd3fbb419adc05b, type: 3}

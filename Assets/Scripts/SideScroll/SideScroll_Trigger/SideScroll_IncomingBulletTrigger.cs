@@ -3,6 +3,7 @@ public class SideScroll_IncomingBulletTrigger : SideScroll_TriggerEvent
 {
     [SerializeField] private IncomingBulletController IncomingBulletController;
     [SerializeField] private bool startRainingBullet;
+    [SerializeField] private bool useBulletVariant = false;
     [SerializeField] private int startBulletPattern;
     [SerializeField] private int endBulletPattern;
     [SerializeField] private float overwriteSpawnTime;
@@ -12,7 +13,7 @@ public class SideScroll_IncomingBulletTrigger : SideScroll_TriggerEvent
         if(collision.tag == "Player" && isTriggered == false)
         {
             isTriggered = true;
-            Trigger_RainingBullet(IncomingBulletController, startRainingBullet, startBulletPattern, endBulletPattern, overwriteSpawnTime);
+            Trigger_RainingBullet(IncomingBulletController, startRainingBullet, useBulletVariant, startBulletPattern, endBulletPattern, overwriteSpawnTime);
         }
     }
 }
