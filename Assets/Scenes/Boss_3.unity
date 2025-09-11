@@ -1844,6 +1844,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 363292489}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!1 &610347953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 610347954}
+  m_Layer: 0
+  m_Name: VacuumObjectSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &610347954
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610347953}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.70710653, w: 0.7071071}
+  m_LocalPosition: {x: -7.65, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1342719655}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &630455308
 GameObject:
   m_ObjectHideFlags: 0
@@ -3338,6 +3369,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1218166177
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1218166178}
+  m_Layer: 0
+  m_Name: PooledWheelGroup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1218166178
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218166177}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1342719655}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1238082883
 GameObject:
   m_ObjectHideFlags: 0
@@ -3882,6 +3944,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2094339149435152368, guid: 8895c6d898d8f6744893d0dbed0fa7bd, type: 3}
   m_PrefabInstance: {fileID: 1684176399}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1342719654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1342719655}
+  - component: {fileID: 1342719656}
+  m_Layer: 0
+  m_Name: VacuumObjectPooler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1342719655
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342719654}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 610347954}
+  - {fileID: 1789052647}
+  - {fileID: 1746994615}
+  - {fileID: 1218166178}
+  m_Father: {fileID: 6041772196421084831}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1342719656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342719654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a29c7c7fac02be4d916a8bdaa7d621b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vacuumObjectPrefab:
+  - {fileID: 1696368809868825910, guid: 79ba65e27193ffb4e827d71666a4a98e, type: 3}
+  - {fileID: 2573800096369548314, guid: a5dedbedcc8bc144693e831847780c76, type: 3}
+  - {fileID: 1696368809868825910, guid: 9e5d40b60a8cb5542b5305360febf996, type: 3}
+  pooledVacuumObjectGroup:
+  - {fileID: 1789052647}
+  - {fileID: 1746994615}
+  - {fileID: 1218166178}
+  amountToPoolPerObject: 5
 --- !u!1001 &1343170904
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5257,6 +5376,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2094339149435152368, guid: 8895c6d898d8f6744893d0dbed0fa7bd, type: 3}
   m_PrefabInstance: {fileID: 1371462125}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1746994614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1746994615}
+  m_Layer: 0
+  m_Name: PooledBoxGroup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1746994615
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746994614}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1342719655}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1748530641
 GameObject:
   m_ObjectHideFlags: 0
@@ -5320,6 +5470,37 @@ Transform:
   - {fileID: 1238082884}
   - {fileID: 630455309}
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1789052646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1789052647}
+  m_Layer: 0
+  m_Name: PooledBucketGroup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1789052647
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789052646}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1342719655}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1813498702
 GameObject:
@@ -7224,6 +7405,7 @@ Transform:
   - {fileID: 7208782657562875153}
   - {fileID: 80034347}
   - {fileID: 1466315112}
+  - {fileID: 1342719655}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6069675958008455089
@@ -7731,6 +7913,7 @@ MonoBehaviour:
   playerSideScrollStateController: {fileID: 1698339495}
   enemyBulletPooler: {fileID: 567625175}
   kidBulletSpawner: {fileID: 8511861924619482440}
+  vacuumObjectSpawner: {fileID: 610347954}
   babyElephantSpawnerArr:
   - {fileID: 208920644}
   - {fileID: 587204309}
@@ -7777,6 +7960,8 @@ MonoBehaviour:
       - 1
       - 1
   vacuumTrigger: {fileID: 1682263306}
+  vacuumPooler: {fileID: 1342719656}
+  vacuumObjectSpawner: {fileID: 610347954}
   isDead: 0
   isBossInvulnerable: 0
   isBossPreparetoAttack: 0

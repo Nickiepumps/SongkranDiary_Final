@@ -11,7 +11,7 @@ public class EnemyBomberExplodeState : EnemyStateMachine
         bomberEnemy.enemyHitBox.enabled = false;
         bomberEnemy.enemyAudioSource.clip = bomberEnemy.enemyAudioClipArr[1];
         bomberEnemy.enemyAudioSource.Play();
-        bomberEnemy.NotifyNormalEnemy(EnemyAction.Explode); // Play explode animation
+        bomberEnemy.NotifyNormalEnemy(EnemyAction.Explode);
     }
     public override void Update()
     {

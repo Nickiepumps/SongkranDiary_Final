@@ -122,7 +122,7 @@ MonoBehaviour:
   spawnPos: []
   curerntSpawnPos: {fileID: 0}
   curerntDestinationPos: {fileID: 0}
-  bulletSpriteRenderer: {fileID: 0}
+  bulletSpriteRenderer: {fileID: 7777349128278511481}
   bulletSprite: {fileID: 2139764006, guid: 48c208e1eeed3194bbebaf49546adf52, type: 3}
   healSprite: {fileID: 954128510, guid: 48c208e1eeed3194bbebaf49546adf52, type: 3}
   bulletAnimator: {fileID: 1122996628235446539}

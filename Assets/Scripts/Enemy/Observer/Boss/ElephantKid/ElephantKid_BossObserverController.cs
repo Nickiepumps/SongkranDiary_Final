@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.UIElements.ToolbarMenu;
 
 public class ElephantKid_BossObserverController : MonoBehaviour, IBossObserver, IGameObserver
 {
@@ -22,6 +23,7 @@ public class ElephantKid_BossObserverController : MonoBehaviour, IBossObserver, 
 
     [Header("Kid bullet spawner")]
     [SerializeField] private Transform kidBulletSpawner;
+    [SerializeField] private Transform vacuumObjectSpawner;
 
     [Header("Baby elephant spawner and destination")]
     [SerializeField] private Transform[] babyElephantSpawnerArr = new Transform[2]; 

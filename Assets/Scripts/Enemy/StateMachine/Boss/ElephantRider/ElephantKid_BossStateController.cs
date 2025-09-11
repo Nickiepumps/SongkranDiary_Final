@@ -22,8 +22,10 @@ public class ElephantKid_BossStateController : BossSubject
     public IncomingBulletPatternList undergroundUltPatternList = new IncomingBulletPatternList();
     public PatternTimerList patternTimerList = new PatternTimerList();
 
-    [Header("Boss Vacuum Ultimate Trigger")]
+    [Header("Boss Vacuum Ultimate Properties")]
     public BoxCollider2D vacuumTrigger;
+    public VacuumObjectPooler vacuumPooler;
+    public Transform vacuumObjectSpawner;
 
     // Hide in inspector
     public bool isDead = false;
@@ -82,6 +84,24 @@ public class ElephantKid_BossStateController : BossSubject
     {
         currentBossState = newState;
         currentBossState.Start();
+    }
+    public void Boss_VacuumObjectSpawn()
+    {
+        int variant = Random.Range(0, 3);
+        int spawnerYPos = Random.Range(0, 3);
+        GameObject vacuumObject = vacuumPooler.EnableVacuumObject(variant);
+        if (vacuumObject != null)
+        {
+            vacuumObjectSpawner.position = new Vector2(vacuumObjectSpawner.position.x, spawnerYPos);
+            Vector3 lookDirection = transform.position - vacuumObjectSpawner.position;
+            float rotAngle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - 90;
+            rotAngle = Random.Range(rotAngle - 10, rotAngle + 11);
+            vacuumObjectSpawner.transform.localRotation = Quaternion.Euler(0, 0, rotAngle);
+            vacuumObject.GetComponent<EnemyBullet>().bulletDirection = vacuumObjectSpawner.transform.localRotation * Vector2.up;
+            vacuumObject.transform.position = vacuumObjectSpawner.position;
+            vacuumObject.transform.rotation = vacuumObjectSpawner.rotation;
+            vacuumObject.SetActive(true);
+        }
     }
     public IEnumerator StartBossHealAnimation()
     {
