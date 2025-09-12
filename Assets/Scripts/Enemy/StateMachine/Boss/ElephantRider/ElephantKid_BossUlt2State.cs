@@ -27,7 +27,7 @@ public class ElephantKid_BossUlt2State : BossStateMachine
             //elephantKidBoss.NotifyBoss(BossAction.Shoot);
             elephantKidBoss.Boss_VacuumObjectSpawn();
             shotCount++;
-            aspd = 0.5f;
+            aspd = 0.8f;
         }
         if(shotCount >= 3)
         {

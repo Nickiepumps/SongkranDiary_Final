@@ -26,7 +26,7 @@ public class ElephantKid_NormalAttack1State : BossStateMachine
         if (currentAttackTime <= 0 && shotCount < 3)
         {
             elephantKidBoss.NotifyBoss(BossAction.Shoot);
-            currentAttackTime = 2f;
+            currentAttackTime = 1f;
             shotCount++;
         }
         else if(shotCount >= 3)

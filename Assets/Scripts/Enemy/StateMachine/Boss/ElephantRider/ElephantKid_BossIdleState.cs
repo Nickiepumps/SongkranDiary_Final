@@ -33,9 +33,7 @@ public class ElephantKid_BossIdleState : BossStateMachine
             if (elephantKidBoss.normalAttackCount >= 3)
             {
                 elephantKidBoss.normalAttackCount = 0;
-                elephantKidBoss.StartCoroutine(elephantKidBoss.Boss_ElephantKidNormalAtk_Outro(new ElephantKid_BossUlt2State(elephantKidBoss)));
-                currentIdleTime = elephantKidBoss.bossScriptableObject.idleTime;
-                /*int attackType = Random.Range(0, 3);
+                int attackType = Random.Range(0, 3);
                 if(attackType == 0)
                 {
                     elephantKidBoss.StartCoroutine(elephantKidBoss.Boss_ElephantKidNormalAtk_Outro(new ElephantKid_UnderGroundlAttackState(elephantKidBoss)));
@@ -50,7 +48,7 @@ public class ElephantKid_BossIdleState : BossStateMachine
                 {
                     elephantKidBoss.StartCoroutine(elephantKidBoss.Boss_ElephantKidNormalAtk_Outro(new ElephantKid_BossUlt2State(elephantKidBoss)));
                     currentIdleTime = elephantKidBoss.bossScriptableObject.idleTime;
-                }*/
+                }
             }
             else
             {

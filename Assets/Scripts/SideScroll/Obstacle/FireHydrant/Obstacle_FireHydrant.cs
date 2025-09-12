@@ -21,6 +21,7 @@ public class Obstacle_FireHydrant : MonoBehaviour
     private float currentCooldownTime;
     public bool isShoot = false;
     public bool usedByBoss = false;
+    [SerializeField] private float waterSpriteAnimVariant = 0f;
     [SerializeField] private float moveSpeed = 2f;
     [SerializeField] private Transform[] moveTargetArr;
     private Transform currentTarget;
@@ -40,6 +41,7 @@ public class Obstacle_FireHydrant : MonoBehaviour
         currentCooldownTime = waterInitialCooldownTime;
         //currentHoldTime = waterHoldTime;
         waterAnimator.SetBool("WaterIdle", true);
+        waterAnimator.SetFloat("Variant", waterSpriteAnimVariant);
     }
     private void Update()
     {

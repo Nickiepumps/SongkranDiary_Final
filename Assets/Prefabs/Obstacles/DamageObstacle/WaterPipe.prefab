@@ -357,8 +357,8 @@ Transform:
   m_GameObject: {fileID: 7245097562091441658}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.702, z: 0}
-  m_LocalScale: {x: 0.3509, y: 0.3509, z: 0.3509}
+  m_LocalPosition: {x: 0.0133, y: 0.702, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.65, z: 0.3509}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2094339149435152368}
@@ -404,17 +404,17 @@ SpriteRenderer:
   m_SortingLayerID: -266900595
   m_SortingLayer: 6
   m_SortingOrder: 0
-  m_Sprite: {fileID: 921446855, guid: 3e02b4a7dfd64fc4e9894dd3f3f3d8cd, type: 3}
+  m_Sprite: {fileID: 1492432616, guid: 8ab8c806e074adb4aa6463b47431743e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_DrawMode: 2
+  m_Size: {x: 2.8346589, y: 7.782651}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!61 &7383075072646104997
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -451,10 +451,10 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 5.2820964, y: 7.9900002}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 2.77, y: 7.8}
+    newSize: {x: 2.8346589, y: 7.782651}
     adaptiveTilingThreshold: 0.5
-    drawMode: 0
+    drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
@@ -581,10 +581,14 @@ MonoBehaviour:
   waterAnimator: {fileID: 2345816328510602372}
   waterTrigger: {fileID: 7383075072646104997}
   isShootingIndefinitely: 0
+  isMovingPipe: 0
   waterStopper: {fileID: 8324104483173944282}
-  waterPeakPos: {fileID: 0}
   waterCooldownTime: 3
   waterInitialCooldownTime: 0
+  isShoot: 0
+  usedByBoss: 0
+  moveSpeed: 2
+  moveTargetArr: []
 --- !u!1 &8324104483173944282
 GameObject:
   m_ObjectHideFlags: 0

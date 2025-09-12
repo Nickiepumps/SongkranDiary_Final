@@ -88,7 +88,7 @@ public class ElephantKid_BossStateController : BossSubject
     public void Boss_VacuumObjectSpawn()
     {
         int variant = Random.Range(0, 3);
-        int spawnerYPos = Random.Range(0, 3);
+        float spawnerYPos = Random.Range(-1.88f, 2.44f);
         GameObject vacuumObject = vacuumPooler.EnableVacuumObject(variant);
         if (vacuumObject != null)
         {
