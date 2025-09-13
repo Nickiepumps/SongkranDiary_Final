@@ -449,7 +449,7 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.014897972, y: 3.7981548}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0, y: 0, z: 0, w: 7.08}
     pivot: {x: 0.5, y: 0}
     oldSize: {x: 2.77, y: 7.8}
     newSize: {x: 2.8346589, y: 7.782651}
@@ -587,6 +587,7 @@ MonoBehaviour:
   waterInitialCooldownTime: 0
   isShoot: 0
   usedByBoss: 0
+  waterSpriteAnimVariant: 0
   moveSpeed: 2
   moveTargetArr: []
 --- !u!1 &8324104483173944282

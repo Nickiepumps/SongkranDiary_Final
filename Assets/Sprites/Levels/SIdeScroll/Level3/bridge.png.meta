@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8ab8c806e074adb4aa6463b47431743e
+guid: ab32fd1af32170947ba035158d3c1353
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -149,139 +149,34 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fountain new_0
+      name: bridge_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 1031
-        width: 277
-        height: 780
+        x: 62
+        y: 381
+        width: 1920
+        height: 244
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 1, z: 0, w: 778}
+      border: {x: 0, y: 0, z: 0, w: 60}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7906b68856a19264890f897749c077fd
-      internalID: -1510846974
+      spriteID: 98c2f7fcdff95314ea88f6b14c998998
+      internalID: -135398326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fountain new_1
+      name: bridge_1
       rect:
         serializedVersion: 2
-        x: 397
-        y: 1031
-        width: 277
-        height: 780
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 77572a0d70f1a47488847c8c3da3132a
-      internalID: -2066316713
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fountain new_2
-      rect:
-        serializedVersion: 2
-        x: 965
-        y: 1031
-        width: 277
-        height: 780
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 708}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a66890e2022066f4fb330ff389c25a2b
-      internalID: 2011097273
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fountain new_3
-      rect:
-        serializedVersion: 2
-        x: 1589
-        y: 1031
-        width: 277
-        height: 780
-      alignment: 9
-      pivot: {x: 0.469, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 708}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1afb7780639b70b4eafd66ae28d230ca
-      internalID: 1042126399
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fountain new_4
-      rect:
-        serializedVersion: 2
-        x: 2192
-        y: 1031
-        width: 277
-        height: 780
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 708}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d2059c27f5a98024aa5bf4bfc40a31b3
-      internalID: 1492432616
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fountain new_5
-      rect:
-        serializedVersion: 2
-        x: 2854
-        y: 1031
-        width: 277
-        height: 780
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 708}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e285c208aa28c59488217306f5a8fd45
-      internalID: 1831344171
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fountain new_6
-      rect:
-        serializedVersion: 2
-        x: 29
-        y: 72
-        width: 277
-        height: 780
+        x: 225
+        y: 40
+        width: 241
+        height: 241
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c61bc0e829817014980ad07c5a732140
-      internalID: -1730897866
+      spriteID: 043fc1a8fbd7c9049a036dfedb826c0b
+      internalID: -167389009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fountain new_7
+      name: bridge_2
       rect:
         serializedVersion: 2
-        x: 556
-        y: 72
-        width: 277
-        height: 780
+        x: 513
+        y: 45
+        width: 150
+        height: 206
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,50 +205,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12676783510d3f2479a0eadee93d5c5f
-      internalID: -1615365091
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fountain new_8
-      rect:
-        serializedVersion: 2
-        x: 1032
-        y: 72
-        width: 277
-        height: 780
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4423ec9170a89084d81a9ce6c9270fd0
-      internalID: 406430350
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fountain new_9
-      rect:
-        serializedVersion: 2
-        x: 1521
-        y: 72
-        width: 277
-        height: 780
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 31, z: 0, w: 707}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8334a958656a05541998487dc273e52b
-      internalID: 702430167
+      spriteID: 2821b17e6075ddb468e6413ed69d3429
+      internalID: -1532835313
       vertices: []
       indices: 
       edges: []
@@ -369,16 +222,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      fountain new_0: -1510846974
-      fountain new_1: -2066316713
-      fountain new_2: 2011097273
-      fountain new_3: 1042126399
-      fountain new_4: 1492432616
-      fountain new_5: 1831344171
-      fountain new_6: -1730897866
-      fountain new_7: -1615365091
-      fountain new_8: 406430350
-      fountain new_9: 702430167
+      bridge_0: -135398326
+      bridge_1: -167389009
+      bridge_2: -1532835313
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
