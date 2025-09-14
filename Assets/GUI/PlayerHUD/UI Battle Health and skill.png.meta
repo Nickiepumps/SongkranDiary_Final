@@ -631,6 +631,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: UI Battle Health and skill_0
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 821
+        width: 150
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da747520d643464ab71fa153c1d4499
+      internalID: -227370558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -655,6 +676,7 @@ TextureImporter:
       Player_Nervious: -1557957158
       SpreadToNormal: 147493107
       Spread_Icon: 854107269
+      UI Battle Health and skill_0: -227370558
       UI Battle Health and skill_13: 1593376937
       UI Battle Health and skill_14: 1083152748
       UI Battle Health and skill_15: -1455041160

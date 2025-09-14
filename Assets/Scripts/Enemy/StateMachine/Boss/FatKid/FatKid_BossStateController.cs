@@ -14,9 +14,10 @@ public class FatKid_BossStateController : BossSubject
     //public AudioSource enemyAudioSource;
 
     [Header("Boss Animator")]
-    public Animator bossAnimator;    
+    public Animator bossAnimator;
 
     [Header("Boss Properties")]
+    public FatKid_BossObserverController bossObserverController;
     public BossHealth bossHP;
     public SpriteRenderer bossSpriteRenderer;
     public Rigidbody2D bossRB;
@@ -32,6 +33,7 @@ public class FatKid_BossStateController : BossSubject
     public bool startInitIdle = false;
     public bool bossShooting = false;
     public bool bossUlt = false;
+    public bool isBossStartRolling = false;
     public bool reachLeftSide = false;
     public bool isJump = false;
     public bool isDead = false;
@@ -78,5 +80,17 @@ public class FatKid_BossStateController : BossSubject
     {
         currentBossState = newBossState;
         currentBossState.Start();
+    }
+    public IEnumerator FatKidBoss_Rolling()
+    {
+        bossAnimator.SetBool("isIdle", false);
+        bossAnimator.SetBool("isAim", false);
+        bossAnimator.SetBool("isShoot", false);
+        bossAnimator.SetBool("isPrepare", true);
+        bossAnimator.SetBool("isUlt", true);
+        yield return new WaitForSeconds(2.3f);
+        bossAnimator.SetBool("isPrepare", false);
+        bossAnimator.SetBool("isUlt", true);
+        isBossStartRolling = true;
     }
 }

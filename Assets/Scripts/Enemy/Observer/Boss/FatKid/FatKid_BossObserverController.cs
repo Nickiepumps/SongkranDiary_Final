@@ -14,6 +14,7 @@ public class FatKid_BossObserverController : MonoBehaviour, IBossObserver, IGame
     [Header("Boss BulletPooler Reference")]
     [SerializeField] private EnemyBulletPooler enemyBulletPooler;
     [Header("Bullet Spawn Points")]
+    public int shootVariant;
     [SerializeField] private Transform bulletLowerSpawn;
     [SerializeField] private Transform bulletMiddleSpawn;
     [SerializeField] private Transform bulletTopSpawn;
@@ -47,14 +48,7 @@ public class FatKid_BossObserverController : MonoBehaviour, IBossObserver, IGame
                 return;
             case (BossAction.Shoot):
                 bossSubject.GetComponent<FatKid_BossStateController>().bossShooting = true;
-                if (RandomPattern() <= 5)
-                {
-                    StartCoroutine(ShootPattern(1));
-                }
-                else
-                {
-                    StartCoroutine(ShootPattern(2));
-                }
+                StartCoroutine(ShootPattern(shootVariant));
                 return;
             case (BossAction.Jump):
                 bossSubject.GetComponent<FatKid_BossStateController>().bossRB.AddForce(Vector2.up * 28, ForceMode2D.Impulse);
@@ -88,25 +82,21 @@ public class FatKid_BossObserverController : MonoBehaviour, IBossObserver, IGame
                 return;
         }
     }
-    private int RandomPattern()
-    {
-        int shootValue = Random.Range(0, 10);
-        return shootValue;
-    }
-    private IEnumerator ShootPattern(int patternValue)
+    private IEnumerator ShootPattern(int variant)
     {
         fatKidStateController.bossAnimator.SetBool("isShoot", true);
         fatKidStateController.bossAnimator.SetBool("isIdle", false);
         fatKidStateController.bossAnimator.SetBool("isAim", false);
-        if (patternValue == 1)
+        if (variant == 1)
         {
-            Debug.Log("Boss Shoot Pattern 1");
+            fatKidStateController.bossAnimator.SetFloat("Variant", 1);
+            yield return new WaitForSeconds(0.3f);
             BossShoot(bulletLowerSpawn, Vector2.left);
 
         }
         else
         {
-            Debug.Log("Boss Shoot Pattern 2");
+            fatKidStateController.bossAnimator.SetFloat("Variant", 0);
             BossShoot(bulletMiddleSpawn, Vector2.left);
         }
         yield return new WaitForSeconds(0.5f);

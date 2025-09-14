@@ -6,8 +6,8 @@ using UnityEngine;
 public class FatKid_BossUltState : BossStateMachine
 {
     public FatKid_BossUltState(FatKid_BossStateController fatKidBoss) : base(fatKidBoss) { }
-    private float prepareTime = 1f;
-    private float currentTime;
+    //private float prepareTime = 2.3f;
+    //private float currentTime;
     private Transform rightPos;
     private Vector2 moveDir;
     float moveSpeed;
@@ -15,14 +15,15 @@ public class FatKid_BossUltState : BossStateMachine
     public override void Start()
     {
         // Change animation from idle to ult
-        fatKidBoss.bossAnimator.enabled = false;
+        //fatKidBoss.bossAnimator.enabled = false;
 
-        fatKidBoss.bossSpriteRenderer.sprite = fatKidBoss.bossScriptableObject.ultimateSprite;
+        //fatKidBoss.bossSpriteRenderer.sprite = fatKidBoss.bossScriptableObject.ultimateSprite;
+        fatKidBoss.StartCoroutine(fatKidBoss.FatKidBoss_Rolling());
         fatKidBoss.normalCollider.enabled = false;
         fatKidBoss.ultCollider.enabled = true;
         fatKidBoss.normalHitBox.enabled = false;
         fatKidBoss.ultHitBox.enabled = true;
-        currentTime = prepareTime;
+        //currentTime = prepareTime;
 
         // Bounce back to original position
         rightPos = fatKidBoss.destination;
@@ -30,8 +31,8 @@ public class FatKid_BossUltState : BossStateMachine
     }
     public override void Update()
     {
-        currentTime -= Time.deltaTime;
-        if (currentTime <= 0)
+        //currentTime -= Time.deltaTime;
+        if (fatKidBoss.isBossStartRolling == true)
         {
             if (moveDir.x <= rightPos.position.x + 1.57f && isRight == true)
             {

@@ -8,12 +8,18 @@ public class FatKid_BossIdleState : BossStateMachine
     private float currentAspd;
     private float currentIdleTime;
     private float currentUltTime;
+    private float prepareToAtkTime = 1f;
+    private bool isBossDeciding = false;
     public override void Start()
     {
         fatKidBoss.bossAnimator.enabled = true;
         fatKidBoss.bossAnimator.SetBool("isIdle", true);
         fatKidBoss.bossAnimator.SetBool("isAim", false);
+        fatKidBoss.bossAnimator.SetBool("isShoot", false);
+        fatKidBoss.bossAnimator.SetBool("isPrepare", false);
+        fatKidBoss.bossAnimator.SetBool("isUlt", false);
 
+        fatKidBoss.isBossStartRolling = false;
         fatKidBoss.bossSpriteRenderer.sprite = fatKidBoss.bossScriptableObject.idleSprite;
         currentUltTime = fatKidBoss.bossScriptableObject.ultCooldown;
         currentAspd = fatKidBoss.bossScriptableObject.aspd;
@@ -44,12 +50,19 @@ public class FatKid_BossIdleState : BossStateMachine
             if (currentAspd <= 0)
             {
                 fatKidBoss.NotifyBoss(BossAction.Shoot);
+                isBossDeciding = false;
                 currentAspd = fatKidBoss.bossScriptableObject.aspd;
             }
             else
             {
+                if (isBossDeciding == false)
+                {
+                    fatKidBoss.bossObserverController.shootVariant = Random.Range(0, 2);
+                    isBossDeciding = true;
+                }
                 fatKidBoss.bossAnimator.SetBool("isIdle", false);
                 fatKidBoss.bossAnimator.SetBool("isAim", true);
+                fatKidBoss.bossAnimator.SetFloat("Variant", fatKidBoss.bossObserverController.shootVariant);
             }
             if (currentUltTime <= 0)
             {

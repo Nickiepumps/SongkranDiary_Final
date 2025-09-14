@@ -141,7 +141,7 @@ SpriteRenderer:
   m_SortingLayerID: -298028489
   m_SortingLayer: 8
   m_SortingOrder: 4
-  m_Sprite: {fileID: 1363391175, guid: a385b7b969d17ab4dbae132e00429f31, type: 3}
+  m_Sprite: {fileID: -227370558, guid: a385b7b969d17ab4dbae132e00429f31, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 1
@@ -326,6 +326,7 @@ MonoBehaviour:
   spawnPos: []
   curerntSpawnPos: {fileID: 0}
   curerntDestinationPos: {fileID: 0}
+  vacuumBulletVariant: 0
   bulletSpriteRenderer: {fileID: 1643757585660873665}
   bulletSprite: {fileID: 1334717516, guid: 48c208e1eeed3194bbebaf49546adf52, type: 3}
   healSprite: {fileID: 1334717516, guid: 48c208e1eeed3194bbebaf49546adf52, type: 3}
