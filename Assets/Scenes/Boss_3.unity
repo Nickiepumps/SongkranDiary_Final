@@ -1203,12 +1203,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6032734254540547184, guid: 4564829e5c3e4654cbb2a0def432de8d, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6032734254540547184, guid: 4564829e5c3e4654cbb2a0def432de8d, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: a17255d787f4f4949b90fa61e1dd880f, type: 3}
+      objectReference: {fileID: 8300000, guid: f9e736b7f4b2bb34e90c0f30bdde4235, type: 3}
     - target: {fileID: 6438509087067579111, guid: 4564829e5c3e4654cbb2a0def432de8d, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -6200,8 +6200,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameControllerSubject: {fileID: 0}
-  bossSubject: {fileID: 0}
-  levelDataSO: {fileID: 11400000, guid: 965078f54bae0f94186f3fe35a0c5319, type: 2}
+  bossSubject: {fileID: 8827472385491448626}
+  levelDataSO: {fileID: 11400000, guid: 43e644b0ac120ec4781eee84bcf67f20, type: 2}
   mapName: 
   Side_L1_Run: 0
   Side_L1_Boss: 0

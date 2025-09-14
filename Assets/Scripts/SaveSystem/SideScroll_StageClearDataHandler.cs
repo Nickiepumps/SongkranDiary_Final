@@ -9,8 +9,8 @@ public class SideScroll_StageClearDataHandler : MonoBehaviour, IGameObserver, IB
     public static SideScroll_StageClearDataHandler instance;
 
     /// <summary>
-    /// For Run n Gun mode, use goal subject
-    /// For Boss mode, use boss subject
+    /// For Run n Gun mode, use goal subject in gameControllerSubject
+    /// For Boss mode, use boss subject in bossSubject
     /// For Isometric mode, use game controller subject
     /// </summary>
     [SerializeField] private GameSubject gameControllerSubject;

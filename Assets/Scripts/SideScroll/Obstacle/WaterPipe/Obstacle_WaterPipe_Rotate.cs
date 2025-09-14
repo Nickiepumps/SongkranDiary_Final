@@ -26,7 +26,7 @@ public class Obstacle_WaterPipe_Rotate : MonoBehaviour
             if (enemyBullet != null)
             {
                 enemyBullet.transform.position = transform.position;
-                enemyBullet.transform.localRotation = transform.localRotation;
+                enemyBullet.transform.rotation = Quaternion.Euler(transform.localRotation.eulerAngles.x, transform.localRotation.eulerAngles.y, transform.localRotation.eulerAngles.z - 180);
                 enemyBullet.GetComponent<EnemyBullet>().bulletDirection = -lookDirection;
                 enemyBullet.SetActive(true);
             }

@@ -220,7 +220,7 @@ public class BucketKid_BossObserverController : MonoBehaviour, IBossObserver, IG
         {
             Vector3 camPos = Camera.main.WorldToViewportPoint(Camera.main.transform.position);
             rainBullet.transform.position = new Vector2(Random.Range(minSpawnPos.position.x, maxSpawnPos.position.x), minSpawnPos.position.y);
-            rainBullet.transform.localRotation = Quaternion.Euler(Vector3.zero);
+            rainBullet.transform.localRotation = minSpawnPos.transform.localRotation;
             rainBullet.GetComponent<EnemyBullet>().bulletDirection = Vector2.down;
             rainBullet.GetComponent<EnemyBullet>().travelSpeed = 4.5f;
             rainBullet.SetActive(true);
