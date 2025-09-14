@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossName: 1
   hp: 150
-  armorHP: 100
+  armorHP: 120
   damage: 1
   ultCooldown: 8
   idleTime: 1.3
