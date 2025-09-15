@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ff5fa59f94e628b4887e0e2f7b696292
+guid: 70a85b7ad44c69c41a72cc2fd65b71d8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -149,22 +149,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: boss 1 rolling_0
+      name: frame 4_0
       rect:
         serializedVersion: 2
-        x: 74
-        y: 33
-        width: 567
-        height: 491
+        x: 14
+        y: 13
+        width: 1023
+        height: 572
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81ccfb5a9c4f6b745a9cb104c00c94b7
-      internalID: -1734293452
+      spriteID: fd0e42be4dac9df48b9810b5e535c215
+      internalID: -1583729959
       vertices: []
       indices: 
       edges: []
@@ -180,7 +180,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      boss 1 rolling_0: -1734293452
+      frame 4_0: -1583729959
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

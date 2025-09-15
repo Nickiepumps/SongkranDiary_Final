@@ -768,12 +768,12 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 6.5, y: 8.85}
+  m_Size: {x: 5.67, y: 4.91}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!95 &2914438942052201941
 Animator:
   serializedVersion: 5
@@ -1244,9 +1244,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.17, y: -1.5989134}
+  m_Offset: {x: 0.21882057, y: -1.4}
   serializedVersion: 2
-  m_Radius: 0.7660794
+  m_Radius: 0.96125305
 --- !u!50 &4835650169157746852
 Rigidbody2D:
   serializedVersion: 4
@@ -1302,6 +1302,7 @@ MonoBehaviour:
   startInitIdle: 0
   bossShooting: 0
   bossUlt: 0
+  isBossStartRolling: 0
   reachLeftSide: 0
   isJump: 0
   isDead: 0

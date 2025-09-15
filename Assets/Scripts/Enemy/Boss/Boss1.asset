@@ -22,7 +22,7 @@ MonoBehaviour:
   aspd: 1
   healAmount: 0
   bossNormalMovementSpeed: 5
-  bossUltMovementSpeed: 8
+  bossUltMovementSpeed: 12
   ultimateSprite: {fileID: 21300000, guid: 13c2193897bfd2b4d883e49d83932f7f, type: 3}
   idleSprite: {fileID: 21300000, guid: 9544b22db723bbd448bf61e282df3c6f, type: 3}
   ultimateAnimation: {fileID: 0}
