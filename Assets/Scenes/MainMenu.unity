@@ -616,7 +616,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Tutorial
+          m_StringArgument: IntroCutscene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &46927611
@@ -4889,6 +4889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 27406409}
+  isoSettingController: {fileID: 0}
   confirmBtn: {fileID: 591215059}
   keymapDropdown: {fileID: 1141443951}
   keymapDiagramArr:
@@ -4899,6 +4900,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d45dfc111f6fbe14ba9e2432559f8397, type: 2}
   - {fileID: 11400000, guid: 60ba6974be506324da8608eb63ecbc4a, type: 2}
   - {fileID: 11400000, guid: 3051e8aee76b0264d8c2d75a4168dbce, type: 2}
+  iso_PlayerStateController: {fileID: 0}
+  sidescroll_PlayerStateController: {fileID: 0}
 --- !u!1 &445883213
 GameObject:
   m_ObjectHideFlags: 0
@@ -14997,6 +15000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 27406409}
+  isoSettingController: {fileID: 0}
   confirmBtn: {fileID: 591215059}
   setting_BGMAudioSouce: {fileID: 454892571}
   setting_SFXAudioSouce: {fileID: 0}
