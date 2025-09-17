@@ -205,7 +205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMainMenu: 0
   isoPlayerStateController: {fileID: 0}
-  playerStats: {fileID: 0}
+  playerStats: {fileID: 1445301336}
   hasPlayerData: 0
 --- !u!1001 &107021034
 PrefabInstance:

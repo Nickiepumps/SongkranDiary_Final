@@ -87,8 +87,6 @@ public class NPCDialogController : MonoBehaviour, INPCObserver, IPlayerObserver,
                 if (npcID == isoStageData.npcIDLists[i])
                 {
                     isPlayerAnswered = true;
-                    interactNotif.transform.GetChild(0).gameObject.SetActive(true);
-                    interactNotif.transform.GetChild(1).gameObject.SetActive(false);
                     break;
                 }
             }
@@ -107,34 +105,29 @@ public class NPCDialogController : MonoBehaviour, INPCObserver, IPlayerObserver,
                 case (PlayerAction.Idle):
                     if (isPlayerAnswered == false)
                     {
-                        interactNotif.transform.GetChild(0).gameObject.SetActive(true);
-                        interactNotif.transform.GetChild(1).gameObject.SetActive(false);
+                        
                     }
                     return;
                 case (PlayerAction.Talk):
-
+                    interactNotif.SetActive(false);
                     if (dialogType == NPCDialogType.Normal)
                     {
-                        interactNotif.SetActive(false);
                         dialogBox.SetActive(true);
                         StartCoroutine(NormalDialogSequence());
                     }
                     else if (isPlayerAnswered == false && dialogType == NPCDialogType.Choices)
                     {
-                        interactNotif.SetActive(false);
                         dialogBox.SetActive(true);
                         StartCoroutine(ChoiceDialogSequence());
                     }
                     else
                     {
-                        interactNotif.SetActive(false);
                         dialogBox.SetActive(true);
                         StartCoroutine(OutroDialogSequence());
                     }
                     return;
                 case (PlayerAction.Walk):
-                    interactNotif.transform.GetChild(0).gameObject.SetActive(true);
-                    interactNotif.transform.GetChild(1).gameObject.SetActive(false);
+                    //interactNotif.SetActive(true);
                     return;
             }
         }
@@ -142,8 +135,7 @@ public class NPCDialogController : MonoBehaviour, INPCObserver, IPlayerObserver,
         {
             if (isPlayerAnswered == false)
             {
-                interactNotif.transform.GetChild(0).gameObject.SetActive(false);
-                interactNotif.transform.GetChild(1).gameObject.SetActive(true);
+                
             }
         }
         
@@ -153,7 +145,7 @@ public class NPCDialogController : MonoBehaviour, INPCObserver, IPlayerObserver,
         switch (isoGameState)
         {
             case (IsometricGameState.Play):
-                interactNotif.SetActive(true);
+                //interactNotif.SetActive(true);
                 return;
         }
     }
@@ -203,6 +195,7 @@ public class NPCDialogController : MonoBehaviour, INPCObserver, IPlayerObserver,
         if(collision.tag == "Player")
         {
             player = collision.gameObject;
+            interactNotif.SetActive(true);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -210,13 +203,11 @@ public class NPCDialogController : MonoBehaviour, INPCObserver, IPlayerObserver,
         player = null;
         if(isPlayerAnswered == false && dialogType == NPCDialogType.Choices)
         {
-            interactNotif.transform.GetChild(0).gameObject.SetActive(false);
-            interactNotif.transform.GetChild(1).gameObject.SetActive(true);
+            interactNotif.SetActive(false);
         }
         else
         {
-            interactNotif.transform.GetChild(0).gameObject.SetActive(false);
-            interactNotif.transform.GetChild(1).gameObject.SetActive(false);
+            interactNotif.SetActive(false);
         }
     }
     private IEnumerator OutroDialogSequence()

@@ -16,7 +16,8 @@ MonoBehaviour:
   levelName: FatkidBoss
   unitySceneName: Boss_1
   levelImagePostcard: {fileID: 0}
-  isoLevelBoundary: []
+  isoLevelBoundary:
+  - {fileID: 3133539747516374589, guid: d5fa612bf08f0644e817969e378f941c, type: 3}
   nextLevel: {fileID: 3130106400391898850, guid: 47dceb76ecf97f945a098fb62efde77d, type: 3}
   isClear: 0
   isClearFirstTime: 1

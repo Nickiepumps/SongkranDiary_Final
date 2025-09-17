@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44e410a54552b624bb4ed0298320f393, type: 3}
   m_Name: Image_RunNGun3
   m_EditorClassIdentifier: 
-  unlockImageText: "\u0E19\u0E49\u0E2D\u0E07\u0E40\u0E04\u0E22\u0E40\u0E2B\u0E47\u0E19\u0E0A\u0E49\u0E32\u0E07\u0E23\u0E36\u0E40\u0E1B\u0E25\u0E48\u0E32"
-  lockImageText: "\u0E41\u0E1B\u0E23\u0E4A\u0E19 \u0E41\u0E1B\u0E23\u0E4A\u0E19"
-  image: {fileID: -962410829, guid: 069f641f4407f304099ecd39143ce92b, type: 3}
-  unlockStatus: 0
+  imageName: 
+  unlockImageText: "\u0E0A\u0E49\u0E32\u0E07\u0E41\u0E25\u0E30\u0E01\u0E25\u0E49\u0E27\u0E22"
+  lockImageText: "\u0E08\u0E21\u0E39\u0E01\u0E22\u0E32\u0E27\u0E46\u0E40\u0E23\u0E35\u0E22\u0E01\u0E27\u0E48\u0E32\u0E07\u0E27\u0E07"
+  imageDescription: 
+  image: {fileID: 21300000, guid: 34efc62e99dbea64998f2b81044717b9, type: 3}
