@@ -66,6 +66,7 @@ public class ElephantKid_BossObserverController : MonoBehaviour, IBossObserver, 
             case(BossAction.Heal):
                 return;
             case (BossAction.Die):
+                gameUISubject.NotifySideScrollGameObserver(SideScrollGameState.WinBoss);
                 return;
         }
     }

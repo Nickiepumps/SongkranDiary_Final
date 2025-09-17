@@ -13292,7 +13292,7 @@ PrefabInstance:
     - target: {fileID: 923969219530498524, guid: 09778fec36b77a541abe904245496da2, type: 3}
       propertyPath: playerStats
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 976362591}
     - target: {fileID: 1272158379395917835, guid: 09778fec36b77a541abe904245496da2, type: 3}
       propertyPath: goalPos
       value: 
@@ -13308,7 +13308,7 @@ PrefabInstance:
     - target: {fileID: 1272158379395917835, guid: 09778fec36b77a541abe904245496da2, type: 3}
       propertyPath: albumImageSO
       value: 
-      objectReference: {fileID: 11400000, guid: a373d2a38aef4f7498bf9dbc5df8646b, type: 2}
+      objectReference: {fileID: 11400000, guid: d32f5487d7bdf01438d536e60448a23b, type: 2}
     - target: {fileID: 1272158379395917835, guid: 09778fec36b77a541abe904245496da2, type: 3}
       propertyPath: sideScrollIntro
       value: 

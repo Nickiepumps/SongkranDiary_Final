@@ -11537,7 +11537,7 @@ PrefabInstance:
     - target: {fileID: 1272158379395917835, guid: 09778fec36b77a541abe904245496da2, type: 3}
       propertyPath: albumImageSO
       value: 
-      objectReference: {fileID: 11400000, guid: a373d2a38aef4f7498bf9dbc5df8646b, type: 2}
+      objectReference: {fileID: 11400000, guid: 2dd764df076dcb84c81654e691e30457, type: 2}
     - target: {fileID: 1272158379395917835, guid: 09778fec36b77a541abe904245496da2, type: 3}
       propertyPath: sideScrollIntro
       value: 
@@ -11569,7 +11569,7 @@ PrefabInstance:
     - target: {fileID: 3402882973284607450, guid: 09778fec36b77a541abe904245496da2, type: 3}
       propertyPath: levelDataSO
       value: 
-      objectReference: {fileID: 11400000, guid: 54a04609af6f1424e944e8367add87aa, type: 2}
+      objectReference: {fileID: 11400000, guid: af184575626c635478281f820be36e6f, type: 2}
     - target: {fileID: 3402882973284607450, guid: 09778fec36b77a541abe904245496da2, type: 3}
       propertyPath: gameControllerSubject
       value: 

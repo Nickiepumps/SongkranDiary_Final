@@ -37,7 +37,7 @@ public class AlbumDisplayController : MonoBehaviour
         {
             for (int i = 0; i < albumData.imageUnlockStatus.Count; i++)
             {
-                albumDisplaySlotArr[i].isUnlock = albumData.imageUnlockStatus[i];
+                albumDisplaySlotArr[albumData.albumImagesSO[i].imageNumber].isUnlock = albumData.imageUnlockStatus[i];
             }
         }
         albumPreviousPageButton.SetActive(false);

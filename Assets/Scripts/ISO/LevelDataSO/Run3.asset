@@ -17,7 +17,7 @@ MonoBehaviour:
   unitySceneName: Run_3
   levelImagePostcard: {fileID: 0}
   isoLevelBoundary:
-  - {fileID: 0}
-  nextLevel: {fileID: 3919939998096335435, guid: 9d34669961854be42b0f49baa29faaf8, type: 3}
+  - {fileID: 2976912085778321314, guid: 689cca5781975c74f9e5ac99afeac1d1, type: 3}
+  nextLevel: {fileID: 2348139229824612905, guid: 9d34669961854be42b0f49baa29faaf8, type: 3}
   isClear: 0
   isClearFirstTime: 1

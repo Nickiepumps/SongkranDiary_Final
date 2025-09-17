@@ -94,7 +94,6 @@ public class NPCDialogController : MonoBehaviour, INPCObserver, IPlayerObserver,
     }
     public void OnNPCNotify(NPCAction npcAction)
     {
-        
     }
     public void OnPlayerNotify(PlayerAction playerAction)
     {
@@ -103,10 +102,6 @@ public class NPCDialogController : MonoBehaviour, INPCObserver, IPlayerObserver,
             switch (playerAction)
             {
                 case (PlayerAction.Idle):
-                    if (isPlayerAnswered == false)
-                    {
-                        
-                    }
                     return;
                 case (PlayerAction.Talk):
                     interactNotif.SetActive(false);
@@ -127,25 +122,15 @@ public class NPCDialogController : MonoBehaviour, INPCObserver, IPlayerObserver,
                     }
                     return;
                 case (PlayerAction.Walk):
-                    //interactNotif.SetActive(true);
                     return;
             }
         }
-        else
-        {
-            if (isPlayerAnswered == false)
-            {
-                
-            }
-        }
-        
     }
     public void OnGameNotify(IsometricGameState isoGameState)
     {
         switch (isoGameState)
         {
             case (IsometricGameState.Play):
-                //interactNotif.SetActive(true);
                 return;
         }
     }

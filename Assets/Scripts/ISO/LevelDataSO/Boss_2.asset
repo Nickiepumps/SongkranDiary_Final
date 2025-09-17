@@ -16,7 +16,9 @@ MonoBehaviour:
   levelName: BucketKidBoss
   unitySceneName: Boss_2
   levelImagePostcard: {fileID: 0}
-  isoLevelBoundary: []
-  nextLevel: {fileID: 5196912837627068995, guid: 762fa372ba84d3443ba0a8ddf81f43c6, type: 3}
+  isoLevelBoundary:
+  - {fileID: 2924607521530799927, guid: a080e26d0760db243b7d985cad1017df, type: 3}
+  - {fileID: 1385755251654612161, guid: b72f23fe00fd88342a0dd129c5ad0a8a, type: 3}
+  nextLevel: {fileID: 3441536116431270071, guid: 762fa372ba84d3443ba0a8ddf81f43c6, type: 3}
   isClear: 0
   isClearFirstTime: 1

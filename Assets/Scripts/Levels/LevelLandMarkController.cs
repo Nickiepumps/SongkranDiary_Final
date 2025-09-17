@@ -7,7 +7,8 @@ public enum LandmarkType
     RunNGun,
     Boss,
     Tutorial,
-    MapTransition
+    MapTransition,
+    Cutscene
 }
 public class LevelLandMarkController : MonoBehaviour, IGameObserver, IPlayerObserver
 {
@@ -172,6 +173,10 @@ public class LevelLandMarkController : MonoBehaviour, IGameObserver, IPlayerObse
             sceneController.ChangeScene(sceneName);
         }
         else if (landmarkType == LandmarkType.Tutorial)
+        {
+            sceneController.ChangeScene(sceneName);
+        }
+        else if(landmarkType == LandmarkType.Cutscene)
         {
             sceneController.ChangeScene(sceneName);
         }

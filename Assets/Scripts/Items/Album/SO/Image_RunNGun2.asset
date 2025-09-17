@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44e410a54552b624bb4ed0298320f393, type: 3}
   m_Name: Image_RunNGun2
   m_EditorClassIdentifier: 
+  imageNumber: 2
   imageName: 
   unlockImageText: "\u0E40\u0E22\u0E47\u0E19\u0E0A\u0E37\u0E48\u0E19\u0E43\u0E08"
   lockImageText: "\u0E25\u0E38\u0E22\u0E19\u0E49\u0E33"

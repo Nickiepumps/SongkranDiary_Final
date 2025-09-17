@@ -38,12 +38,7 @@ public class PlayerCameraController : MonoBehaviour, IPlayerObserver
     }
     private void Start()
     {
-        /*stageClearData = SideScroll_StageClearDataHandler.instance.LoadSideScrollStageClear();
-        if(stageClearData != null)
-        {
-            CheckMapToFocus(stageClearData.mapName);
-        }
-        currentFocusTime = focusTime;*/
+        playerCam.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, playerCam.transform.position.z);
     }
     private void LateUpdate()
     {
@@ -71,11 +66,6 @@ public class PlayerCameraController : MonoBehaviour, IPlayerObserver
             if (movedir.x == currentFocusTarget.position.x && movedir.y == currentFocusTarget.position.y)
             {
                 isReachFocusTarget = true;
-                /*currentFocusTime -= Time.deltaTime;
-                if (currentFocusTime <= 0)
-                {
-                    isFocusNextLevel = false;
-                }*/
             }
             else
             {

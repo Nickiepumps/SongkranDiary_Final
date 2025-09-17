@@ -51,13 +51,36 @@ public class PlayerStats : MonoBehaviour
         PlayerData playerData = PlayerDataHandler.instance.LoadPlayerData();
         if(playerData != null)
         {
-            currentPlayerHP = playerData.hpSO;
-            currentPlayerUltCharge = playerData.ultChargeSO;
-            currentNormalASPD = playerData.bulletNormalASPDSO;
-            currentWeaponTravelSpeed = playerData.bulletNormalTSPDSO;
-            currentWeaponSprdCount = playerData.bulletSpreadCountSO;
-            currentSprdBulletASPD = playerData.bulletSpreadASPDSO;
-            currentLsrBulletASPD = playerData.bulletLaserASPDSO;
+            if(playerData.hpSO != null)
+            {
+                currentPlayerHP = playerData.hpSO;
+            }
+            if(playerData.ultChargeSO != null)
+            {
+                currentPlayerUltCharge = playerData.ultChargeSO;
+            }
+            if(playerData.bulletNormalASPDSO != null)
+            {
+                currentNormalASPD = playerData.bulletNormalASPDSO;
+            }
+            if(playerData.bulletNormalTSPDSO != null)
+            {
+                currentWeaponTravelSpeed = playerData.bulletNormalTSPDSO;
+            }
+            if(playerData.bulletSpreadCountSO != null)
+            {
+                currentWeaponSprdCount = playerData.bulletSpreadCountSO;
+            }
+            if (playerData.bulletSpreadASPDSO != null)
+            {
+                currentSprdBulletASPD = playerData.bulletSpreadASPDSO;
+            }
+            if (playerData.bulletLaserASPDSO != null)
+            {
+                currentLsrBulletASPD = playerData.bulletLaserASPDSO;
+            }
+            spreadBulletUnlocked = playerData.bulletSpreadUnlocked;
+            laserBulletUnlocked = playerData.bulletLaserUnlocked;
             coinAmount = playerData.Coin;
         }
     }

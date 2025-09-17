@@ -833,6 +833,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 147285803}
+  - component: {fileID: 147285804}
   m_Layer: 0
   m_Name: AlbumController
   m_TagString: Untagged
@@ -855,6 +856,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &147285804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147285801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d547275342c11f943aaa8e4b83ef13bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  albumImageArr:
+  - {fileID: 11400000, guid: a373d2a38aef4f7498bf9dbc5df8646b, type: 2}
+  - {fileID: 11400000, guid: 30a5d6f8e667cf74cbae57c9fee4bd28, type: 2}
+  - {fileID: 11400000, guid: d32f5487d7bdf01438d536e60448a23b, type: 2}
+  - {fileID: 11400000, guid: 6a8dfef10119d1447bfd6b45bbd88a26, type: 2}
+  - {fileID: 11400000, guid: 2dd764df076dcb84c81654e691e30457, type: 2}
+  - {fileID: 11400000, guid: 3131220a856c56440a7dc101686b9488, type: 2}
 --- !u!1 &150743422
 GameObject:
   m_ObjectHideFlags: 0

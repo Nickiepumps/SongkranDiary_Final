@@ -57,6 +57,7 @@ public class SceneController : MonoBehaviour
     private IEnumerator StartLoadingScreen()
     {
         transitionCanvas.SetActive(true);
+        transitionAnimator.SetFloat("FadeVariant", 0);
         transitionAnimator.SetInteger("Transition", 0);
         transitionAnimator.SetBool("IsISO", false);
         yield return new WaitForSeconds(1f);
@@ -71,6 +72,7 @@ public class SceneController : MonoBehaviour
             yield return null;
         }
         transitionCanvas.SetActive(true);
+        transitionAnimator.SetFloat("FadeVariant", 0);
         transitionAnimator.SetInteger("Transition", 0);
         transitionAnimator.SetBool("IsISO", false);
         yield return new WaitForSeconds(1f);
@@ -78,6 +80,7 @@ public class SceneController : MonoBehaviour
     }
     private IEnumerator TransitionOut()
     {
+        transitionAnimator.SetFloat("FadeVariant", 0);
         transitionAnimator.SetInteger("Transition", 1);
         transitionAnimator.SetBool("IsISO", false);
         yield return new WaitForSeconds(1f);

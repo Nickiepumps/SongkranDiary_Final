@@ -34,6 +34,10 @@ public class ElephantKid_BossUlt2State : BossStateMachine
             aspd = 1f;
             shotCount = 0;
         }
+        if (elephantKidBoss.bossHP.currentBossHP <= 0)
+        {
+            elephantKidBoss.BossStateTransition(new ElephantKid_BossDieState(elephantKidBoss));
+        }
     }
     public override void FixedUpdate(){}
     public override void OnTriggerEnter(Collider2D eCollider){}

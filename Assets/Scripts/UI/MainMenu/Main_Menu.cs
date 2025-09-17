@@ -6,6 +6,11 @@ using UnityEngine.UI;
 
 public class Main_Menu : MonoBehaviour
 {
+    [Header("Main Menu Image Properties")]
+    [SerializeField] private Image menuImage;
+    [SerializeField] private Sprite daytimeMenu;
+    [SerializeField] private Sprite nighttimeMenu;
+
     [Header("Windows")]
     [SerializeField] private GameObject mainMenuWindow;
     [SerializeField] private GameObject albumWindow;
@@ -26,6 +31,15 @@ public class Main_Menu : MonoBehaviour
     {
         PlayerData playerData = PlayerDataHandler.instance.LoadPlayerData();
         SettingData soundData = SettingHandler.instance.LoadSettingData();
+        
+        /*if (isPlayerFinishedThegame == true)
+        {
+            menuImage.sprite = nighttimeMenu;
+        }
+        else
+        {
+            menuImage.sprite = daytimeMenu;
+        }*/
         if (playerData != null)
         {
             continueBtn.SetActive(true);
@@ -90,5 +104,9 @@ public class Main_Menu : MonoBehaviour
             tabImageComponentArr[0].sprite = tabImageArr[1];
             tabImageComponentArr[1].sprite = tabImageArr[2];
         }
+    }
+    public void NewGame()
+    {
+        PlayerDataHandler.instance.ResetPlayerData();
     }
 }

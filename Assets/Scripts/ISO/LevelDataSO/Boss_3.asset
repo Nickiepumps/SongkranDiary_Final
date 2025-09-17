@@ -16,7 +16,8 @@ MonoBehaviour:
   levelName: ElephantKidBoss
   unitySceneName: Boss_3
   levelImagePostcard: {fileID: 0}
-  isoLevelBoundary: []
-  nextLevel: {fileID: 7801682343020925593, guid: 26791fe66543da5409ca31424d6afdb3, type: 3}
+  isoLevelBoundary:
+  - {fileID: 4417078112184738780, guid: 41a6a05ba1181d240805b3d238f17f88, type: 3}
+  nextLevel: {fileID: 5837478127548416903, guid: 602f8e24ef652b549859caedc07ede58, type: 3}
   isClear: 0
   isClearFirstTime: 1

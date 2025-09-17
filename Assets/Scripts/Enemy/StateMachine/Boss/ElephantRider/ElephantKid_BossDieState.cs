@@ -8,6 +8,7 @@ public class ElephantKid_BossDieState : BossStateMachine
     public override void Start()
     {
         elephantKidBoss.NotifyBoss(BossAction.Die);
+        elephantKidBoss.gameObject.SetActive(false);
     }
     public override void Update()
     {
