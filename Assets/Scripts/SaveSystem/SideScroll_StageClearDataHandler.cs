@@ -162,6 +162,20 @@ public class SideScroll_StageClearDataHandler : MonoBehaviour, IGameObserver, IB
         string stageClearJson = JsonUtility.ToJson(stageClearData);
         File.WriteAllText(Application.dataPath + "/stageClear.json", stageClearJson);
     }
+    public void ClearSideScrollStageClear()
+    {
+        StageClearData stageClearData = LoadSideScrollStageClear();
+        if (stageClearData != null)
+        {
+            if (Directory.Exists(Application.dataPath) == false)
+            {
+                Directory.CreateDirectory(Application.dataPath);
+            }
+            stageClearData = null;
+            string stageClearJson = JsonUtility.ToJson(stageClearData);
+            File.WriteAllText(Application.dataPath + "/stageClear.json", stageClearJson);
+        }
+    }
     public StageClearData LoadSideScrollStageClear()
     {
         if (File.Exists(Application.dataPath + "/stageClear.json") == false)

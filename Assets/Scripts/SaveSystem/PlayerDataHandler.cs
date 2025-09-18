@@ -158,7 +158,8 @@ public class PlayerDataHandler : MonoBehaviour
             {
                 Directory.CreateDirectory(Application.dataPath);
             }
-            playerData = new PlayerData();
+            //playerData = new PlayerData();
+            playerData = null;
             string playerDataJson = JsonUtility.ToJson(playerData);
             File.WriteAllText(Application.dataPath + "/playerData.json", playerDataJson);
         }

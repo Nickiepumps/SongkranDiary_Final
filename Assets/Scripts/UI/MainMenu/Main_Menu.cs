@@ -31,15 +31,34 @@ public class Main_Menu : MonoBehaviour
     {
         PlayerData playerData = PlayerDataHandler.instance.LoadPlayerData();
         SettingData soundData = SettingHandler.instance.LoadSettingData();
-        
-        /*if (isPlayerFinishedThegame == true)
+        StageClearData stageClearData = SideScroll_StageClearDataHandler.instance.LoadSideScrollStageClear();
+
+        if(stageClearData != null && stageClearData.levelFirstClearStatus.Count == 6)
         {
-            menuImage.sprite = nighttimeMenu;
+            bool isPlayerFinishedTheGame = false;
+            for(int i = 0; i < stageClearData.levelFirstClearStatus.Count; i++)
+            {
+                if (stageClearData.levelFirstClearStatus[i] == false)
+                {
+                    isPlayerFinishedTheGame = true;
+                    continue;
+                }
+                else
+                {
+                    isPlayerFinishedTheGame = false;
+                    break;
+                }
+            }
+            if(isPlayerFinishedTheGame == true)
+            {
+                menuImage.sprite = nighttimeMenu;
+            }
+            else
+            {
+                menuImage.sprite = daytimeMenu;
+            }
         }
-        else
-        {
-            menuImage.sprite = daytimeMenu;
-        }*/
+        
         if (playerData != null)
         {
             continueBtn.SetActive(true);
@@ -108,5 +127,7 @@ public class Main_Menu : MonoBehaviour
     public void NewGame()
     {
         PlayerDataHandler.instance.ResetPlayerData();
+        SideScroll_StageClearDataHandler.instance.ClearSideScrollStageClear();
+        AlbumDataHandler.instance.ClearAlbumData();
     }
 }

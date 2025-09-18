@@ -49,8 +49,12 @@ public class GameUIController : MonoBehaviour, IGameObserver, IPlayerObserver
     [Header("Scoreboard Window")]
     [SerializeField] private GameObject scoreBoard;
     [SerializeField] private GameObject scoreBoardBG;
-    [SerializeField] private GameObject winScoreBoard;
-    [SerializeField] private GameObject loseScoreBoard;
+    [SerializeField] private GameObject bossScoreboard;
+    [SerializeField] private GameObject bossWinScoreBoard;
+    [SerializeField] private GameObject bossLoseScoreBoard;
+    [SerializeField] private GameObject runScoreboard;
+    [SerializeField] private GameObject runWinScoreBoard;
+    [SerializeField] private GameObject runLoseScoreBoard;
     [SerializeField] private Image scoreBoardDistantUI;
     [SerializeField] private Image currentProgreesionIcon;
     [SerializeField] private TMP_Text loseText;
@@ -184,9 +188,11 @@ public class GameUIController : MonoBehaviour, IGameObserver, IPlayerObserver
             case (SideScrollGameState.Lose):
                 // show lose scoreboard
                 scoreBoard.SetActive(true);
-                winScoreBoard.SetActive(false);
                 if(levelType == LevelType.RunNGunLevel)
                 {
+                    runScoreboard.SetActive(true);
+                    runWinScoreBoard.SetActive(false);
+                    runLoseScoreBoard.SetActive(true);
                     Vector2 progressValue = new Vector2(sidescrollGameController.CheckGoalDistant(scoreBoardDistantUI),
                         currentProgreesionIcon.rectTransform.anchoredPosition.y);
                     StartCoroutine(StartPlayerLoseProgression(progressValue));
@@ -194,11 +200,13 @@ public class GameUIController : MonoBehaviour, IGameObserver, IPlayerObserver
                 }
                 else if(levelType == LevelType.BossLevel)
                 {
+                    bossScoreboard.SetActive(true);
+                    bossWinScoreBoard.SetActive(false);
+                    bossLoseScoreBoard.SetActive(false);
                     Vector2 progressValue = new Vector2(sidescrollGameController.CheckBossProgression(scoreBoardDistantUI),
                         currentProgreesionIcon.rectTransform.anchoredPosition.y);
                     StartCoroutine(StartPlayerLoseProgression(progressValue));
                 }
-                loseScoreBoard.SetActive(true);
                 return;
         }
     }
@@ -302,7 +310,7 @@ public class GameUIController : MonoBehaviour, IGameObserver, IPlayerObserver
         loseText.GetComponent<Animation>().Play();
         yield return new WaitUntil(() => loseText.GetComponent<Animation>().isPlaying == false);
         scoreBoardBG.SetActive(true);
-        loseScoreBoard.SetActive(true);
+        bossLoseScoreBoard.SetActive(true);
         while(currentProgreesionIcon.rectTransform.anchoredPosition.x < progressValue.x)
         {
             currentProgreesionIcon.rectTransform.anchoredPosition = new Vector2(currentProgreesionIcon.rectTransform.anchoredPosition.x + 1, currentProgreesionIcon.rectTransform.anchoredPosition.y);
@@ -330,9 +338,10 @@ public class GameUIController : MonoBehaviour, IGameObserver, IPlayerObserver
         // Show win scoreboard
         enemySpawnController.enabled = false;
         scoreBoard.SetActive(true);
-        winScoreBoard.SetActive(true);
+        runWinScoreBoard.SetActive(true);
         scoreBoardBG.SetActive(true);
-        loseScoreBoard.SetActive(false);
+        runScoreboard.SetActive(true);
+        runLoseScoreBoard.SetActive(false);
         timerText.text = sidescrollGameController.currentTime;
         hpText.text = sidescrollGameController.UpdatePlayerHPCount().ToString();
         coinAmountText.text = sidescrollGameController.coinCounter.ToString();
@@ -351,9 +360,10 @@ public class GameUIController : MonoBehaviour, IGameObserver, IPlayerObserver
         transitionWindow.GetComponentInChildren<Animator>().SetInteger("Transition", 1);
         // Show win scoreboard
         scoreBoard.SetActive(true);
-        winScoreBoard.SetActive(true);
+        bossWinScoreBoard.SetActive(true);
         scoreBoardBG.SetActive(true);
-        loseScoreBoard.SetActive(false);
+        bossScoreboard.SetActive(true);
+        bossLoseScoreBoard.SetActive(false);
         timerText.text = sidescrollGameController.currentTime;
         hpText.text = sidescrollGameController.UpdatePlayerHPCount().ToString();
         gradeText.text = sidescrollGameController.Result();

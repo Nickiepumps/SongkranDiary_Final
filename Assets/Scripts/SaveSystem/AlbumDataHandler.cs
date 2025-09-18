@@ -91,4 +91,18 @@ public class AlbumDataHandler : MonoBehaviour
         AlbumData loadedAlbumData = JsonUtility.FromJson<AlbumData>(loadedAlbumDataJson);
         return loadedAlbumData;
     }
+    public void ClearAlbumData()
+    {
+        AlbumData albumData = LoadAlbumData();
+        if (albumData != null)
+        {
+            if (Directory.Exists(Application.dataPath) == false)
+            {
+                Directory.CreateDirectory(Application.dataPath);
+            }
+            albumData = null;
+            string albumDataToJson = JsonUtility.ToJson(albumData);
+            File.WriteAllText(Application.dataPath + "/albumData.json", albumDataToJson);
+        }
+    }
 }

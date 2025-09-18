@@ -133,16 +133,24 @@ public class BulletShooting : ShootingSubject, IPlayerObserver
             {
                 currentBulletArrayIndex = 0;
             }
-            if(currentBulletArrayIndex == 1)
+            switch (currentBulletArrayIndex)
             {
-                if (weaponData.spreadBulletUnlocked == false && weaponData.laserBulletUnlocked == false)
-                {
-                    currentBulletArrayIndex = 0;
-                }
-                else if (weaponData.spreadBulletUnlocked == false && weaponData.laserBulletUnlocked == true)
-                {
-                    currentBulletArrayIndex = 2;
-                }
+                case 1:
+                    if (weaponData.spreadBulletUnlocked == false && weaponData.laserBulletUnlocked == false)
+                    {
+                        currentBulletArrayIndex = 0;
+                    }
+                    else if (weaponData.spreadBulletUnlocked == false && weaponData.laserBulletUnlocked == true)
+                    {
+                        currentBulletArrayIndex = 2;
+                    }
+                    break;
+                case 2:
+                    if (weaponData.spreadBulletUnlocked == true && weaponData.laserBulletUnlocked == false)
+                    {
+                        currentBulletArrayIndex = 0;
+                    }
+                    break;
             }
             StartCoroutine(SwitchCoolDown());
             gunAudioPlayer.clip = bulletAudioClipArr[currentBulletArrayIndex];
