@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class UpgradeWindow : MonoBehaviour, IGameObserver
 {
-    [Header("Temp PlayerDataSO")]
-    [SerializeField] private TempPlayerDataSave tempDataSO;
+    [Header("Upgrade Window")]
+    [SerializeField] private GameObject upgradeWindow;
 
     [Header("Observer Reference")]
     [SerializeField] private GameSubject gameUIControllerSubject;
@@ -126,7 +126,8 @@ public class UpgradeWindow : MonoBehaviour, IGameObserver
             {
                 p_Ult_UpgradeBarBtn.SetActive(true);
             }
-            gameObject.SetActive(false);
+            gameUIControllerSubject.GetComponent<GameUIController>().CloseDiaryWindow();
+            //gameObject.SetActive(false);
             gameUIControllerSubject.NotifyGameObserver(IsometricGameState.Play);
         }
         if(coinAmount == 0)

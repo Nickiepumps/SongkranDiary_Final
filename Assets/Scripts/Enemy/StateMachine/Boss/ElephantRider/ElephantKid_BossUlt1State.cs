@@ -26,6 +26,7 @@ public class ElephantKid_BossUlt1State : BossStateMachine
         }
         if(currentUltTime <= 0)
         {
+            elephantKidBoss.bossAttackAudioSource.Stop();
             elephantKidBoss.bossUlt1 = false;
             elephantKidBoss.BossStateTransition(new ElephantKid_BossIdleState(elephantKidBoss));
         }

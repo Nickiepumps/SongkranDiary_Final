@@ -6,9 +6,10 @@ using UnityEngine.UI;
 
 public class SettingController : MonoBehaviour
 {
-    [Header("All audio players")]
-    [SerializeField] private AudioSource bgmAudioPlayer;
-    [SerializeField] private AudioSource[] sfxAudioPlayer;
+    [Header("Audio Slider Components")]
+    [SerializeField] private Slider masterSlider;
+    [SerializeField] private Slider bgmSlider;
+    [SerializeField] private Slider sfxSlider;
 
     [Header("Player state controller")]
     [SerializeField] private PlayerStateController playerStateController;
@@ -37,6 +38,9 @@ public class SettingController : MonoBehaviour
         SettingData settingData = SettingHandler.instance.LoadSettingData();
         if (settingData != null)
         {
+            masterSlider.value = settingData.masterVolume;
+            bgmSlider.value = settingData.bgmVolume;
+            sfxSlider.value = settingData.sfxVolume;
             if(settingData.keymapSO != null)
             {
                 keymapDropdown.value = settingData.keymapSO.id;
@@ -50,28 +54,19 @@ public class SettingController : MonoBehaviour
                     playerSideScrollStateController.keymapSO = settingData.keymapSO;
                 }
             }
-            if (settingData.bgmVolume > settingData.masterVolume)
-            {
-                bgmAudioPlayer.volume = settingData.masterVolume;
-            }
             else
             {
-                bgmAudioPlayer.volume = settingData.bgmVolume;
-            }
-            if (settingData.sfxVolume > settingData.masterVolume)
-            {
-                foreach (AudioSource sfxSource in sfxAudioPlayer)
+                keymapDropdown.value = defaultKeymap.id;
+                if (playerStateController != null)
                 {
-                    sfxSource.volume = settingData.masterVolume;
+                    playerStateController.keymapSO = defaultKeymap;
+                }
+                else if (playerSideScrollStateController != null)
+                {
+                    playerSideScrollStateController.keymapSO = defaultKeymap;
                 }
             }
-            else
-            {
-                foreach (AudioSource sfxSource in sfxAudioPlayer)
-                {
-                    sfxSource.volume = settingData.sfxVolume;
-                }
-            }
+            
         }
         else
         {

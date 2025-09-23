@@ -18,6 +18,8 @@ MonoBehaviour:
   levelImagePostcard: {fileID: 0}
   isoLevelBoundary:
   - {fileID: 2124297373547204099, guid: 6c1f79fc79a0b6949842377a97a4ee3f, type: 3}
+  isoLevelBoundaryName:
+  - Run1
   nextLevel: {fileID: 8129825810464509259, guid: 55ac34ee80ac874449af6444a56cfb20, type: 3}
   isClear: 0
   isClearFirstTime: 1

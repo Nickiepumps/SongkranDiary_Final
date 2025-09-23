@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
+using UnityEngine.UI;
 public class PostcardWindow : MonoBehaviour, IGameObserver
 {
     [Header("Observer References")]
@@ -11,6 +11,10 @@ public class PostcardWindow : MonoBehaviour, IGameObserver
     [Header("Postcard Text References")]
     public TMP_Text postcardNameText;
     public TMP_Text levelTypeText;
+
+    [Header("Postcard Variants")]
+    public Sprite[] postcardVariantArr;
+    public Image postcardImageComponent;
 
     [Header("Scene Controller (For Keyboard Only)")]
     [SerializeField] SceneController sceneController;

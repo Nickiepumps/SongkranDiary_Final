@@ -21,6 +21,13 @@ public class BucketKid_BossStateController : BossSubject
     public CircleCollider2D ultHitBox;
     public BoxCollider2D normalHitBox;
 
+    [Header("Boss Audio Properties")]
+    public AudioSource bossAttackAudioSource;
+    public AudioSource bossStatusAudioSource;
+    public AudioSource bossEffectAudioSource;
+    public AudioClip[] bossAttackAudioClipArr;
+    public AudioClip[] bossEffectAudioClipArr;
+
     // Hide in inspector
     public bool isDead = false;
     public bool isBossInvulnerable = false;
@@ -54,6 +61,12 @@ public class BucketKid_BossStateController : BossSubject
                 if (isDead == false && isBossInvulnerable == false)
                 {
                     NotifyBoss(BossAction.Damaged);
+                }
+                break;
+            case ("PlayerUlt"):
+                if (isDead == false && isBossInvulnerable == false)
+                {
+                    NotifyBoss(BossAction.UltDamaged);
                 }
                 break;
         }
@@ -101,8 +114,12 @@ public class BucketKid_BossStateController : BossSubject
         bossAnimator.SetBool("isIdle", false);
         bossAnimator.SetBool("isFullBody", true);
         bossAnimator.SetBool("isTransition", true);
+        yield return new WaitForSeconds(1.5f);
+        bossEffectAudioSource.clip = bossEffectAudioClipArr[2];
+        bossEffectAudioSource.loop = false;
+        bossEffectAudioSource.Play();
         Debug.Log("Playing switch to barrel anim");
-        yield return new WaitForSeconds(2.7f);
+        yield return new WaitForSeconds(1.2f);
         // Play boss barrel idle anim
         bossAnimator.SetBool("isIdle", true);
         bossAnimator.SetBool("isFullBody", false);
@@ -120,7 +137,11 @@ public class BucketKid_BossStateController : BossSubject
         bossAnimator.SetBool("isIdle", false);
         bossAnimator.SetBool("isFullBody", true);
         bossAnimator.SetBool("isTransition", true);
-        yield return new WaitForSeconds(2.7f);
+        yield return new WaitForSeconds(1.5f);
+        bossEffectAudioSource.clip = bossEffectAudioClipArr[2];
+        bossEffectAudioSource.loop = false;
+        bossEffectAudioSource.Play();
+        yield return new WaitForSeconds(1.2f);
         Debug.Log("Playing switch to barrel anim");
         // Play boss barrel idle anim
         bossAnimator.SetFloat("transitionVariant", 0);
@@ -133,6 +154,8 @@ public class BucketKid_BossStateController : BossSubject
     }
     public IEnumerator SwitchToFullbody()
     {
+        bossEffectAudioSource.clip = bossEffectAudioClipArr[0];
+        bossEffectAudioSource.Play();
         isReadyToAttack = false;
         bossAnimator.SetFloat("transitionVariant", 0);
         bossAnimator.SetBool("isIdle", false);
@@ -152,7 +175,15 @@ public class BucketKid_BossStateController : BossSubject
         bossAnimator.SetBool("isIdle", false);
         bossAnimator.SetBool("isFullBody", true);
         bossAnimator.SetBool("isUlt", true);
-        yield return new WaitForSeconds(1.9f);
+        yield return new WaitForSeconds(0.3f);
+        bossAttackAudioSource.clip = bossAttackAudioClipArr[1];
+        bossAttackAudioSource.loop = false;
+        bossAttackAudioSource.Play();
+        yield return new WaitForSeconds(1.3f);
+        bossEffectAudioSource.clip = bossEffectAudioClipArr[1];
+        bossEffectAudioSource.loop = false;
+        bossEffectAudioSource.Play();
+        yield return new WaitForSeconds(0.3f);
         bossUlt2 = true;
         NotifyBoss(BossAction.Ult);
         bossAnimator.SetBool("isIdle", true);
@@ -165,16 +196,24 @@ public class BucketKid_BossStateController : BossSubject
         bossAnimator.SetBool("isIdle", false);
         bossAnimator.SetBool("isAttack", true);
         bossAnimator.SetBool("isPrepareToAttack", false);
+        bossAttackAudioSource.clip = bossAttackAudioClipArr[1];
+        bossAttackAudioSource.Play();
         yield return new WaitForSeconds(1.5f);
         bossAnimator.SetBool("isUlt", true);
         bossAnimator.SetBool("isIdle", true);
         bossAnimator.SetBool("isAttack", true);
         bossAnimator.SetBool("isPrepareToAttack", false);
+        bossAttackAudioSource.clip = bossAttackAudioClipArr[2];
+        bossAttackAudioSource.loop = true;
+        bossAttackAudioSource.Play();
         yield return new WaitForSeconds(2.1f);
         bossAnimator.SetBool("isUlt", false);
         bossAnimator.SetBool("isIdle", true);
         bossAnimator.SetBool("isAttack", true);
         bossAnimator.SetBool("isPrepareToAttack", false);
+        bossAttackAudioSource.clip = bossAttackAudioClipArr[3];
+        bossAttackAudioSource.loop = true;
+        bossAttackAudioSource.Play();
         bossUlt1 = true;
     }
 }

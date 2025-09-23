@@ -101,12 +101,14 @@ public class PlayerObserverController : MonoBehaviour, IGameObserver, IPlayerObs
                 playerSideScrollStateController.isGameStart = true;
                 return;
             case(SideScrollGameState.WinRunNGun):
+                playerSideScrollStateController.NotifyPlayerObserver(PlayerAction.win);
                 playerSideScrollStateController.enabled = false;
                 playerSideScrollStateController.isWinRunNGun = true;
                 return;
             case (SideScrollGameState.WinBoss):
                 playerSideScrollStateController.enabled = false;
                 playerSideScrollStateController.gameObject.GetComponent<BulletShooting>().enabled = false;
+                playerSideScrollStateController.isWinBoss = true;
                 return;
             case (SideScrollGameState.Paused):
                 return;

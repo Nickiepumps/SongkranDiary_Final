@@ -91,12 +91,16 @@ public class FatKid_BossObserverController : MonoBehaviour, IBossObserver, IGame
         {
             fatKidStateController.bossAnimator.SetFloat("Variant", 1);
             yield return new WaitForSeconds(0.3f);
+            fatKidStateController.enemyAttackAudioSource.clip = fatKidStateController.enemyAttackAudioClipArr[0];
+            fatKidStateController.enemyAttackAudioSource.Play();
             BossShoot(bulletLowerSpawn, Vector2.left);
 
         }
         else
         {
             fatKidStateController.bossAnimator.SetFloat("Variant", 0);
+            fatKidStateController.enemyAttackAudioSource.clip = fatKidStateController.enemyAttackAudioClipArr[0];
+            fatKidStateController.enemyAttackAudioSource.Play();
             BossShoot(bulletMiddleSpawn, Vector2.left);
         }
         yield return new WaitForSeconds(0.5f);

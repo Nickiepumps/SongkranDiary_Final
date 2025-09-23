@@ -7,6 +7,7 @@ public class BucketKid_BarrelTransitionState : BossStateMachine
     public BucketKid_BarrelTransitionState(BucketKid_BossStateController bucketKidBoss) : base(bucketKidBoss) { }
     public override void Start()
     {
+        bucketKidBoss.bossAttackAudioSource.Stop();
         bucketKidBoss.NotifyBoss(BossAction.Idle);
         bucketKidBoss.isBossInvulnerable = true;
         bucketKidBoss.normalAttackCount = 0;

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ElephantKid_BossStateController : BossSubject
@@ -26,6 +27,12 @@ public class ElephantKid_BossStateController : BossSubject
     public BoxCollider2D vacuumTrigger;
     public VacuumObjectPooler vacuumPooler;
     public Transform vacuumObjectSpawner;
+
+    [Header("Audio Properties")]
+    public AudioSource bossAttackAudioSource;
+    public AudioSource bossEffectAudioSource;
+    public AudioClip[] bossAttackAudioClipArr;
+    public AudioClip[] bossEffectAudioClipArr;
 
     // Hide in inspector
     public bool isDead = false;
@@ -63,6 +70,12 @@ public class ElephantKid_BossStateController : BossSubject
                 if (isDead == false && isBossInvulnerable == false)
                 {
                     NotifyBoss(BossAction.Damaged);
+                }
+                return;
+            case ("PlayerUlt"):
+                if (isDead == false && isBossInvulnerable == false)
+                {
+                    NotifyBoss(BossAction.UltDamaged);
                 }
                 return;
         }
@@ -137,6 +150,9 @@ public class ElephantKid_BossStateController : BossSubject
     }
     public IEnumerator StartBossVacuumAnimation()
     {
+        bossAttackAudioSource.clip = bossAttackAudioClipArr[1];
+        bossAttackAudioSource.loop = true;
+        bossAttackAudioSource.Play();
         bossAnimator.SetBool("isPrepareToAttack", false);
         bossAnimator.SetBool("isIdle", false);
         bossAnimator.SetBool("isAttack", false);
@@ -145,6 +161,9 @@ public class ElephantKid_BossStateController : BossSubject
         vacuumTrigger.gameObject.SetActive(true);
         NotifyBoss(BossAction.Ult2);
         yield return new WaitForSeconds(8f);
+        bossAttackAudioSource.clip = bossAttackAudioClipArr[2];
+        bossAttackAudioSource.loop = false;
+        bossAttackAudioSource.Play();
         vacuumTrigger.gameObject.SetActive(false);
         BossStateTransition(new ElephantKid_BossIdleState(this));
     }
@@ -171,6 +190,9 @@ public class ElephantKid_BossStateController : BossSubject
     }
     public IEnumerator Boss_ElephantKidNormalAtk_Intro()
     {
+        bossEffectAudioSource.clip = bossEffectAudioClipArr[0];
+        bossEffectAudioSource.loop = false;
+        bossEffectAudioSource.Play();
         bossAnimator.SetBool("isHeal", false);
         bossAnimator.SetBool("isPrepareToAttack", true);
         bossAnimator.SetBool("isIdle", false);
@@ -190,7 +212,16 @@ public class ElephantKid_BossStateController : BossSubject
         bossAnimator.SetBool("isIdle", false);
         bossAnimator.SetBool("isAttack", false);
         bossAnimator.SetFloat("prepareVariant", 2);
-        yield return new WaitForSeconds(0.7f);
+        yield return new WaitForSeconds(0.1f);
+        bossEffectAudioSource.clip = bossEffectAudioClipArr[1];
+        bossEffectAudioSource.loop = false;
+        bossEffectAudioSource.Play();
+        yield return new WaitForSeconds(0.4f);
+        bossEffectAudioSource.Play();
+        yield return new WaitForSeconds(0.2f);
+        bossAttackAudioSource.clip = bossAttackAudioClipArr[5];
+        bossAttackAudioSource.loop = true;
+        bossAttackAudioSource.Play();
         bossAnimator.SetBool("isPrepareToAttack", false);
         bossAnimator.SetBool("isIdle", true);
         bossAnimator.SetBool("isAttack", true);
@@ -206,6 +237,7 @@ public class ElephantKid_BossStateController : BossSubject
     }
     public IEnumerator Boss_ElephantKidUndergroundAtk_Outro()
     {
+        bossAttackAudioSource.Stop();
         bossAnimator.SetBool("isPrepareToAttack", true);
         bossAnimator.SetBool("isIdle", false);
         bossAnimator.SetBool("isAttack", false);
@@ -213,7 +245,11 @@ public class ElephantKid_BossStateController : BossSubject
         bossAnimator.SetBool("isShoot", false);
         bossAnimator.SetFloat("prepareVariant", 3);
         bossAnimator.SetFloat("attackIdleVariant", 0);
-        yield return new WaitForSeconds(0.7f);
+        yield return new WaitForSeconds(0.2f);
+        bossEffectAudioSource.clip = bossEffectAudioClipArr[1];
+        bossEffectAudioSource.loop = false;
+        bossEffectAudioSource.Play();
+        yield return new WaitForSeconds(0.5f);
         BossStateTransition(new ElephantKid_BossIdleState(this));
     }
     public IEnumerator Boss_ElephantKidVacuum_Intro()
@@ -228,10 +264,16 @@ public class ElephantKid_BossStateController : BossSubject
     }
     public IEnumerator Boss_BabyElephantCallOut()
     {
+        bossAttackAudioSource.clip = bossAttackAudioClipArr[3];
+        bossAttackAudioSource.loop = false;
+        bossAttackAudioSource.Play();
         bossAnimator.SetBool("isIdle", false);
         bossAnimator.SetBool("isUlt", true);
         bossAnimator.SetFloat("ultVariant", 1);
         yield return new WaitForSeconds(1);
+        bossAttackAudioSource.clip = bossAttackAudioClipArr[4];
+        bossAttackAudioSource.loop = true;
+        bossAttackAudioSource.Play();
         bossAnimator.SetBool("isIdle", true);
         bossAnimator.SetBool("isAttack", false);
         bossAnimator.SetBool("isUlt", false);

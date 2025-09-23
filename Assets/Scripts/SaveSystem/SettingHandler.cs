@@ -33,12 +33,12 @@ public class SettingHandler : MonoBehaviour
             settingData.bgmVolume = bgmValue;
             settingData.sfxVolume = sfxValue;
         }
-        if (Directory.Exists(Application.dataPath) == false)
+        if (Directory.Exists(Application.persistentDataPath) == false)
         {
-            Directory.CreateDirectory(Application.dataPath);
+            Directory.CreateDirectory(Application.persistentDataPath);
         }
         string settingJson = JsonUtility.ToJson(settingData);
-        File.WriteAllText(Application.dataPath + "/setting.json", settingJson);
+        File.WriteAllText(Application.persistentDataPath + "/setting.json", settingJson);
     }
     public void SaveSetting_Keymap(KeyMapSO keymap)
     {
@@ -52,20 +52,20 @@ public class SettingHandler : MonoBehaviour
             settingData = new SettingData();
             settingData.keymapSO = keymap;
         }
-        if (Directory.Exists(Application.dataPath) == false)
+        if (Directory.Exists(Application.persistentDataPath) == false)
         {
-            Directory.CreateDirectory(Application.dataPath);
+            Directory.CreateDirectory(Application.persistentDataPath);
         }
         string settingJson = JsonUtility.ToJson(settingData);
-        File.WriteAllText(Application.dataPath + "/setting.json", settingJson);
+        File.WriteAllText(Application.persistentDataPath + "/setting.json", settingJson);
     }
     public SettingData LoadSettingData()
     {
-        if(File.Exists(Application.dataPath + "/setting.json") == false)
+        if(File.Exists(Application.persistentDataPath + "/setting.json") == false)
         {
             return null;
         }
-        string loadedSettingJson = File.ReadAllText(Application.dataPath + "/setting.json");
+        string loadedSettingJson = File.ReadAllText(Application.persistentDataPath + "/setting.json");
         SettingData loadedSetting = JsonUtility.FromJson<SettingData>(loadedSettingJson);
         return loadedSetting;
     }

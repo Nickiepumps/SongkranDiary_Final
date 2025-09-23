@@ -21,6 +21,10 @@ public class FatKid_BossUlt2State : BossStateMachine
         {
             fatKidBoss.BossStateTransition(new FatKid_BossIdleState(fatKidBoss));
         }
+        if (fatKidBoss.bossHP.currentBossHP <= 0)
+        {
+            fatKidBoss.BossStateTransition(new FatKid_BossDieState(fatKidBoss));
+        }
     }
     public override void FixedUpdate()
     {

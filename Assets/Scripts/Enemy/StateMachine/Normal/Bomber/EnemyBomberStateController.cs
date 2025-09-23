@@ -76,6 +76,11 @@ public class EnemyBomberStateController : NormalEnemySubject
                 enemyAudioSource.Play();
                 NotifyNormalEnemy(EnemyAction.Damaged);
                 break;
+            case ("PlayerUlt"):
+                enemyAudioSource.clip = enemyAudioClipArr[0];
+                enemyAudioSource.Play();
+                NotifyNormalEnemy(EnemyAction.Damaged);
+                break;
             case ("E_Boundary"):
                 gameObject.SetActive(false);
                 return;

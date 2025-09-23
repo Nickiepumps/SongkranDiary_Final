@@ -5,6 +5,7 @@ using UnityEngine;
 public class ISO_GameController : MonoBehaviour
 {
     [SerializeField] PlayerCameraController playerISOCameraController;
+    [SerializeField] GameObject[] levelBoundaryArr;
     private void Start()
     {
         StageClearData stageData = SideScroll_StageClearDataHandler.instance.LoadSideScrollStageClear();
@@ -20,7 +21,8 @@ public class ISO_GameController : MonoBehaviour
                 }
                 else if(stageData.levelClearStatus[i] == true && stageData.levelFirstClearStatus[i] == false)
                 {
-                    RemoveBoundary(stageData.levelDataSOLists[i].isoLevelBoundary);
+                    //RemoveBoundary(levelBoundaryArr[i]);
+                    levelBoundaryArr[i].SetActive(false);
                 }
             }
             SideScroll_StageClearDataHandler.instance.UpdateSideScrollStageData(stageData);
@@ -32,7 +34,7 @@ public class ISO_GameController : MonoBehaviour
         {
             for (int i = 0; i < boundaryTarget.Length; i++)
             {
-                GameObject.Find(boundaryTarget[i].name).SetActive(false);
+                levelBoundaryArr[i].SetActive(false);
             }
         }
     }

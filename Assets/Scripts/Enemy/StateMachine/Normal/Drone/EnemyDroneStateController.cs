@@ -77,6 +77,9 @@ public class EnemyDroneStateController : NormalEnemySubject
             case ("PlayerBullet"):
                 NotifyNormalEnemy(EnemyAction.Damaged);
                 return;
+            case ("PlayerUlt"):
+                NotifyNormalEnemy(EnemyAction.Explode);
+                return;
         }
         enemyCurrentState.OnTriggerEnter(collision);
     }

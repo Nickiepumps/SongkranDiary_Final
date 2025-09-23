@@ -49,10 +49,18 @@ public class FatKid_BossUltState : BossStateMachine
             if(moveDir.x >= fatKidBoss.destination.position.x - 1.57f && isRight == false)
             {
                 fatKidBoss.destination = rightPos;
+                fatKidBoss.enemyEffectAudioSource.clip = fatKidBoss.enemyEffectAudioClipArr[1];
+                fatKidBoss.enemyEffectAudioSource.loop = false;
+                fatKidBoss.enemyEffectAudioSource.Play();
                 fatKidBoss.BossStateTransition(new FatKid_BossIdleState(fatKidBoss));
             }
             moveDir = Vector2.MoveTowards(fatKidBoss.transform.position, fatKidBoss.destination.position, moveSpeed * Time.deltaTime);
             fatKidBoss.transform.position = moveDir;
+        }
+        if (fatKidBoss.bossHP.currentBossHP <= 0)
+        {
+            fatKidBoss.StopAllCoroutines();
+            fatKidBoss.BossStateTransition(new FatKid_BossDieState(fatKidBoss));
         }
     }
     public override void FixedUpdate()

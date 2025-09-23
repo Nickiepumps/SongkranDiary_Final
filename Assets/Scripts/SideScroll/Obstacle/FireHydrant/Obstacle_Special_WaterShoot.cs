@@ -30,15 +30,10 @@ public class Obstacle_Special_WaterShoot : MonoBehaviour, IBossObserver
     private IEnumerator RandomPipeAttack()
     {
         int result1 = Random.Range(0, 4);
-        //int result2 = Random.Range(2, 4);
         waterPipeObstacleArr[result1].enabled = true;
         waterSpriteArr[result1].enabled = true;
-        //waterPipeObstacleArr[result2].enabled = true;
-        //waterSpriteArr[result2].enabled = true;
         yield return new WaitForSeconds(waterPipeObstacleArr[result1].waterInitialCooldownTime + 0.8f);
         waterPipeObstacleArr[result1].enabled = false;
         waterSpriteArr[result1].enabled = false;
-        //waterPipeObstacleArr[result2].enabled = false;
-        //waterSpriteArr[result2].enabled = false;
     }
 }

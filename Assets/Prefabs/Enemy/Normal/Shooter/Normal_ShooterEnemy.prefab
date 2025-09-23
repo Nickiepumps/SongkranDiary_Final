@@ -278,8 +278,9 @@ MonoBehaviour:
   distanceFromPlayer: 0
   shooterEnemyAnimator: {fileID: 6367609203466684222}
   enemyAudioClipArr:
-  - {fileID: 8300000, guid: 23b09dbe0ea88714e9aa30930424a734, type: 3}
-  - {fileID: 8300000, guid: e4cb9d9877b266d41aeeb84cce113797, type: 3}
+  - {fileID: 8300000, guid: c90d1e2ede8ee3a47a70c7b4a6e41230, type: 3}
+  - {fileID: 8300000, guid: 96fcaeac4413e3840aa42d9171ac3d24, type: 3}
+  - {fileID: 8300000, guid: f8b032f85364d9048a14b75192b30c7a, type: 3}
   enemyAudioSource: {fileID: 6719908076588004262}
   enemyHitBox: {fileID: 6606606190766882619}
   isDead: 0
@@ -447,7 +448,7 @@ AudioSource:
   m_GameObject: {fileID: 7680084267092936274}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -7538442057315267264, guid: 83bb434f59cd7a44eaf2f58418869042, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1

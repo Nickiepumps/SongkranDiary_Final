@@ -10,7 +10,9 @@ public class BucketKid_BossIdleState : BossStateMachine
     private float currentUltTime;
     public override void Start()
     {
-        if(bucketKidBoss.isGameStart == true)
+        bucketKidBoss.bossAttackAudioSource.Stop();
+
+        if (bucketKidBoss.isGameStart == true)
         {
             bucketKidBoss.bossAnimator.SetBool("isIdle", true);
             bucketKidBoss.bossAnimator.SetBool("isFullBody", false);

@@ -49,6 +49,21 @@ public class BossHealthObserver : MonoBehaviour, IBossObserver
                     bossStatusAudioSource.Play();
                 }
                 return;
+            case (BossAction.UltDamaged):
+                StartCoroutine(DamageIndicator());
+                if (bossHealth.currentBossArmor <= 0)
+                {
+                    bossHealth.currentBossHP -= 5;
+                    bossStatusAudioSource.clip = enemyAudioClipArr[2];
+                    bossStatusAudioSource.Play();
+                }
+                else
+                {
+                    bossHealth.currentBossArmor -= 5;
+                    bossStatusAudioSource.clip = enemyAudioClipArr[2];
+                    bossStatusAudioSource.Play();
+                }
+                return;
             case (BossAction.Heal):
                 bossHealth.currentBossHP += bossHealth.bossStats.healAmount;
                 bossHealAudioSource.clip = enemyAudioClipArr[3];
@@ -66,4 +81,5 @@ public class BossHealthObserver : MonoBehaviour, IBossObserver
         yield return new WaitForSeconds(0.1f);
         bossSpriteRenderer.color = Color.white;
     }
+    
 }

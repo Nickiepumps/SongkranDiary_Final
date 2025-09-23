@@ -58,7 +58,6 @@ public class Bullet : MonoBehaviour
             SpreadBullet();
         }
 
-        // To Do: Deactivate Bullet when it go pass the camera
         Vector2 bulletPos = cam.WorldToViewportPoint(transform.position);
         if(bulletPos.x < -0.1f || bulletPos.x > 1.1f || bulletPos.y < -0.1f || bulletPos.y > 1.1f)
         {

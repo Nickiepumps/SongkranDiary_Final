@@ -26,7 +26,8 @@ public class Main_Menu : MonoBehaviour
     [SerializeField] private Image[] tabImageComponentArr;
 
     [Header("Sound component")]
-    [SerializeField] private AudioSource bgmAudio;
+    [SerializeField] private Slider masterSlider;
+    [SerializeField] private Slider bgmSlider;
     private void Start()
     {
         PlayerData playerData = PlayerDataHandler.instance.LoadPlayerData();
@@ -69,14 +70,8 @@ public class Main_Menu : MonoBehaviour
         }
         if (soundData != null)
         {
-            if (soundData.masterVolume >= soundData.bgmVolume)
-            {
-                bgmAudio.volume = soundData.bgmVolume;
-            }
-            else
-            {
-                bgmAudio.volume = soundData.masterVolume;
-            }
+            masterSlider.value = soundData.masterVolume;
+            bgmSlider.value = soundData.bgmVolume;
         }
     }
     public void OpenMenu()
@@ -129,5 +124,6 @@ public class Main_Menu : MonoBehaviour
         PlayerDataHandler.instance.ResetPlayerData();
         SideScroll_StageClearDataHandler.instance.ClearSideScrollStageClear();
         AlbumDataHandler.instance.ClearAlbumData();
+        ISOStageDataHandler.instance.ClearISOStageData();
     }
 }

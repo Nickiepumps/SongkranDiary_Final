@@ -42,7 +42,11 @@ public class FatKid_BossIdleState : BossStateMachine
     }
     public override void Update()
     {
-        if(fatKidBoss.bossShooting == false && fatKidBoss.bossUlt == false && fatKidBoss.isGameStart == true)
+        if (fatKidBoss.bossHP.currentBossHP <= 0)
+        {
+            fatKidBoss.BossStateTransition(new FatKid_BossDieState(fatKidBoss));
+        }
+        if (fatKidBoss.bossShooting == false && fatKidBoss.bossUlt == false && fatKidBoss.isGameStart == true)
         {
             currentAspd -= Time.deltaTime;
             //currentIdleTime -= Time.deltaTime;
@@ -64,7 +68,7 @@ public class FatKid_BossIdleState : BossStateMachine
                 fatKidBoss.bossAnimator.SetBool("isAim", true);
                 fatKidBoss.bossAnimator.SetFloat("Variant", fatKidBoss.bossObserverController.shootVariant);
             }
-            if (currentUltTime <= 0)
+            if (currentUltTime <= 0 && fatKidBoss.bossHP.currentBossHP > 0)
             {
                 int ultVariant = Random.Range(1, 3);
                 //int ultVariant = 2;
@@ -79,10 +83,6 @@ public class FatKid_BossIdleState : BossStateMachine
                     currentUltTime = fatKidBoss.bossScriptableObject.ultCooldown;
                     fatKidBoss.BossStateTransition(new FatKid_BossUlt2State(fatKidBoss));
                 }
-            }
-            if(fatKidBoss.bossHP.currentBossHP <= 0)
-            {
-                fatKidBoss.BossStateTransition(new FatKid_BossDieState(fatKidBoss));
             }
         }
     }

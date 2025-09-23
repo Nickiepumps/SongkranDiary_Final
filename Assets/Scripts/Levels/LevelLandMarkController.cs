@@ -52,7 +52,7 @@ public class LevelLandMarkController : MonoBehaviour, IGameObserver, IPlayerObse
     }
     private void Start()
     {
-        if(landmarkType != LandmarkType.Tutorial && landmarkType != LandmarkType.MapTransition)
+        if(landmarkType != LandmarkType.Tutorial && landmarkType != LandmarkType.MapTransition && landmarkType != LandmarkType.Cutscene)
         {
             StageClearData stageclearData = SideScroll_StageClearDataHandler.instance.LoadSideScrollStageClear();
             if (stageclearData != null)
@@ -70,6 +70,11 @@ public class LevelLandMarkController : MonoBehaviour, IGameObserver, IPlayerObse
             {
                 flag.SetActive(false);
             }
+        }
+        else if(landmarkType == LandmarkType.Tutorial)
+        {
+            landmarkAnimator.SetFloat("nodeVariant", 1);
+            landmarkAnimator.SetFloat("flagVariant", 0);
         }
         else
         {
@@ -114,6 +119,7 @@ public class LevelLandMarkController : MonoBehaviour, IGameObserver, IPlayerObse
                 {
                     if(landmarkType == LandmarkType.RunNGun)
                     {
+                        levelPostcard.postcardImageComponent.sprite = levelPostcard.postcardVariantArr[levelDataSO.levelNumber];
                         levelPostcard.isTransitionToNewISOArea = false;
                         levelPostcard.mapStartPoint = null;
                         levelPostcard.levelTypeText.text = "Run n Gun";
@@ -122,6 +128,7 @@ public class LevelLandMarkController : MonoBehaviour, IGameObserver, IPlayerObse
                     }
                     else if(landmarkType == LandmarkType.Boss)
                     {
+                        levelPostcard.postcardImageComponent.sprite = levelPostcard.postcardVariantArr[levelDataSO.levelNumber];
                         levelPostcard.isTransitionToNewISOArea = false;
                         levelPostcard.mapStartPoint = null;
                         levelPostcard.levelTypeText.text = "Boss";

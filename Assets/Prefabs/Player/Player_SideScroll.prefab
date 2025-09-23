@@ -307,6 +307,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9778789a5418ce3459c1621fc0feeaf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHPStatsSOArr:
+  - {fileID: 11400000, guid: 21788c81d36a60c4f9a49313a2807b7b, type: 2}
+  - {fileID: 11400000, guid: a4611c8c4ba2e2d4fa871501aca16097, type: 2}
+  - {fileID: 11400000, guid: b3ea7fd9ba649ba4e997ce656fdcc3c7, type: 2}
+  playerUltStatsSOArr:
+  - {fileID: 11400000, guid: 0051d1f528765464f96396c4b4740120, type: 2}
+  - {fileID: 11400000, guid: 6437d7c789b076a488521621a54ec4df, type: 2}
+  - {fileID: 11400000, guid: fa70322135134854ca8af8ba457d12aa, type: 2}
+  normalBulletASPDStatsSOArr:
+  - {fileID: 11400000, guid: 99f957aa8f4c3b747adc2600c8cd7ff9, type: 2}
+  - {fileID: 11400000, guid: 745ad07ee161fb9498eb4c007c1b102a, type: 2}
+  - {fileID: 11400000, guid: 0cb9e50458a51a542891b9741f030131, type: 2}
+  normalBulletTSPDStatsSOArr:
+  - {fileID: 11400000, guid: bcc1f3142732375429d23c04d01d1814, type: 2}
+  - {fileID: 11400000, guid: 3d69566fc2a0af44aaf0e4c3ada65c9b, type: 2}
+  - {fileID: 11400000, guid: 1be238addb811c0488f66c1dbaf648a1, type: 2}
+  spreadBulletCountStatsSOArr:
+  - {fileID: 11400000, guid: 7466a3e31a3592049840d1af2be5b82a, type: 2}
+  - {fileID: 11400000, guid: a97ef2c10b9492f4daffb4cc392976a2, type: 2}
+  - {fileID: 11400000, guid: 7484293b457be5044955928293aeb403, type: 2}
+  spreadBulletASPDStatsSOArr:
+  - {fileID: 11400000, guid: c7c7616b0ff3cad449d32a4831f54bf5, type: 2}
+  - {fileID: 11400000, guid: 988a2479151e0194c8cb35d747655659, type: 2}
+  - {fileID: 11400000, guid: c60eb8144fcf04c44b955b44f276886d, type: 2}
+  laserBulletASPDStatsSOArr:
+  - {fileID: 11400000, guid: 5720ac2d05678de49a29285cea972d29, type: 2}
+  - {fileID: 11400000, guid: 6fec0ff4003c73343b051c35a22a8e66, type: 2}
+  - {fileID: 11400000, guid: 2e3eeebc0ac5ea543b4cfc3a98683576, type: 2}
   maxPlayerHP: {fileID: 11400000, guid: b3ea7fd9ba649ba4e997ce656fdcc3c7, type: 2}
   currentPlayerHP: {fileID: 11400000, guid: 21788c81d36a60c4f9a49313a2807b7b, type: 2}
   maxPlayerUltCharge: {fileID: 11400000, guid: fa70322135134854ca8af8ba457d12aa, type: 2}
@@ -346,6 +374,7 @@ MonoBehaviour:
   playerBulletShooting: {fileID: 4547212055769616017}
   keymapSO: {fileID: 11400000, guid: 60ba6974be506324da8608eb63ecbc4a, type: 2}
   playerAnimator: {fileID: 2943960317122129396}
+  playerAnimation: {fileID: 0}
   playerStatusAudioSource: {fileID: 5280446153761052152}
   playerMovementAudioSource: {fileID: 384789548389454616}
   playerAudioClipArr:
@@ -353,6 +382,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 479a4257e4eab23429eb74fa951381e9, type: 3}
   - {fileID: 8300000, guid: 5236289ce1586f54daeee260252142cb, type: 3}
   - {fileID: 8300000, guid: f34c53267467e5249bef703e41cad60c, type: 3}
+  - {fileID: 8300000, guid: b07d5ee5d8205334489387b36ed11a07, type: 3}
   antislipPhysicMat: {fileID: 6200000, guid: 12bf1c09b64cee54fb4c876c1e0a36bc, type: 2}
   currentPlayerStats: {fileID: 4114151262793558229}
   playerCurrentHP: 0
@@ -449,7 +479,7 @@ MonoBehaviour:
   weaponData: {fileID: 4114151262793558229}
   gunAudioPlayer: {fileID: 1636402538498234920}
   bulletAudioClipArr:
-  - {fileID: 8300000, guid: d7f6e299fbf70a243baef0ed7cccfa08, type: 3}
+  - {fileID: 8300000, guid: 0d48932cc5ffd1c42beb67f761d9e85f, type: 3}
   - {fileID: 8300000, guid: 6d039cc9157932941b51496a3a6a8560, type: 3}
   - {fileID: 8300000, guid: d7f6e299fbf70a243baef0ed7cccfa08, type: 3}
   bulletPooler: {fileID: 0}
@@ -990,10 +1020,10 @@ AudioSource:
   m_GameObject: {fileID: 4915805138831742553}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -7538442057315267264, guid: 83bb434f59cd7a44eaf2f58418869042, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1852,7 +1882,7 @@ AudioSource:
   m_GameObject: {fileID: 8159397769456306292}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -7538442057315267264, guid: 83bb434f59cd7a44eaf2f58418869042, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -2188,7 +2218,7 @@ AudioSource:
   m_GameObject: {fileID: 9063799722347476353}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -7538442057315267264, guid: 83bb434f59cd7a44eaf2f58418869042, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1

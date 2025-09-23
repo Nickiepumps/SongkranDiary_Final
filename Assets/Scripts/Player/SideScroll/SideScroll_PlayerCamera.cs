@@ -27,6 +27,10 @@ public class SideScroll_PlayerCamera : MonoBehaviour, IPlayerObserver
     [SerializeField] private Volume blurVolumeObject;
     [SerializeField] private VolumeProfile blurProfile;
     private DepthOfField depthOfField;
+
+    [Header("Audio Properties")]
+    [SerializeField] private AudioSource gameStatusAudioSource;
+    [SerializeField] private AudioClip[] gameStatusAudioClipArr;
     private void OnEnable()
     {
         playerSubject.AddPlayerObserver(this);   
@@ -78,6 +82,12 @@ public class SideScroll_PlayerCamera : MonoBehaviour, IPlayerObserver
             case (PlayerAction.Dead):
                 StopAllCoroutines();
                 StartCoroutine(CameraShake(1f, minShake, maxShake));
+                gameStatusAudioSource.clip = gameStatusAudioClipArr[1];
+                gameStatusAudioSource.Play();
+                return;
+            case (PlayerAction.win):
+                gameStatusAudioSource.clip = gameStatusAudioClipArr[0];
+                gameStatusAudioSource.Play();
                 return;
         }
     }

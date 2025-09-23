@@ -61,15 +61,43 @@ MonoBehaviour:
   gameControllerSubject: {fileID: 0}
   gameUIControllerSubject: {fileID: 8999487539489694780}
   goalSubject: {fileID: 0}
+  ISOPlayerSubject: {fileID: 0}
+  sideScrollIntroSubject: {fileID: 0}
   sidescrollGameController: {fileID: 0}
   enemySpawnController: {fileID: 0}
+  diaryAudioPlayer: {fileID: 0}
+  diaryAudioClipArr: []
+  ISOPlayerHud: {fileID: 0}
+  diaryNotifImage: {fileID: 0}
+  rewardWindow: {fileID: 0}
+  diaryMainWindow: {fileID: 0}
   upgradeWindow: {fileID: 0}
+  albumWindow: {fileID: 0}
+  postcardWindow: {fileID: 0}
   scoreBoard: {fileID: 0}
-  winScoreBoard: {fileID: 0}
-  loseScoreBoard: {fileID: 0}
+  scoreBoardBG: {fileID: 0}
+  bossScoreboard: {fileID: 0}
+  bossWinScoreBoard: {fileID: 0}
+  bossLoseScoreBoard: {fileID: 0}
+  runScoreboard: {fileID: 0}
+  runWinScoreBoard: {fileID: 0}
+  runLoseScoreBoard: {fileID: 0}
   scoreBoardDistantUI: {fileID: 0}
   currentProgreesionIcon: {fileID: 0}
+  loseText: {fileID: 0}
   timerText: {fileID: 0}
   hpText: {fileID: 0}
   gradeText: {fileID: 0}
+  coinAmountText: {fileID: 0}
   pauseWindow: {fileID: 0}
+  sideScrollIntroWindow: {fileID: 0}
+  tutorialExitWindow: {fileID: 0}
+  transitionWindow: {fileID: 0}
+  transitionAnimator: {fileID: 0}
+  allISOWindowArr: []
+  isNPCTalking: 0
+  gameAudioEffectSource: {fileID: 0}
+  gameAudioEffectArr:
+  - {fileID: 8300000, guid: 49bc89a34121bb74da30097cc07a13ed, type: 3}
+  - {fileID: 8300000, guid: c85b1322f4b931743809bbdfb25e87f4, type: 3}
+  - {fileID: 8300000, guid: 4c6b0cca87c2a734eb66ed85067019a1, type: 3}

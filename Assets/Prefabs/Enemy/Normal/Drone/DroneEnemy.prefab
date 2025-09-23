@@ -178,7 +178,7 @@ AudioSource:
   m_GameObject: {fileID: 3400858026870479122}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -7538442057315267264, guid: 83bb434f59cd7a44eaf2f58418869042, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -497,8 +497,8 @@ MonoBehaviour:
   enemySpriteRenderer: {fileID: 1439469271471359708}
   enemyDamagedColor: {r: 0.7490196, g: 0.87058824, b: 1, a: 1}
   enemyAudioClipArr:
-  - {fileID: 8300000, guid: 23b09dbe0ea88714e9aa30930424a734, type: 3}
-  - {fileID: 8300000, guid: 11ee784c90362f84aa8a07141177be59, type: 3}
+  - {fileID: 8300000, guid: 96fcaeac4413e3840aa42d9171ac3d24, type: 3}
+  - {fileID: 8300000, guid: f8b032f85364d9048a14b75192b30c7a, type: 3}
   enemyAudioSource: {fileID: 7969489697283037194}
 --- !u!1 &5660236189801384898
 GameObject:

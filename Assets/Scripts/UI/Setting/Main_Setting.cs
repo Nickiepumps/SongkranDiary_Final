@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using UnityEngine.Audio;
 public class Main_Setting : MonoBehaviour
 {
     [Header("Main menu")]
@@ -14,6 +15,7 @@ public class Main_Setting : MonoBehaviour
     [Header("Sounds")]
     [SerializeField] private AudioSource setting_BGMAudioSouce;
     [SerializeField] private AudioSource setting_SFXAudioSouce;
+    [SerializeField] private AudioMixer gameAudioMixer;
     [Header("Slider")]
     [SerializeField] private Slider setting_MasterSlider;
     [SerializeField] private Slider setting_BGMSlider;
@@ -36,18 +38,18 @@ public class Main_Setting : MonoBehaviour
             setting_MasterSlider.value = soundData.masterVolume;
             setting_BGMSlider.value = soundData.bgmVolume;
             setting_SFXSlider.value = soundData.sfxVolume;
-            //setting_OriginalSFXVolume = settingData.sfxVolume;
+            setting_OriginalSFXVolume = soundData.sfxVolume;
         }
         else
         {
             setting_OriginalMasterVolume = 1;
             setting_OriginalBGMVolume = 1;
-            //setting_OriginalSFXVolume = 1;
+            setting_OriginalSFXVolume = 1;
         }
         // Master
-        MasterSetting();
+        //MasterSetting();
         // BGM
-        BGMSetting();
+        //BGMSetting();
         // SFX
         //SFXSetting();
         confirmBtn.GetComponent<Button>().onClick.AddListener(() => ConfirmSoundSetting());
@@ -70,15 +72,16 @@ public class Main_Setting : MonoBehaviour
         confirmBtn.SetActive(false);
 
         // Master
-        MasterSetting();
+        //MasterSetting();
         // BGM
-        BGMSetting();
+        //BGMSetting();
         // SFX
         //SFXSetting();
     }
     public void MasterSetting()
     {
         setting_MasterValue.text = Convert.ToInt32(setting_MasterSlider.value * 100).ToString();
+        gameAudioMixer.SetFloat("Master", setting_MasterSlider.value);
         if (setting_MasterSlider.value >= setting_BGMSlider.value)
         {
             setting_BGMAudioSouce.volume = setting_BGMSlider.value;
@@ -100,6 +103,15 @@ public class Main_Setting : MonoBehaviour
             confirmBtn.SetActive(true);
         }
     }
+    public void MasterSetting(float sliderValue)
+    {
+        setting_MasterValue.text = Convert.ToInt32(setting_MasterSlider.value * 100).ToString();
+        gameAudioMixer.SetFloat("Master", Mathf.Log10(sliderValue) * 20f);
+        if (setting_MasterSlider.value != setting_OriginalMasterVolume)
+        {
+            confirmBtn.SetActive(true);
+        }
+    }
     public void BGMSetting()
     {
         if (setting_MasterSlider.value >= setting_BGMSlider.value)
@@ -116,6 +128,15 @@ public class Main_Setting : MonoBehaviour
         }
         setting_BGMValue.text = Convert.ToInt32(setting_BGMSlider.value * 100).ToString();
     }
+    public void BGMSetting(float sliderValue)
+    {
+        setting_BGMValue.text = Convert.ToInt32(setting_BGMSlider.value * 100).ToString();
+        gameAudioMixer.SetFloat("BGM", Mathf.Log10(sliderValue) * 20f);
+        if (setting_BGMSlider.value != setting_OriginalBGMVolume)
+        {
+            confirmBtn.SetActive(true);
+        }
+    }
     public void SFXSetting()
     {
         if (setting_MasterSlider.value >= setting_SFXSlider.value)
@@ -131,6 +152,15 @@ public class Main_Setting : MonoBehaviour
             confirmBtn.SetActive(true);
         }
         setting_SFXValue.text = Convert.ToInt32(setting_SFXSlider.value * 100).ToString();
+    }
+    public void SFXSetting(float sliderValue)
+    {
+        setting_SFXValue.text = Convert.ToInt32(setting_SFXSlider.value * 100).ToString();
+        gameAudioMixer.SetFloat("SFX", MathF.Log10(sliderValue) * 20f);
+        if (setting_SFXSlider.value != setting_OriginalSFXVolume)
+        {
+            confirmBtn.SetActive(true);
+        }
     }
     public void ConfirmSoundSetting()
     {

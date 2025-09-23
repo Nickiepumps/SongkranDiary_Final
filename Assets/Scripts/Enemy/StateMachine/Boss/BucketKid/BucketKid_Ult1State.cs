@@ -12,7 +12,6 @@ public class BucketKid_Ult1State : BossStateMachine
     public override void Start()
     {
         bucketKidBoss.StartCoroutine(bucketKidBoss.PlayBarrelUltAnim());
-        //bucketKidBoss.bossUlt1 = true;
         bucketKidBoss.normalAttackCount = 0;
         currentUltAttackTime = ultAttackTime;
     }

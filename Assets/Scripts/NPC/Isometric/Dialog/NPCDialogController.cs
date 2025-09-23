@@ -35,8 +35,11 @@ public class NPCDialogController : MonoBehaviour, INPCObserver, IPlayerObserver,
     private GameObject player; // Player to NPC status
 
     [Header("Dialog and Choices")]
+    [TextArea]
     [SerializeField] private List<string> dialogLists = new List<string>(); // NPC's normal dialog lists
+    [TextArea]
     [SerializeField] private List<string> correctAnswerDialogLists = new List<string>();
+    [TextArea]
     [SerializeField] private List<string> wrongAnswerDialogLists = new List<string>();
     [SerializeField] private List<string> choiceLists = new List<string>(); // Player's choice iists
     [SerializeField] private string outroDialog;

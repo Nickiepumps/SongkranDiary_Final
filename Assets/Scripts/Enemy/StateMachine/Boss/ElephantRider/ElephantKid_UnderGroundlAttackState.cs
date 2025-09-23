@@ -5,6 +5,7 @@ using UnityEngine;
 public class ElephantKid_UnderGroundlAttackState : BossStateMachine
 {
     public ElephantKid_UnderGroundlAttackState(ElephantKid_BossStateController elephantKidBoss) : base(elephantKidBoss) { }
+    private bool startOutro = false;
     public override void Start()
     {
         elephantKidBoss.StartCoroutine(elephantKidBoss.Boss_ElephantKidUndergroundAtk_Intro());
@@ -14,7 +15,11 @@ public class ElephantKid_UnderGroundlAttackState : BossStateMachine
         Obstacle_FireHydrant component = elephantKidBoss.undergroundUltPatternList.PatternList[elephantKidBoss.undergroundPattern].incomingBullet[elephantKidBoss.undergroundUltPatternList.PatternList[elephantKidBoss.undergroundPattern].incomingBullet.Count - 1].GetComponent<Obstacle_FireHydrant>();
         if (component.isShoot == true)
         {
-            elephantKidBoss.StartCoroutine(elephantKidBoss.Boss_ElephantKidUndergroundAtk_Outro());
+            if(startOutro == false)
+            {
+                elephantKidBoss.StartCoroutine(elephantKidBoss.Boss_ElephantKidUndergroundAtk_Outro());
+                startOutro = true;
+            }
         }
         if (elephantKidBoss.bossHP.currentBossHP <= 0)
         {

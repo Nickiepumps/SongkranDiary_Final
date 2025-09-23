@@ -29,17 +29,17 @@ public class WeaponDisplay : MonoBehaviour, IShootingObserver
             case (ShootingAction.switchtonormal):
                 bulletDisplay.sprite = bulletSprites[0];
                 //spreadBulletDisplay.sprite = bulletKeySprites[0];
-                laserBulletDisplay.sprite = bulletKeySprites[2];
+                laserBulletDisplay.sprite = bulletKeySprites[0];
                 return;
             case (ShootingAction.switchtospread):
                 bulletDisplay.sprite = bulletSprites[1];
                 //spreadBulletDisplay.sprite = bulletKeySprites[1];
-                laserBulletDisplay.sprite = bulletKeySprites[2];
+                laserBulletDisplay.sprite = bulletKeySprites[1];
                 return;
             case (ShootingAction.switchtolaser):
                 bulletDisplay.sprite = bulletSprites[2];
                 //spreadBulletDisplay.sprite = bulletKeySprites[0];
-                laserBulletDisplay.sprite = bulletKeySprites[3];
+                laserBulletDisplay.sprite = bulletKeySprites[2];
                 return;
             case (ShootingAction.chargeult):
                 ultAmountText.text = shootingSubject.GetComponent<PlayerSideScrollStateController>().playerUltAmount.ToString();

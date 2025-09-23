@@ -94,7 +94,11 @@ public class ElephantKid_BossObserverController : MonoBehaviour, IBossObserver, 
         elephantKidBossAnimator.SetBool("isShoot", true);
         elephantKidBossAnimator.SetFloat("attackIdleVariant", 0);
         elephantKidBossAnimator.SetFloat("prepareVariant", 0);
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(0.2f);
+        elephantKidStateController.bossAttackAudioSource.clip = elephantKidStateController.bossAttackAudioClipArr[0];
+        elephantKidStateController.bossAttackAudioSource.loop = false;
+        elephantKidStateController.bossAttackAudioSource.Play();
+        yield return new WaitForSeconds(0.2f);
         Boss_KidShootBulletSpawner(kidBulletSpawner);
         yield return new WaitForSeconds(0.3f);
         elephantKidBossAnimator.SetBool("isPrepareToAttack", false);

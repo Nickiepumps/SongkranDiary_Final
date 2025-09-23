@@ -38,14 +38,20 @@ public class ShooterEnemyObserverController : MonoBehaviour, INormalEnemyObserve
         switch (action)
         {
             case(EnemyAction.Damaged):
-                Debug.Log("Notify Hit");
                 if(enemyStats.currentEnemyHP > 0)
                 {
                     StartCoroutine(DamageIndicator()); // Enable damage flickering effect
                     enemyStats.currentEnemyHP--;
                 }
                 return;
-            case(EnemyAction.Shoot):
+            case (EnemyAction.UltDamaged):
+                if (enemyStats.currentEnemyHP > 0)
+                {
+                    StartCoroutine(DamageIndicator()); // Enable damage flickering effect
+                    enemyStats.currentEnemyHP -= 5;
+                }
+                return;
+            case (EnemyAction.Shoot):
                 if(enemySpriteRenderer.flipX == true)
                 {
                     EnemyShoot(bulletLeftSpawn, Vector2.left, true);

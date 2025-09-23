@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class Obstacle_FireHydrant : MonoBehaviour
 {
@@ -25,23 +23,40 @@ public class Obstacle_FireHydrant : MonoBehaviour
     [SerializeField] private float moveSpeed = 2f;
     [SerializeField] private Transform[] moveTargetArr;
     private Transform currentTarget;
+
+    [Header("Audio reference")]
+    [SerializeField] private AudioSource waterpipeAudioSource;
+    [SerializeField] private AudioClip[] waterPipeAudioClipArr;
+    private bool isPlayingWarningSound = false;
     private void OnEnable()
     {
         waterAnimator.enabled = true;
         currentCooldownTime = waterInitialCooldownTime;
+        if(waterpipeAudioSource.enabled == true)
+        {
+            waterpipeAudioSource.clip = waterPipeAudioClipArr[0];
+            waterpipeAudioSource.loop = true;
+            waterpipeAudioSource.Play();
+        }
     }
     private void OnDisable()
     {
+        waterpipeAudioSource.enabled = false;
         waterAnimator.enabled = false;
     }
     private void Start()
     {
-        //originalWaterYScale = water.transform.localScale.y;
         waterTrigger.enabled = false;
         currentCooldownTime = waterInitialCooldownTime;
-        //currentHoldTime = waterHoldTime;
         waterAnimator.SetBool("WaterIdle", true);
         waterAnimator.SetFloat("Variant", waterSpriteAnimVariant);
+
+        if(isShootingIndefinitely == true)
+        {
+            isShoot = true;
+            waterTrigger.enabled = true;
+            waterAnimator.SetBool("ShootInfinitely", true);
+        }
     }
     private void Update()
     {
@@ -50,12 +65,20 @@ public class Obstacle_FireHydrant : MonoBehaviour
             currentCooldownTime -= Time.deltaTime;
             if (currentCooldownTime <= 1 && currentCooldownTime > 0)
             {
+                if(isPlayingWarningSound == false && waterpipeAudioSource.enabled == true && usedByBoss == false)
+                {
+                    isPlayingWarningSound = true;
+                    waterpipeAudioSource.clip = waterPipeAudioClipArr[1];
+                    waterpipeAudioSource.loop = true;
+                    waterpipeAudioSource.Play();
+                }
                 waterAnimator.SetBool("WaterWarning", true);
                 waterAnimator.SetBool("WaterIdle", false);
                 waterAnimator.SetBool("WaterShoot", false);
             }
             if (currentCooldownTime <= 0 && isShoot == false)
             {
+                isPlayingWarningSound = false;
                 if(usedByBoss == false)
                 {
                     StartCoroutine(WaterShootAnim());
@@ -66,12 +89,6 @@ public class Obstacle_FireHydrant : MonoBehaviour
                     StartCoroutine(WaterShoot_Boss());
                 }
             }
-        }
-        else
-        {
-            isShoot = true;
-            waterTrigger.enabled = true;
-            waterAnimator.SetBool("ShootInfinitely", true);
         }
         if (isMovingPipe == true)
         {
@@ -85,13 +102,27 @@ public class Obstacle_FireHydrant : MonoBehaviour
         waterAnimator.SetBool("WaterShoot", true);
         waterAnimator.SetBool("WaterIdle", false);
         waterAnimator.SetBool("WaterWarning", false);
+        if(waterpipeAudioSource.enabled == true)
+        {
+            waterpipeAudioSource.clip = waterPipeAudioClipArr[2];
+            waterpipeAudioSource.loop = false;
+            waterpipeAudioSource.Play();
+        }
         yield return new WaitForSeconds(0.83f);
         isShoot = false;
         waterTrigger.enabled = false;
         waterAnimator.SetBool("WaterIdle", true);
         waterAnimator.SetBool("WaterWarning", false);
         waterAnimator.SetBool("WaterShoot", false);
+        if(waterpipeAudioSource.enabled == true && waterpipeAudioSource.enabled == true)
+        {
+            waterpipeAudioSource.clip = waterPipeAudioClipArr[0];
+            waterpipeAudioSource.loop = true;
+            waterpipeAudioSource.Play();
+        }
     }
+
+    // For Elephant Kid Boss
     private IEnumerator WaterShoot_Boss()
     {
         isShoot = true;
@@ -99,12 +130,19 @@ public class Obstacle_FireHydrant : MonoBehaviour
         waterAnimator.SetBool("WaterShoot", true);
         waterAnimator.SetBool("WaterIdle", false);
         waterAnimator.SetBool("WaterWarning", false);
+        if (waterpipeAudioSource.enabled == true)
+        {
+            waterpipeAudioSource.clip = waterPipeAudioClipArr[2];
+            waterpipeAudioSource.loop = false;
+            waterpipeAudioSource.Play();
+        }
         yield return new WaitForSeconds(0.83f);
         isShoot = false;
         waterTrigger.enabled = false;
         waterAnimator.SetBool("WaterIdle", true);
         waterAnimator.SetBool("WaterWarning", false);
         waterAnimator.SetBool("WaterShoot", false);
+        waterpipeAudioSource.Stop();
         gameObject.SetActive(false);
     }
     private void MovePipe(Transform pointA, Transform pointB)

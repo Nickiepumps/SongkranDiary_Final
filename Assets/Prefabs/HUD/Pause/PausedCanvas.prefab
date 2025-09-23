@@ -1741,9 +1741,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2688210741778748579}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 127.985, y: -32.497086}
   m_SizeDelta: {x: 255.97, y: 50.422}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5081110809233561625
@@ -3455,6 +3455,7 @@ MonoBehaviour:
   confirmBtn: {fileID: 2757311487031664137}
   setting_BGMAudioSouce: {fileID: 0}
   setting_SFXAudioSouce: {fileID: 0}
+  gameAudioMixer: {fileID: 24100000, guid: 83bb434f59cd7a44eaf2f58418869042, type: 2}
   setting_MasterSlider: {fileID: 1800741052173376897}
   setting_BGMSlider: {fileID: 8887015118612959447}
   setting_SFXSlider: {fileID: 817578928674424430}
@@ -3988,9 +3989,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2688210741778748579}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 127.985, y: -97.49126}
   m_SizeDelta: {x: 255.97, y: 50.422}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8983021979741893199
@@ -4466,7 +4467,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 6761707603516866445}
   m_HandleRect: {fileID: 3853820677078085281}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 1
@@ -4476,7 +4477,7 @@ MonoBehaviour:
       - m_Target: {fileID: 6198385873256860080}
         m_TargetAssemblyTypeName: Main_Setting, Assembly-CSharp
         m_MethodName: MasterSetting
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5219,9 +5220,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2688210741778748579}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 127.985, y: -227.4796}
   m_SizeDelta: {x: 255.97, y: 50.422}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1716316694770524269
@@ -5252,7 +5253,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 743fef76ce3c28c40aab9d3474e709c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d6f3ed1beecd08e4082520785898247e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6099,7 +6100,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 8962879238654426002}
   m_HandleRect: {fileID: 3587874212997107639}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 1
@@ -6109,7 +6110,7 @@ MonoBehaviour:
       - m_Target: {fileID: 6198385873256860080}
         m_TargetAssemblyTypeName: Main_Setting, Assembly-CSharp
         m_MethodName: BGMSetting
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10451,9 +10452,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2688210741778748579}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 127.985, y: -162.48543}
   m_SizeDelta: {x: 255.97, y: 50.422}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6468586626999916063
@@ -10484,7 +10485,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d6f3ed1beecd08e4082520785898247e, type: 3}
+  m_Sprite: {fileID: 2144727402, guid: 53f201b7f9e486746b3c81a5490581fb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10523,8 +10524,8 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 0489fac9fd03a5740ad9fd34321c19c4, type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: 0489fac9fd03a5740ad9fd34321c19c4, type: 3}
+    m_HighlightedSprite: {fileID: 827704530, guid: b87167d5044c35641b3f9ac7d12f9183, type: 3}
+    m_PressedSprite: {fileID: 2144727402, guid: 53f201b7f9e486746b3c81a5490581fb, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -13002,7 +13003,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1376965029338044210
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13317,7 +13318,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 8307198522626774971}
   m_HandleRect: {fileID: 4030948386194160083}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 1
@@ -13327,7 +13328,7 @@ MonoBehaviour:
       - m_Target: {fileID: 6198385873256860080}
         m_TargetAssemblyTypeName: Main_Setting, Assembly-CSharp
         m_MethodName: SFXSetting
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -13351,7 +13352,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8264729414642369578
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14779,7 +14780,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2008177719641737775
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16183,12 +16184,12 @@ MonoBehaviour:
   confirmBtn: {fileID: 2757311487031664137}
   keymapDropdown: {fileID: 5965382016690300402}
   keymapDiagramArr:
-  - {fileID: 5863231322742277510}
   - {fileID: 8135231380046439236}
+  - {fileID: 5863231322742277510}
   - {fileID: 6997335846385832709}
   keymapArr:
-  - {fileID: 11400000, guid: d45dfc111f6fbe14ba9e2432559f8397, type: 2}
   - {fileID: 11400000, guid: 60ba6974be506324da8608eb63ecbc4a, type: 2}
+  - {fileID: 11400000, guid: d45dfc111f6fbe14ba9e2432559f8397, type: 2}
   - {fileID: 11400000, guid: 3051e8aee76b0264d8c2d75a4168dbce, type: 2}
   iso_PlayerStateController: {fileID: 0}
   sidescroll_PlayerStateController: {fileID: 0}
@@ -18604,7 +18605,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7701784495116246876
 RectTransform:
   m_ObjectHideFlags: 0

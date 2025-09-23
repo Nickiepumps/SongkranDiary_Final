@@ -10,6 +10,9 @@ public class Obstacle_WaterPipe_Rotate : MonoBehaviour
     [SerializeField] private float aspd;
     private float currentASPD;
     [SerializeField] private float rotateSpeed;
+
+    [Header("Audio Properties")]
+    [SerializeField] private AudioSource waterpipeAudioSource;
     private void Start()
     {
         currentASPD = aspd;
@@ -25,6 +28,7 @@ public class Obstacle_WaterPipe_Rotate : MonoBehaviour
             GameObject enemyBullet = enemyBulletPooler.EnableObstacleBullet();
             if (enemyBullet != null)
             {
+                waterpipeAudioSource.Play();
                 enemyBullet.transform.position = transform.position;
                 enemyBullet.transform.rotation = Quaternion.Euler(transform.localRotation.eulerAngles.x, transform.localRotation.eulerAngles.y, transform.localRotation.eulerAngles.z - 180);
                 enemyBullet.GetComponent<EnemyBullet>().bulletDirection = -lookDirection;

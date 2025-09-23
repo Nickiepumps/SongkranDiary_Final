@@ -34,13 +34,21 @@ public class DroneEnemyObserverController : MonoBehaviour, INormalEnemyObserver
         switch (action)
         {
             case(EnemyAction.Damaged):
-                Debug.Log("Notify Hit");
                 if(droneEnemyStats.currentEnemyHP > 0)
                 {
                     StartCoroutine(DamageIndicator()); // Enable damage flickering effect
                     enemyAudioSource.clip = enemyAudioClipArr[0];
                     enemyAudioSource.Play();
                     droneEnemyStats.currentEnemyHP--;
+                }
+                return;
+            case (EnemyAction.UltDamaged):
+                if (droneEnemyStats.currentEnemyHP > 0)
+                {
+                    StartCoroutine(DamageIndicator()); // Enable damage flickering effect
+                    enemyAudioSource.clip = enemyAudioClipArr[1];
+                    enemyAudioSource.Play();
+                    droneEnemyStats.currentEnemyHP -= 5;
                 }
                 return;
             case (EnemyAction.Explode):

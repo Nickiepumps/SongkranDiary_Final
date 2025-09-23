@@ -34,6 +34,12 @@ public class Main_ControlSetting : MonoBehaviour
                 keymapDropdown.value = keymapData.keymapSO.id;
                 keymapDiagramArr[keymapDropdown.value].SetActive(true);
             }
+            else
+            {
+                currentKeymapSO = keymapArr[0];
+                keymapDiagramArr[0].SetActive(true);
+                keymapDropdown.value = 0;
+            }
         }
         else if(keymapData == null || keymapData.keymapSO == null)
         {

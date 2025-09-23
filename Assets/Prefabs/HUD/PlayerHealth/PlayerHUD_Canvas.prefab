@@ -235,7 +235,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 754687257, guid: a385b7b969d17ab4dbae132e00429f31, type: 3}
+  m_Sprite: {fileID: 854107269, guid: a385b7b969d17ab4dbae132e00429f31, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -407,10 +407,9 @@ MonoBehaviour:
   - {fileID: 854107269, guid: a385b7b969d17ab4dbae132e00429f31, type: 3}
   - {fileID: -605190634, guid: a385b7b969d17ab4dbae132e00429f31, type: 3}
   bulletKeySprites:
-  - {fileID: 275184025, guid: a385b7b969d17ab4dbae132e00429f31, type: 3}
-  - {fileID: 147493107, guid: a385b7b969d17ab4dbae132e00429f31, type: 3}
-  - {fileID: 754687257, guid: a385b7b969d17ab4dbae132e00429f31, type: 3}
-  - {fileID: 1700510973, guid: a385b7b969d17ab4dbae132e00429f31, type: 3}
+  - {fileID: 854107269, guid: a385b7b969d17ab4dbae132e00429f31, type: 3}
+  - {fileID: -605190634, guid: a385b7b969d17ab4dbae132e00429f31, type: 3}
+  - {fileID: -941792481, guid: a385b7b969d17ab4dbae132e00429f31, type: 3}
   ultAmountText: {fileID: 5291523961786088370}
 --- !u!1 &3426172069522805667
 GameObject:
@@ -997,7 +996,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 754687257, guid: a385b7b969d17ab4dbae132e00429f31, type: 3}
+  m_Sprite: {fileID: 854107269, guid: a385b7b969d17ab4dbae132e00429f31, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

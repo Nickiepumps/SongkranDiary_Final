@@ -8,6 +8,7 @@ public class LevelDataSO : ScriptableObject
     public string unitySceneName;
     public Sprite levelImagePostcard;
     public GameObject[] isoLevelBoundary;
+    public string[] isoLevelBoundaryName;
     public Transform nextLevel;
     public bool isClear = false;
     public bool isClearFirstTime = true;

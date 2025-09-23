@@ -25,7 +25,7 @@ public class AlbumDataHandler : MonoBehaviour
     {
         if (Directory.Exists(Application.dataPath) == false)
         {
-            Directory.CreateDirectory(Application.dataPath);
+            Directory.CreateDirectory(Application.persistentDataPath);
         }
         AlbumData albumData = new AlbumData();
         for(int i = 0; i < albumData.albumImagesSO.Count; i++)
@@ -33,13 +33,13 @@ public class AlbumDataHandler : MonoBehaviour
             albumData.albumImagesSO[i] = albumDisplayController.albumDisplaySlotArr[i].albumImageSO;
         }
         string albumDataToJson = JsonUtility.ToJson(albumData);
-        File.WriteAllText(Application.dataPath + "/albumData.json", albumDataToJson);
+        File.WriteAllText(Application.persistentDataPath + "/albumData.json", albumDataToJson);
     }
     public void SaveAlbumData(SideScroll_AlbumController sidescrollAlbumController)
     {
-        if (Directory.Exists(Application.dataPath) == false)
+        if (Directory.Exists(Application.persistentDataPath) == false)
         {
-            Directory.CreateDirectory(Application.dataPath);
+            Directory.CreateDirectory(Application.persistentDataPath);
         }
         AlbumData albumData = new AlbumData();
         for (int i = 0; i < sidescrollAlbumController.albumImageArr.Length; i++)
@@ -47,13 +47,13 @@ public class AlbumDataHandler : MonoBehaviour
             albumData.albumImagesSO.Add(sidescrollAlbumController.albumImageArr[i]);
         }
         string albumDataToJson = JsonUtility.ToJson(albumData);
-        File.WriteAllText(Application.dataPath + "/albumData.json", albumDataToJson);
+        File.WriteAllText(Application.persistentDataPath + "/albumData.json", albumDataToJson);
     }
     public void SaveAlbumData(AlbumSO albumSO)
     {
-        if (Directory.Exists(Application.dataPath) == false)
+        if (Directory.Exists(Application.persistentDataPath) == false)
         {
-            Directory.CreateDirectory(Application.dataPath);
+            Directory.CreateDirectory(Application.persistentDataPath);
         }
         AlbumData albumData = LoadAlbumData();
         if (albumData == null)
@@ -79,15 +79,15 @@ public class AlbumDataHandler : MonoBehaviour
             }
         }
         string albumDataToJson = JsonUtility.ToJson(albumData);
-        File.WriteAllText(Application.dataPath + "/albumData.json", albumDataToJson);
+        File.WriteAllText(Application.persistentDataPath + "/albumData.json", albumDataToJson);
     }
     public AlbumData LoadAlbumData()
     {
-        if(File.Exists(Application.dataPath + "/albumData.json") == false)
+        if(File.Exists(Application.persistentDataPath + "/albumData.json") == false)
         {
             return null;
         }
-        string loadedAlbumDataJson = File.ReadAllText(Application.dataPath + "/albumData.json");
+        string loadedAlbumDataJson = File.ReadAllText(Application.persistentDataPath + "/albumData.json");
         AlbumData loadedAlbumData = JsonUtility.FromJson<AlbumData>(loadedAlbumDataJson);
         return loadedAlbumData;
     }
@@ -96,13 +96,13 @@ public class AlbumDataHandler : MonoBehaviour
         AlbumData albumData = LoadAlbumData();
         if (albumData != null)
         {
-            if (Directory.Exists(Application.dataPath) == false)
+            if (Directory.Exists(Application.persistentDataPath) == false)
             {
-                Directory.CreateDirectory(Application.dataPath);
+                Directory.CreateDirectory(Application.persistentDataPath);
             }
             albumData = null;
             string albumDataToJson = JsonUtility.ToJson(albumData);
-            File.WriteAllText(Application.dataPath + "/albumData.json", albumDataToJson);
+            File.WriteAllText(Application.persistentDataPath + "/albumData.json", albumDataToJson);
         }
     }
 }

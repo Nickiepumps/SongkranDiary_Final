@@ -21,6 +21,7 @@ TagManager:
   - Side_Interactable
   - Obstacle
   - VacuumArea
+  - PlayerUlt
   layers:
   - Default
   - TransparentFX

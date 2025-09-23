@@ -58,9 +58,12 @@ public class GameUIController : MonoBehaviour, IGameObserver, IPlayerObserver
     [SerializeField] private Image scoreBoardDistantUI;
     [SerializeField] private Image currentProgreesionIcon;
     [SerializeField] private TMP_Text loseText;
-    [SerializeField] private TMP_Text timerText;
-    [SerializeField] private TMP_Text hpText;
-    [SerializeField] private TMP_Text gradeText;
+    [SerializeField] private TMP_Text run_TimerText;
+    [SerializeField] private TMP_Text boss_TimerText;
+    [SerializeField] private TMP_Text run_HPText;
+    [SerializeField] private TMP_Text boss_HPText;
+    [SerializeField] private TMP_Text run_GradeText;
+    [SerializeField] private TMP_Text boss_GradeText;
     [SerializeField] private TMP_Text coinAmountText;
     [Space]
     [Header("Pause Window")]
@@ -78,6 +81,11 @@ public class GameUIController : MonoBehaviour, IGameObserver, IPlayerObserver
 
     [SerializeField] private GameObject[] allISOWindowArr;
     [HideInInspector] public bool isNPCTalking = false;
+
+    [Space]
+    [Header("UI and Game Audio Effects")]
+    [SerializeField] private AudioSource gameAudioEffectSource;
+    [SerializeField] private AudioClip[] gameAudioEffectArr;
     private void OnEnable()
     {
         if (levelType == LevelType.IsoLevel)
@@ -309,6 +317,8 @@ public class GameUIController : MonoBehaviour, IGameObserver, IPlayerObserver
     {
         loseText.GetComponent<Animation>().Play();
         yield return new WaitUntil(() => loseText.GetComponent<Animation>().isPlaying == false);
+        gameAudioEffectSource.clip = gameAudioEffectArr[1];
+        gameAudioEffectSource.Play();
         scoreBoardBG.SetActive(true);
         bossLoseScoreBoard.SetActive(true);
         while(currentProgreesionIcon.rectTransform.anchoredPosition.x < progressValue.x)
@@ -330,6 +340,8 @@ public class GameUIController : MonoBehaviour, IGameObserver, IPlayerObserver
         sideScrollIntroWindow.reachGoalGroup.SetActive(true);
         StartCoroutine(sideScrollIntroWindow.StartReachGoalAnimation());
         yield return new WaitUntil(() => sideScrollIntroWindow.finishCoroutine == true); // Change this when we have player win anim
+        gameAudioEffectSource.clip = gameAudioEffectArr[0];
+        gameAudioEffectSource.Play();
         transitionWindow.SetActive(true);
         transitionWindow.GetComponentInChildren<Animator>().SetInteger("Transition", 0);
         yield return new WaitForSeconds(1f);
@@ -342,10 +354,10 @@ public class GameUIController : MonoBehaviour, IGameObserver, IPlayerObserver
         scoreBoardBG.SetActive(true);
         runScoreboard.SetActive(true);
         runLoseScoreBoard.SetActive(false);
-        timerText.text = sidescrollGameController.currentTime;
-        hpText.text = sidescrollGameController.UpdatePlayerHPCount().ToString();
+        run_TimerText.text = sidescrollGameController.currentTime;
+        run_HPText.text = sidescrollGameController.UpdatePlayerHPCount().ToString();
         coinAmountText.text = sidescrollGameController.coinCounter.ToString();
-        gradeText.text = sidescrollGameController.Result();
+        run_GradeText.text = sidescrollGameController.Result();
         yield return null;
     }
     private IEnumerator BossKnockOut()
@@ -359,14 +371,16 @@ public class GameUIController : MonoBehaviour, IGameObserver, IPlayerObserver
         yield return new WaitForSeconds(1f);
         transitionWindow.GetComponentInChildren<Animator>().SetInteger("Transition", 1);
         // Show win scoreboard
+        gameAudioEffectSource.clip = gameAudioEffectArr[0];
+        gameAudioEffectSource.Play();
         scoreBoard.SetActive(true);
         bossWinScoreBoard.SetActive(true);
         scoreBoardBG.SetActive(true);
         bossScoreboard.SetActive(true);
         bossLoseScoreBoard.SetActive(false);
-        timerText.text = sidescrollGameController.currentTime;
-        hpText.text = sidescrollGameController.UpdatePlayerHPCount().ToString();
-        gradeText.text = sidescrollGameController.Result();
+        boss_TimerText.text = sidescrollGameController.currentTime;
+        boss_HPText.text = sidescrollGameController.UpdatePlayerHPCount().ToString();
+        boss_GradeText.text = sidescrollGameController.Result();
         yield return null;
     }
 }

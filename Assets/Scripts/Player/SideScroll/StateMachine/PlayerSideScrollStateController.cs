@@ -16,7 +16,8 @@ public class PlayerSideScrollStateController : PlayerSubject
     public KeyMapSO keymapSO;
     
     [Header("Player Animator Reference")]
-    public Animator playerAnimator;
+    public Animator playerAnimator; // For main movement animation
+    public Animation playerAnimation; // For invinsible animation
 
     [Header("Player Audio Reference")]
     public AudioSource playerStatusAudioSource;
@@ -198,16 +199,25 @@ public class PlayerSideScrollStateController : PlayerSubject
             switch (collision.tag)
             {
                 case ("EnemyHitBox"): // For Player to collide with
-                    NotifyPlayerObserver(PlayerAction.Damaged);
+                    if (isWinRunNGun == false && isWinBoss == false)
+                    {
+                        NotifyPlayerObserver(PlayerAction.Damaged);
+                    }
                     return;
                 case ("EnemyBullet"):
-                    NotifyPlayerObserver(PlayerAction.Damaged);
+                    if(isWinRunNGun == false && isWinBoss == false)
+                    {
+                        NotifyPlayerObserver(PlayerAction.Damaged);
+                    }
                     return;
                 case ("DamageObstacle"):
                     NotifyPlayerObserver(PlayerAction.Damaged);
                     return;
                 case ("BlindHitBox"):
-                    NotifyPlayerObserver(PlayerAction.Blind);
+                    if (isWinRunNGun == false && isWinBoss == false)
+                    {
+                        NotifyPlayerObserver(PlayerAction.Blind);
+                    }
                     return;
                 case ("E_Boundary"):
                     if (playerCurrentHP == 1)

@@ -110,18 +110,18 @@ public class SideScroll_StageClearDataHandler : MonoBehaviour, IGameObserver, IB
     }
     public void UpdateSideScrollStageData(StageClearData updatedData)
     {
-        if (Directory.Exists(Application.dataPath) == false)
+        if (Directory.Exists(Application.persistentDataPath) == false)
         {
-            Directory.CreateDirectory(Application.dataPath);
+            Directory.CreateDirectory(Application.persistentDataPath);
         }
         string stageClearJson = JsonUtility.ToJson(updatedData);
-        File.WriteAllText(Application.dataPath + "/stageClear.json", stageClearJson);
+        File.WriteAllText(Application.persistentDataPath + "/stageClear.json", stageClearJson);
     }
     public void SaveSideScrollStageClear()
     {
-        if (Directory.Exists(Application.dataPath) == false)
+        if (Directory.Exists(Application.persistentDataPath) == false)
         {
-            Directory.CreateDirectory(Application.dataPath);
+            Directory.CreateDirectory(Application.persistentDataPath);
         }
 
         StageClearData stageClearData = LoadSideScrollStageClear();
@@ -129,6 +129,10 @@ public class SideScroll_StageClearDataHandler : MonoBehaviour, IGameObserver, IB
         {
             stageClearData = new StageClearData();
             stageClearData.levelDataSOLists.Add(levelDataSO);
+            for(int i = 0; i < levelDataSO.isoLevelBoundaryName.Length; i++)
+            {
+                stageClearData.levelBoundaryNameLists.Add(levelDataSO.isoLevelBoundaryName[i]);
+            }
             stageClearData.levelClearStatus.Add(true);
             stageClearData.levelFirstClearStatus.Add(true);
             for(int i = 0; i < coinIDLists.Count; i++)
@@ -160,29 +164,29 @@ public class SideScroll_StageClearDataHandler : MonoBehaviour, IGameObserver, IB
             stageClearData.coinIDLists.Sort();
         }
         string stageClearJson = JsonUtility.ToJson(stageClearData);
-        File.WriteAllText(Application.dataPath + "/stageClear.json", stageClearJson);
+        File.WriteAllText(Application.persistentDataPath + "/stageClear.json", stageClearJson);
     }
     public void ClearSideScrollStageClear()
     {
         StageClearData stageClearData = LoadSideScrollStageClear();
         if (stageClearData != null)
         {
-            if (Directory.Exists(Application.dataPath) == false)
+            if (Directory.Exists(Application.persistentDataPath) == false)
             {
-                Directory.CreateDirectory(Application.dataPath);
+                Directory.CreateDirectory(Application.persistentDataPath);
             }
             stageClearData = null;
             string stageClearJson = JsonUtility.ToJson(stageClearData);
-            File.WriteAllText(Application.dataPath + "/stageClear.json", stageClearJson);
+            File.WriteAllText(Application.persistentDataPath + "/stageClear.json", stageClearJson);
         }
     }
     public StageClearData LoadSideScrollStageClear()
     {
-        if (File.Exists(Application.dataPath + "/stageClear.json") == false)
+        if (File.Exists(Application.persistentDataPath + "/stageClear.json") == false)
         {
             return null;
         }
-        string loadedStageClearJson = File.ReadAllText(Application.dataPath + "/stageClear.json");
+        string loadedStageClearJson = File.ReadAllText(Application.persistentDataPath + "/stageClear.json");
         StageClearData loadedStageClear = JsonUtility.FromJson<StageClearData>(loadedStageClearJson);
         return loadedStageClear;
     }

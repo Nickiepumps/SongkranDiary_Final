@@ -74,6 +74,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2611658516691022250, guid: fc93ee8a1b8aa084daef5402a2479349, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3803508758632816481, guid: fc93ee8a1b8aa084daef5402a2479349, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -154,11 +158,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4156707489993337057, guid: fc93ee8a1b8aa084daef5402a2479349, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4575380832464873816, guid: fc93ee8a1b8aa084daef5402a2479349, type: 3}
       propertyPath: m_Name
       value: ScoreBoardCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 4575380832464873816, guid: fc93ee8a1b8aa084daef5402a2479349, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642838367507049971, guid: fc93ee8a1b8aa084daef5402a2479349, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -269,14 +281,6 @@ PrefabInstance:
     - target: {fileID: 8812060425103443856, guid: fc93ee8a1b8aa084daef5402a2479349, type: 3}
       propertyPath: m_AnchorMin.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8812060425103443856, guid: fc93ee8a1b8aa084daef5402a2479349, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 298.60184
-      objectReference: {fileID: 0}
-    - target: {fileID: 8812060425103443856, guid: fc93ee8a1b8aa084daef5402a2479349, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -43.2335
       objectReference: {fileID: 0}
     - target: {fileID: 9052878573416921778, guid: fc93ee8a1b8aa084daef5402a2479349, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

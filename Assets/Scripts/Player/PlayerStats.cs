@@ -7,7 +7,16 @@ public class PlayerStats : MonoBehaviour
     // Delete this variable when finished prototype
     //[SerializeField] private TempPlayerDataSave tempData;
 
-    // To do: Use this script for saving data
+    // This container use for storing data from Scriptable object to use them when reload the game
+    [Header("Player and Weapon Stats Container")]
+    public PlayerStatSO[] playerHPStatsSOArr;
+    public PlayerStatSO[] playerUltStatsSOArr;
+    public WeaponSO[] normalBulletASPDStatsSOArr;
+    public WeaponSO[] normalBulletTSPDStatsSOArr;
+    public WeaponSO[] spreadBulletCountStatsSOArr;
+    public WeaponSO[] spreadBulletASPDStatsSOArr;
+    public WeaponSO[] laserBulletASPDStatsSOArr;
+
     [Header("Player Stats")]
     public PlayerStatSO maxPlayerHP;
     public PlayerStatSO currentPlayerHP;
@@ -53,31 +62,31 @@ public class PlayerStats : MonoBehaviour
         {
             if(playerData.hpSO != null)
             {
-                currentPlayerHP = playerData.hpSO;
+                currentPlayerHP = playerHPStatsSOArr[playerData.hpLevel - 1];
             }
             if(playerData.ultChargeSO != null)
             {
-                currentPlayerUltCharge = playerData.ultChargeSO;
+                currentPlayerUltCharge = playerUltStatsSOArr[playerData.ultChargeLevel - 1];
             }
             if(playerData.bulletNormalASPDSO != null)
             {
-                currentNormalASPD = playerData.bulletNormalASPDSO;
+                currentNormalASPD = normalBulletASPDStatsSOArr[playerData.bulletNormalASPDLevel - 1];
             }
             if(playerData.bulletNormalTSPDSO != null)
             {
-                currentWeaponTravelSpeed = playerData.bulletNormalTSPDSO;
+                currentWeaponTravelSpeed = normalBulletTSPDStatsSOArr[playerData.bulletNormalTSPDLevel - 1];
             }
             if(playerData.bulletSpreadCountSO != null)
             {
-                currentWeaponSprdCount = playerData.bulletSpreadCountSO;
+                currentWeaponSprdCount = spreadBulletCountStatsSOArr[playerData.bulletSpreadCountLevel - 1];
             }
             if (playerData.bulletSpreadASPDSO != null)
             {
-                currentSprdBulletASPD = playerData.bulletSpreadASPDSO;
+                currentSprdBulletASPD = spreadBulletASPDStatsSOArr[playerData.bulletSpreadASPDLevel - 1];
             }
             if (playerData.bulletLaserASPDSO != null)
             {
-                currentLsrBulletASPD = playerData.bulletLaserASPDSO;
+                currentLsrBulletASPD = laserBulletASPDStatsSOArr[playerData.bulletLaserASPDLevel - 1];
             }
             spreadBulletUnlocked = playerData.bulletSpreadUnlocked;
             laserBulletUnlocked = playerData.bulletLaserUnlocked;

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +9,8 @@ public class DiaryController : MonoBehaviour
     [SerializeField] private GameObject leftWindow;
     [SerializeField] private GameObject rightWindow;
     [SerializeField] private Image buttonImage;
+
+    [SerializeField] private GameUIController gameUIController;
     private RectTransform currentWindowButtonTransform;
     private void OnEnable()
     {
@@ -29,5 +32,12 @@ public class DiaryController : MonoBehaviour
         buttonImage.raycastTarget = true;
         leftWindow.SetActive(false);
         rightWindow.SetActive(false);
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            gameUIController.GetComponent<GameUIController>().CloseDiaryWindow();
+        }
     }
 }

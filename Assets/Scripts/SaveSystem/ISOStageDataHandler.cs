@@ -21,6 +21,20 @@ public class ISOStageDataHandler : MonoBehaviour
     {
         // Assign logic when there are more object to update in the future
     }
+    public void ClearISOStageData()
+    {
+        ISOStageData isoStageData = LoadISOStageData();
+        if(isoStageData != null)
+        {
+            if (Directory.Exists(Application.persistentDataPath) == false)
+            {
+                Directory.CreateDirectory(Application.persistentDataPath);
+            }
+            isoStageData = null;
+            string loadedISOStageJson = JsonUtility.ToJson(isoStageData);
+            File.WriteAllText(Application.persistentDataPath + "/IsoStage.json", loadedISOStageJson);
+        }
+    }
     public void UpdateIsoNPCInteraction(string npcID)
     {
         ISOStageData isoStageData = LoadISOStageData();
@@ -46,20 +60,20 @@ public class ISOStageDataHandler : MonoBehaviour
             isoStageData = new ISOStageData();
             isoStageData.npcIDLists.Add(npcID);
         }
-        if(Directory.Exists(Application.dataPath) == false)
+        if(Directory.Exists(Application.persistentDataPath) == false)
         {
-            Directory.CreateDirectory(Application.dataPath);
+            Directory.CreateDirectory(Application.persistentDataPath);
         }
         string isoStageDataJson = JsonUtility.ToJson(isoStageData);
-        File.WriteAllText(Application.dataPath + "/IsoStage.json", isoStageDataJson);
+        File.WriteAllText(Application.persistentDataPath + "/IsoStage.json", isoStageDataJson);
     }
     public ISOStageData LoadISOStageData()
     {
-        if(File.Exists(Application.dataPath + "/IsoStage.json") == false)
+        if(File.Exists(Application.persistentDataPath + "/IsoStage.json") == false)
         {
             return null;
         }
-        string loadedISOStageJson = File.ReadAllText(Application.dataPath + "/IsoStage.json");
+        string loadedISOStageJson = File.ReadAllText(Application.persistentDataPath + "/IsoStage.json");
         ISOStageData isoStageData = JsonUtility.FromJson<ISOStageData>(loadedISOStageJson);
         return isoStageData;
     }

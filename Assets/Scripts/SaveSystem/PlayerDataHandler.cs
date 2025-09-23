@@ -35,45 +35,35 @@ public class PlayerDataHandler : MonoBehaviour
             }
             if (playerData.hpSO != null)
             {
-                playerStats.currentPlayerHP = playerData.hpSO;
+                playerStats.currentPlayerHP = playerStats.playerHPStatsSOArr[playerData.hpLevel - 1];
             }
             if (playerData.ultChargeSO != null)
             {
-                playerStats.currentPlayerUltCharge = playerData.ultChargeSO;
+                playerStats.currentPlayerUltCharge = playerStats.playerUltStatsSOArr[playerData.ultChargeLevel - 1];
             }
             if (playerData.bulletNormalASPDSO != null)
             {
-                playerStats.currentNormalASPD = playerData.bulletNormalASPDSO;
+                playerStats.currentNormalASPD = playerStats.normalBulletASPDStatsSOArr[playerData.bulletNormalASPDLevel - 1];
             }
             if (playerData.bulletNormalTSPDSO != null)
             {
-                playerStats.currentWeaponTravelSpeed = playerData.bulletNormalTSPDSO;
+                playerStats.currentWeaponTravelSpeed = playerStats.normalBulletTSPDStatsSOArr[playerData.bulletNormalTSPDLevel - 1];
             }
             if (playerData.bulletSpreadCountSO != null)
             {
-                playerStats.currentWeaponSprdCount = playerData.bulletSpreadCountSO;
+                playerStats.currentWeaponSprdCount = playerStats.spreadBulletCountStatsSOArr[playerData.bulletSpreadCountLevel - 1];
             }
             if (playerData.bulletSpreadASPDSO != null)
             {
-                playerStats.currentSprdBulletASPD = playerData.bulletSpreadASPDSO;
+                playerStats.currentSprdBulletASPD = playerStats.spreadBulletASPDStatsSOArr[playerData.bulletSpreadASPDLevel - 1];
             }
             if (playerData.bulletLaserASPDSO != null)
             {
-                playerStats.currentLsrBulletASPD = playerData.bulletLaserASPDSO;
+                playerStats.currentLsrBulletASPD = playerStats.laserBulletASPDStatsSOArr[playerData.bulletLaserASPDLevel - 1];
             }
             playerStats.spreadBulletUnlocked = playerData.bulletSpreadUnlocked;
             playerStats.laserBulletUnlocked = playerData.bulletLaserUnlocked;
             playerStats.coinAmount = playerData.Coin;
-            /*playerStats.currentPlayerHP = playerData.hpSO;
-            playerStats.currentPlayerUltCharge = playerData.ultChargeSO;
-            playerStats.currentNormalASPD = playerData.bulletNormalASPDSO;
-            playerStats.currentWeaponTravelSpeed = playerData.bulletNormalTSPDSO;
-            playerStats.currentSprdBulletASPD = playerData.bulletSpreadASPDSO;
-            playerStats.currentWeaponSprdCount = playerData.bulletSpreadCountSO;
-            playerStats.currentLsrBulletASPD = playerData.bulletLaserASPDSO;
-            playerStats.coinAmount = playerData.Coin;
-            playerStats.spreadBulletUnlocked = playerData.bulletSpreadUnlocked;
-            playerStats.laserBulletUnlocked = playerData.bulletLaserUnlocked;*/
         }
         else if (playerData != null && isMainMenu == true)
         {
@@ -87,12 +77,12 @@ public class PlayerDataHandler : MonoBehaviour
         {
             playerData.Coin += playerStat.coinAmount;
         }
-        if (Directory.Exists(Application.dataPath) == false)
+        if (Directory.Exists(Application.persistentDataPath) == false)
         {
-            Directory.CreateDirectory(Application.dataPath);
+            Directory.CreateDirectory(Application.persistentDataPath);
         }
         string playerDataJson = JsonUtility.ToJson(playerData);
-        File.WriteAllText(Application.dataPath + "/playerData.json", playerDataJson);
+        File.WriteAllText(Application.persistentDataPath + "/playerData.json", playerDataJson);
     }
     public void UpdatePlayerData(int coinAmount)
     {
@@ -101,18 +91,18 @@ public class PlayerDataHandler : MonoBehaviour
         {
             playerData.Coin += coinAmount;
         }
-        if (Directory.Exists(Application.dataPath) == false)
+        if (Directory.Exists(Application.persistentDataPath) == false)
         {
-            Directory.CreateDirectory(Application.dataPath);
+            Directory.CreateDirectory(Application.persistentDataPath);
         }
         string playerDataJson = JsonUtility.ToJson(playerData);
-        File.WriteAllText(Application.dataPath + "/playerData.json", playerDataJson);
+        File.WriteAllText(Application.persistentDataPath + "/playerData.json", playerDataJson);
     }
     public void SavePlayerData()
     {
-        if (Directory.Exists(Application.dataPath) == false)
+        if (Directory.Exists(Application.persistentDataPath) == false)
         {
-            Directory.CreateDirectory(Application.dataPath);
+            Directory.CreateDirectory(Application.persistentDataPath);
         }
 
         PlayerData playerData = new PlayerData();
@@ -137,15 +127,15 @@ public class PlayerDataHandler : MonoBehaviour
         playerData.bulletLaserASPDSO = playerStats.currentLsrBulletASPD;
 
         string playerDataJson = JsonUtility.ToJson(playerData);
-        File.WriteAllText(Application.dataPath + "/playerData.json", playerDataJson);
+        File.WriteAllText(Application.persistentDataPath + "/playerData.json", playerDataJson);
     }
     public PlayerData LoadPlayerData()
     {
-        if (File.Exists(Application.dataPath + "/playerData.json") == false)
+        if (File.Exists(Application.persistentDataPath + "/playerData.json") == false)
         {
             return null;
         }
-        string loadedPlayerDataJson = File.ReadAllText(Application.dataPath + "/playerData.json");
+        string loadedPlayerDataJson = File.ReadAllText(Application.persistentDataPath + "/playerData.json");
         PlayerData loadedPlayerData = JsonUtility.FromJson<PlayerData>(loadedPlayerDataJson);
         return loadedPlayerData;
     }
@@ -154,14 +144,14 @@ public class PlayerDataHandler : MonoBehaviour
         PlayerData playerData = LoadPlayerData();
         if(playerData != null)
         {
-            if (Directory.Exists(Application.dataPath) == false)
+            if (Directory.Exists(Application.persistentDataPath) == false)
             {
-                Directory.CreateDirectory(Application.dataPath);
+                Directory.CreateDirectory(Application.persistentDataPath);
             }
             //playerData = new PlayerData();
             playerData = null;
             string playerDataJson = JsonUtility.ToJson(playerData);
-            File.WriteAllText(Application.dataPath + "/playerData.json", playerDataJson);
+            File.WriteAllText(Application.persistentDataPath + "/playerData.json", playerDataJson);
         }
     }
 }

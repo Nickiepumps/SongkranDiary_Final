@@ -116,23 +116,27 @@ public class BucketKid_BossObserverController : MonoBehaviour, IBossObserver, IG
         bossSubject.GetComponent<BucketKid_BossStateController>().isBossThrowingBoomerang = true;
         if (patternValue == 1)
         {
-            Debug.Log("Boss Shoot Pattern 1");
             bucketKidStateController.bossAnimator.SetBool("isIdle", false);
             bucketKidStateController.bossAnimator.SetBool("isAttack", true);
             bucketKidStateController.bossAnimator.SetBool("isThrowingBoomerang", true);
             bucketKidStateController.bossAnimator.SetFloat("attackVariant", 0);
             yield return new WaitForSeconds(1.3f);
+            bucketKidStateController.bossAttackAudioSource.clip = bucketKidStateController.bossAttackAudioClipArr[0];
+            bucketKidStateController.bossAttackAudioSource.loop = false;
+            bucketKidStateController.bossAttackAudioSource.Play();
             BossThrowBoomerang(boomerangLowerSpawn, boomerangLowerDestination, Vector2.left);
 
         }
         else
         {
-            Debug.Log("Boss Shoot Pattern 2");
             bucketKidStateController.bossAnimator.SetBool("isIdle", false);
             bucketKidStateController.bossAnimator.SetBool("isAttack", true);
             bucketKidStateController.bossAnimator.SetBool("isThrowingBoomerang", true);
             bucketKidStateController.bossAnimator.SetFloat("attackVariant", 1);
             yield return new WaitForSeconds(1.3f);
+            bucketKidStateController.bossAttackAudioSource.clip = bucketKidStateController.bossAttackAudioClipArr[0];
+            bucketKidStateController.bossAttackAudioSource.loop = false;
+            bucketKidStateController.bossAttackAudioSource.Play();
             BossThrowBoomerang(boomerangTopSpawn, boomerangTopDestination, Vector2.left);
         }
         bucketKidStateController.bossAnimator.SetBool("isIdle", true);
@@ -148,10 +152,7 @@ public class BucketKid_BossObserverController : MonoBehaviour, IBossObserver, IG
         {
             enemyBullet.transform.localRotation = spawnPos.rotation;
             enemyBullet.transform.position = spawnPos.position;
-            //enemyBullet.GetComponent<EnemyBullet>().bulletSpriteRenderer.sprite = bossBoomerangPrefab.GetComponent<EnemyBullet>().bulletSpriteRenderer.sprite;
-            //enemyBullet.GetComponent<EnemyBullet>().bulletAnimator = bossBoomerangPrefab.GetComponent<EnemyBullet>().bulletAnimator;
             enemyBullet.GetComponent<EnemyBullet>().bulletSpriteRenderer.gameObject.transform.localPosition = Vector3.zero;
-            //enemyBullet.GetComponent<EnemyBullet>().bulletSpriteRenderer.gameObject.transform.localScale = bossBoomerangPrefab.GetComponent<EnemyBullet>().bulletSpriteRenderer.gameObject.transform.localScale;
             enemyBullet.GetComponent<EnemyBullet>().damageCollider = bossBoomerangPrefab.GetComponent<EnemyBullet>().damageCollider;
             // To Do: Find a way to copy any collider properties, Why do this
             enemyBullet.transform.GetChild(1).GetComponent<CircleCollider2D>().offset = bossBoomerangPrefab.GetComponent<EnemyBullet>().damageCollider.GetComponent<CircleCollider2D>().offset;
@@ -176,6 +177,9 @@ public class BucketKid_BossObserverController : MonoBehaviour, IBossObserver, IG
         bucketKidStateController.bossAnimator.SetFloat("attackVariant", 0);
         bucketKidStateController.isBossThrowingBalloon = true;
         yield return new WaitForSeconds(1f);
+        bucketKidStateController.bossAttackAudioSource.clip = bucketKidStateController.bossAttackAudioClipArr[0];
+        bucketKidStateController.bossAttackAudioSource.loop = false;
+        bucketKidStateController.bossAttackAudioSource.Play();
         BossThrowBalloonSpawner(balloonSpawn);
         bucketKidStateController.bossAnimator.SetBool("isIdle", true);
         bucketKidStateController.bossAnimator.SetBool("isAttack", true);
@@ -192,11 +196,8 @@ public class BucketKid_BossObserverController : MonoBehaviour, IBossObserver, IG
             float rotAngle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - 90;
             spawnPos.transform.localRotation = Quaternion.Euler(0, 0, rotAngle);
             enemyBullet.GetComponent<EnemyBullet>().bulletType = bossBalloonPrefab.GetComponent<EnemyBullet>().bulletType;
-            //enemyBullet.GetComponent<EnemyBullet>().bulletAnimator = bossBalloonPrefab.GetComponent<EnemyBullet>().bulletAnimator;
             enemyBullet.GetComponent<EnemyBullet>().bulletSpriteRenderer.gameObject.transform.localPosition = new Vector3(0, 0.8f, 0);
             enemyBullet.GetComponent<EnemyBullet>().bulletSpriteRenderer.gameObject.transform.localRotation = Quaternion.Euler(Vector3.zero);
-            //enemyBullet.GetComponent<EnemyBullet>().bulletSpriteRenderer.gameObject.transform.localScale = bossBalloonPrefab.GetComponent<EnemyBullet>().bulletSpriteRenderer.gameObject.transform.localScale;
-            //enemyBullet.GetComponent<EnemyBullet>().bulletSpriteRenderer.sprite = bossBalloonPrefab.GetComponent<EnemyBullet>().bulletSpriteRenderer.sprite;
             enemyBullet.GetComponent<EnemyBullet>().damageCollider = bossBalloonPrefab.GetComponent<EnemyBullet>().damageCollider;
             enemyBullet.GetComponent<EnemyBullet>().healCollider = bossBalloonPrefab.GetComponent<EnemyBullet>().healCollider;
             // To Do: Find a way to copy any collider properties, Why do this

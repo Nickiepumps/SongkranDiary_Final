@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beb5e2dd06e6b2a4ea47f06bb3f5f09e, type: 3}
   m_Name: ClassicAKeyMap
   m_EditorClassIdentifier: 
-  id: 1
+  id: 0
   left: 276
   right: 275
   top: 273
@@ -24,4 +24,4 @@ MonoBehaviour:
   ult: 118
   aim: 99
   weaponSwitch: 306
-  interact: 122
+  interact: 101

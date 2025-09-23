@@ -10,8 +10,10 @@ public class FatKid_BossStateController : BossSubject
     public BossScriptableObject bossScriptableObject;
 
     [Header("Audio Reference")]
-    //public AudioClip[] enemyAudioClipArr;
-    //public AudioSource enemyAudioSource;
+    public AudioClip[] enemyAttackAudioClipArr;
+    public AudioClip[] enemyEffectAudioClipArr;
+    public AudioSource enemyAttackAudioSource;
+    public AudioSource enemyEffectAudioSource;
 
     [Header("Boss Animator")]
     public Animator bossAnimator;
@@ -88,7 +90,11 @@ public class FatKid_BossStateController : BossSubject
         bossAnimator.SetBool("isShoot", false);
         bossAnimator.SetBool("isPrepare", true);
         bossAnimator.SetBool("isUlt", true);
-        yield return new WaitForSeconds(2.3f);
+        yield return new WaitForSeconds(0.6f);
+        enemyEffectAudioSource.clip = enemyEffectAudioClipArr[0];
+        enemyEffectAudioSource.loop = true;
+        enemyEffectAudioSource.Play();
+        yield return new WaitForSeconds(1.7f);
         bossAnimator.SetBool("isPrepare", false);
         bossAnimator.SetBool("isUlt", true);
         isBossStartRolling = true;

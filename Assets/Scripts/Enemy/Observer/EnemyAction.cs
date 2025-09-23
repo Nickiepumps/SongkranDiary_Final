@@ -5,5 +5,6 @@ public enum EnemyAction
     Jump,
     Explode,
     Dead,
-    ReachDestination
+    ReachDestination,
+    UltDamaged
 }

@@ -87,6 +87,14 @@ public class EnemyShooterStateController : NormalEnemySubject
                     NotifyNormalEnemy(EnemyAction.Damaged);
                 }
                 break;
+            case ("PlayerUlt"):
+                if (isDead == false)
+                {
+                    enemyAudioSource.clip = enemyAudioClipArr[2];
+                    enemyAudioSource.Play();
+                    NotifyNormalEnemy(EnemyAction.UltDamaged);
+                }
+                break;
             case ("E_Boundary"):
                 gameObject.SetActive(false);
                 break;
