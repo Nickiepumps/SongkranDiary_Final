@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 
 public class SettingController : MonoBehaviour
@@ -24,11 +25,12 @@ public class SettingController : MonoBehaviour
     [SerializeField] private GameObject confirmBtn;
 
     [Header("Keymap properties")]
-    [SerializeField] private KeyMapSO defaultKeymap;
+    [SerializeField] private KeyMapSO[] keymapArr;
 
     [Header("Setting tabs")]
     [SerializeField] private Sprite[] tabImageArr;
     [SerializeField] private Image[] tabImageComponentArr;
+
     private void Start()
     {
         LoadSetting();
@@ -41,42 +43,27 @@ public class SettingController : MonoBehaviour
             masterSlider.value = settingData.masterVolume;
             bgmSlider.value = settingData.bgmVolume;
             sfxSlider.value = settingData.sfxVolume;
-            if(settingData.keymapSO != null)
+
+            keymapDropdown.value = settingData.keymapIndex;
+            confirmBtn.SetActive(false);
+            if (playerStateController != null)
             {
-                keymapDropdown.value = settingData.keymapSO.id;
-                confirmBtn.SetActive(false);
-                if(playerStateController != null)
-                {
-                    playerStateController.keymapSO = settingData.keymapSO;
-                }
-                else if(playerSideScrollStateController != null)
-                {
-                    playerSideScrollStateController.keymapSO = settingData.keymapSO;
-                }
+                playerStateController.keymapSO = keymapArr[settingData.keymapIndex];
             }
-            else
+            else if (playerSideScrollStateController != null)
             {
-                keymapDropdown.value = defaultKeymap.id;
-                if (playerStateController != null)
-                {
-                    playerStateController.keymapSO = defaultKeymap;
-                }
-                else if (playerSideScrollStateController != null)
-                {
-                    playerSideScrollStateController.keymapSO = defaultKeymap;
-                }
+                playerSideScrollStateController.keymapSO = keymapArr[settingData.keymapIndex];
             }
-            
         }
         else
         {
             if (playerSideScrollStateController != null)
             {
-                playerSideScrollStateController.keymapSO = defaultKeymap;
+                playerSideScrollStateController.keymapSO = keymapArr[0];
             }
             else if (playerStateController != null)
             {
-                playerStateController.keymapSO = defaultKeymap;
+                playerStateController.keymapSO = keymapArr[0];
             }
         }
     }

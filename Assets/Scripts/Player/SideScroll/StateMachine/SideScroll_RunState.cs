@@ -33,6 +33,7 @@ public class SideScroll_RunState : PlayerSideScrollStateMachine
         {
             playerSideScroll.playerAnimator.SetBool("Jump", true);
         }
+        playerSideScroll.isDash = false;
     }
     public override void Update()
     {
@@ -133,6 +134,7 @@ public class SideScroll_RunState : PlayerSideScrollStateMachine
             if (normal != Vector2.right && normal.x > 0)
             {
                 isRamp = true;
+                playerSideScroll.isPlayerHighFall = false;
                 // Calculate the speed when running uphil using ramp's x normal then add the remaining speed of player's normal speed
                 float rampSpeed = (normal.x * playerSideScroll.xDir) + (playerSideScroll.walkSpeed - (normal.x * playerSideScroll.xDir));
                 if (playerSideScroll.CheckHorizontalInput() == 1)
@@ -148,6 +150,7 @@ public class SideScroll_RunState : PlayerSideScrollStateMachine
             {
                 // To do: fix slow uphill movement
                 isRamp = true;
+                playerSideScroll.isPlayerHighFall = false;
                 // Calculate the speed when running uphill using ramp's x normal then add the remaining speed of player's normal speed
                 float rampSpeed = (-normal.x * playerSideScroll.xDir) + (playerSideScroll.walkSpeed - (-normal.x * playerSideScroll.xDir));
                 if (playerSideScroll.CheckHorizontalInput() == 1)
@@ -161,6 +164,7 @@ public class SideScroll_RunState : PlayerSideScrollStateMachine
             }
             else
             {
+                playerSideScroll.isPlayerHighFall = false;
                 isRamp = false;
             }
             if (normal == Vector2.left && pCollider.collider.usedByEffector == false)

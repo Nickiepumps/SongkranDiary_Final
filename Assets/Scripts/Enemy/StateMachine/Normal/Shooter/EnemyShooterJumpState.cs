@@ -5,14 +5,14 @@ using UnityEngine;
 public class EnemyShooterJumpState : EnemyStateMachine
 {
     public EnemyShooterJumpState(EnemyShooterStateController shooterEnemy) : base(shooterEnemy) { }
-    private float prepareTime = 1f;
+    private float prepareTime = 0.4f;
     private float currentTime;
     private bool isJumping = false;
     Vector2 moveDir;
     public override void Start()
     {
         currentTime = prepareTime;
-        //shooterEnemy.shooterEnemyAnimator.SetBool("isJump", true); Uncomment this when animation is ready
+        shooterEnemy.StartCoroutine(shooterEnemy.EnemyJump());
     }
     public override void Update()
     {
@@ -51,6 +51,8 @@ public class EnemyShooterJumpState : EnemyStateMachine
     {
         if(eCollider.tag == "EnemyJump")
         {
+            shooterEnemy.shooterEnemyAnimator.SetBool("isRun", true);
+            shooterEnemy.shooterEnemyAnimator.SetBool("isJump", false);
             shooterEnemy.triggerJumpForce = shooterEnemy.jumpForce;
             shooterEnemy.EnemyStateTransition(new EnemyShooterRunState(shooterEnemy));
         }

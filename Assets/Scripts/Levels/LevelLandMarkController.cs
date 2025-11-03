@@ -59,10 +59,14 @@ public class LevelLandMarkController : MonoBehaviour, IGameObserver, IPlayerObse
             {
                 for (int i = 0; i < stageclearData.levelDataSOLists.Count; i++)
                 {
-                    if (stageclearData.levelDataSOLists[i] == levelDataSO)
+                    if (stageclearData.levelNameLists[i] == sceneName)
                     {
                         flag.SetActive(true);
                         break;
+                    }
+                    else
+                    {
+                        flag.SetActive(false);
                     }
                 }
             }
@@ -148,6 +152,14 @@ public class LevelLandMarkController : MonoBehaviour, IGameObserver, IPlayerObse
                         levelPostcard.isTransitionToNewISOArea = false;
                         levelPostcard.mapStartPoint = null;
                         levelPostcard.levelTypeText.text = "เตรียมตัวก่อนเล่น";
+                        enterlevelBtn.onClick.RemoveAllListeners();
+                        enterlevelBtn.onClick.AddListener(ChangeScene);
+                    }
+                    else if (landmarkType == LandmarkType.Cutscene)
+                    {
+                        levelPostcard.isTransitionToNewISOArea = false;
+                        levelPostcard.mapStartPoint = null;
+                        levelPostcard.levelTypeText.text = "หมดเวลาสนุกแล้วสิ";
                         enterlevelBtn.onClick.RemoveAllListeners();
                         enterlevelBtn.onClick.AddListener(ChangeScene);
                     }

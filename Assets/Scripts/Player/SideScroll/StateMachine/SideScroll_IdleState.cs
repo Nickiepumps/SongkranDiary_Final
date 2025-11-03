@@ -129,6 +129,7 @@ public class SideScroll_IdleState : PlayerSideScrollStateMachine
                 {
                     playerSideScroll.playerCollider.excludeLayers = playerSideScroll.floorLayerMaskExclude;
                 }
+                playerSideScroll.isPlayerHighFall = false;
                 playerSideScroll.isFallen = false;
                 playerSideScroll.isDash = false;
                 playerSideScroll.isPlayerOnGround = true;
@@ -138,6 +139,7 @@ public class SideScroll_IdleState : PlayerSideScrollStateMachine
             }
             if (normal.x != -1 && normal.x != 1 && normal.x != 0)
             {
+                playerSideScroll.isPlayerHighFall = false;
                 isRamp = true;
             }
             playerSideScroll.playerCollider.offset = playerSideScroll.playerStandColliderOffset;

@@ -7440,6 +7440,22 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1904741471}
     - target: {fileID: 8010900183881845434, guid: 09778fec36b77a541abe904245496da2, type: 3}
+      propertyPath: keymapArr.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8010900183881845434, guid: 09778fec36b77a541abe904245496da2, type: 3}
+      propertyPath: keymapArr.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 60ba6974be506324da8608eb63ecbc4a, type: 2}
+    - target: {fileID: 8010900183881845434, guid: 09778fec36b77a541abe904245496da2, type: 3}
+      propertyPath: keymapArr.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: d45dfc111f6fbe14ba9e2432559f8397, type: 2}
+    - target: {fileID: 8010900183881845434, guid: 09778fec36b77a541abe904245496da2, type: 3}
+      propertyPath: keymapArr.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 3051e8aee76b0264d8c2d75a4168dbce, type: 2}
+    - target: {fileID: 8010900183881845434, guid: 09778fec36b77a541abe904245496da2, type: 3}
       propertyPath: sfxAudioPlayer.Array.size
       value: 0
       objectReference: {fileID: 0}

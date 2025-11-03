@@ -48,6 +48,7 @@ public class BomberEnemyObserverController : MonoBehaviour, INormalEnemyObserver
     }
     private IEnumerator EnemyExplode()
     {
+        bomberEnemyStat.enemyAnimator.SetBool("isJump", false);
         bomberEnemyStat.enemyAnimator.SetBool("isDead", true);
         bomberEnemyStat.enemyAnimator.SetBool("isRun", false);
         yield return new WaitForSeconds(0.2f);

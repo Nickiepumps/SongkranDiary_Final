@@ -24,59 +24,72 @@ public class Main_Setting : MonoBehaviour
     [SerializeField] private TMP_Text setting_BGMValue;
     [SerializeField] private TMP_Text setting_SFXValue;
 
+    [SerializeField] private bool isCutscene;
+
     private float setting_OriginalMasterVolume;
     private float setting_OriginalBGMVolume;
     private float setting_OriginalSFXVolume;
     private void OnEnable()
     {
-        // Load all setting from JSON
-        SettingData soundData = SettingHandler.instance.LoadSettingData();
-        if (soundData != null)
+        if(isCutscene == false)
         {
-            setting_OriginalMasterVolume = soundData.masterVolume;
-            setting_OriginalBGMVolume = soundData.bgmVolume;
-            setting_MasterSlider.value = soundData.masterVolume;
-            setting_BGMSlider.value = soundData.bgmVolume;
-            setting_SFXSlider.value = soundData.sfxVolume;
-            setting_OriginalSFXVolume = soundData.sfxVolume;
+            // Load all setting from JSON
+            SettingData soundData = SettingHandler.instance.LoadSettingData();
+            if (soundData != null)
+            {
+                setting_OriginalMasterVolume = soundData.masterVolume;
+                setting_OriginalBGMVolume = soundData.bgmVolume;
+                setting_MasterSlider.value = soundData.masterVolume;
+                setting_BGMSlider.value = soundData.bgmVolume;
+                setting_SFXSlider.value = soundData.sfxVolume;
+                setting_OriginalSFXVolume = soundData.sfxVolume;
+            }
+            else
+            {
+                setting_OriginalMasterVolume = 1;
+                setting_OriginalBGMVolume = 1;
+                setting_OriginalSFXVolume = 1;
+            }
+
+            confirmBtn.GetComponent<Button>().onClick.AddListener(() => ConfirmSoundSetting());
+            if (mainMenu != null)
+            {
+                mainMenu.TabHighlight();
+            }
+            else
+            {
+                isoSettingController.TabHighlight();
+            }
         }
         else
         {
-            setting_OriginalMasterVolume = 1;
-            setting_OriginalBGMVolume = 1;
-            setting_OriginalSFXVolume = 1;
-        }
-        // Master
-        //MasterSetting();
-        // BGM
-        //BGMSetting();
-        // SFX
-        //SFXSetting();
-        confirmBtn.GetComponent<Button>().onClick.AddListener(() => ConfirmSoundSetting());
-        if(mainMenu != null)
-        {
-            mainMenu.TabHighlight();
-        }
-        else
-        {
-            isoSettingController.TabHighlight();
+            // Load all setting from JSON
+            SettingData soundData = SettingHandler.instance.LoadSettingData();
+            if (soundData != null)
+            {
+                setting_OriginalMasterVolume = soundData.masterVolume;
+                setting_OriginalBGMVolume = soundData.bgmVolume;
+                setting_MasterSlider.value = soundData.masterVolume;
+                setting_BGMSlider.value = soundData.bgmVolume;
+            }
+            else
+            {
+                setting_OriginalMasterVolume = 1;
+                setting_OriginalBGMVolume = 1;
+            }
         }
     }
     private void OnDisable()
     {
-        // Reset all setting to the original value if player doesn't confirm the setting
-        setting_MasterSlider.value = setting_OriginalMasterVolume;
-        setting_BGMSlider.value = setting_OriginalBGMVolume;
-        setting_SFXSlider.value = setting_OriginalSFXVolume;
-        confirmBtn.GetComponent<Button>().onClick.RemoveListener(() => ConfirmSoundSetting());
-        confirmBtn.SetActive(false);
-
-        // Master
-        //MasterSetting();
-        // BGM
-        //BGMSetting();
-        // SFX
-        //SFXSetting();
+        if(isCutscene == false)
+        {
+            // Reset all setting to the original value if player doesn't confirm the setting
+            setting_MasterSlider.value = setting_OriginalMasterVolume;
+            setting_BGMSlider.value = setting_OriginalBGMVolume;
+            setting_SFXSlider.value = setting_OriginalSFXVolume;
+            confirmBtn.GetComponent<Button>().onClick.RemoveListener(() => ConfirmSoundSetting());
+            confirmBtn.SetActive(false);
+        }
     }
     public void MasterSetting()
     {
@@ -107,9 +120,12 @@ public class Main_Setting : MonoBehaviour
     {
         setting_MasterValue.text = Convert.ToInt32(setting_MasterSlider.value * 100).ToString();
         gameAudioMixer.SetFloat("Master", Mathf.Log10(sliderValue) * 20f);
-        if (setting_MasterSlider.value != setting_OriginalMasterVolume)
+        if(isCutscene == false)
         {
-            confirmBtn.SetActive(true);
+            if (setting_MasterSlider.value != setting_OriginalMasterVolume)
+            {
+                confirmBtn.SetActive(true);
+            }
         }
     }
     public void BGMSetting()
@@ -132,9 +148,12 @@ public class Main_Setting : MonoBehaviour
     {
         setting_BGMValue.text = Convert.ToInt32(setting_BGMSlider.value * 100).ToString();
         gameAudioMixer.SetFloat("BGM", Mathf.Log10(sliderValue) * 20f);
-        if (setting_BGMSlider.value != setting_OriginalBGMVolume)
+        if(isCutscene == false)
         {
-            confirmBtn.SetActive(true);
+            if (setting_BGMSlider.value != setting_OriginalBGMVolume)
+            {
+                confirmBtn.SetActive(true);
+            }
         }
     }
     public void SFXSetting()

@@ -6464,7 +6464,10 @@ MonoBehaviour:
   keymapWindow: {fileID: 936610409}
   keymapDropdown: {fileID: 979715397}
   confirmBtn: {fileID: 1909323952}
-  defaultKeymap: {fileID: 11400000, guid: 60ba6974be506324da8608eb63ecbc4a, type: 2}
+  keymapArr:
+  - {fileID: 11400000, guid: 60ba6974be506324da8608eb63ecbc4a, type: 2}
+  - {fileID: 11400000, guid: d45dfc111f6fbe14ba9e2432559f8397, type: 2}
+  - {fileID: 11400000, guid: 3051e8aee76b0264d8c2d75a4168dbce, type: 2}
   tabImageArr:
   - {fileID: -342083566, guid: b39269ab4043a0441a7fd85b43b2518c, type: 3}
   - {fileID: 1522868210, guid: b39269ab4043a0441a7fd85b43b2518c, type: 3}

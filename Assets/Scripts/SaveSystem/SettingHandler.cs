@@ -45,12 +45,12 @@ public class SettingHandler : MonoBehaviour
         SettingData settingData = LoadSettingData();
         if(settingData != null)
         {
-            settingData.keymapSO = keymap;
+            settingData.keymapIndex = keymap.id;
         }
         else
         {
             settingData = new SettingData();
-            settingData.keymapSO = keymap;
+            settingData.keymapIndex = keymap.id;
         }
         if (Directory.Exists(Application.persistentDataPath) == false)
         {

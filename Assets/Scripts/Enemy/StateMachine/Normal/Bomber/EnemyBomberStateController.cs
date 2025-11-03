@@ -112,4 +112,10 @@ public class EnemyBomberStateController : NormalEnemySubject
         enemyCurrentState = newEnemyState;
         enemyCurrentState.Start();
     }
+    public IEnumerator EnemyJump()
+    {
+        enemyAnimator.SetBool("isRun", false);
+        enemyAnimator.SetBool("isJump", true);
+        yield return new WaitForSeconds(0.4f);
+    }
 }
