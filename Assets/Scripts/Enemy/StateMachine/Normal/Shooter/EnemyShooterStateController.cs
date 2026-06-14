@@ -128,11 +128,18 @@ public class EnemyShooterStateController : NormalEnemySubject
     }
     public IEnumerator EnemyDead()
     {
+        shooterEnemyAnimator.SetBool("isJump", false);
         shooterEnemyAnimator.SetBool("isRun", false);
         shooterEnemyAnimator.SetBool("isDead", true);
         enemyHitBox.enabled = false;
         yield return new WaitForSeconds(0.2f);
         enemySpriteRenderer.enabled = false;
         gameObject.SetActive(false);
+    }
+    public IEnumerator EnemyJump()
+    {
+        shooterEnemyAnimator.SetBool("isRun", false);
+        shooterEnemyAnimator.SetBool("isJump", true);
+        yield return new WaitForSeconds(0.4f);
     }
 }

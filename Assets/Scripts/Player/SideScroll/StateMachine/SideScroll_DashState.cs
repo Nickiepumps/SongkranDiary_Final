@@ -66,7 +66,24 @@ public class SideScroll_DashState : PlayerSideScrollStateMachine
     }
     public override void OnColliderEnter(Collision2D pCollider)
     {
-        
+        if (pCollider.gameObject.tag == "Side_Floor" || pCollider.gameObject.tag == "Side_Interactable")
+        {
+            Vector2 normal = pCollider.GetContact(0).normal;
+            if (normal.y <= 1 && normal.y > -1 && normal.y != 0)
+            {
+                playerSideScroll.isPlayerHighFall = false;
+                playerSideScroll.isFallen = false;
+                playerSideScroll.isDash = false;
+                playerSideScroll.isPlayerOnGround = true;
+                playerSideScroll.playerCollider.enabled = true;
+                playerSideScroll.currentCollider = pCollider.collider;
+                playerSideScroll.playerAnimator.SetBool("Jump", false);
+            }
+            if (normal.x != -1 && normal.x != 1 && normal.x != 0)
+            {
+                playerSideScroll.isPlayerHighFall = false;    
+            }
+        }
     }
     public override void OnColliderStay(Collision2D pCollider)
     {

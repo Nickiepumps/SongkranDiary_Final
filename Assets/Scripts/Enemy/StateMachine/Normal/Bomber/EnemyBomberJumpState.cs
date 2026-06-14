@@ -5,11 +5,12 @@ using UnityEngine;
 public class EnemyBomberJumpState : EnemyStateMachine
 {
     public EnemyBomberJumpState(EnemyBomberStateController enemyBomber) : base(enemyBomber) { }
-    private float prepareTime = 1f;
+    private float prepareTime = 0.4f;
     private float currentTime;
     private bool isJumping = false;
     public override void Start()
     {
+        bomberEnemy.StartCoroutine(bomberEnemy.EnemyJump());
         currentTime = prepareTime;
     }
     public override void Update()
@@ -59,6 +60,8 @@ public class EnemyBomberJumpState : EnemyStateMachine
     {
         if (eCollider.tag == "EnemyJump")
         {
+            bomberEnemy.enemyAnimator.SetBool("isRun", true);
+            bomberEnemy.enemyAnimator.SetBool("isJump", false);
             bomberEnemy.EnemyStateTransition(new EnemyBomberRunState(bomberEnemy));
         }
     }

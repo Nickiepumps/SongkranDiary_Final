@@ -28,10 +28,13 @@ public class Main_ControlSetting : MonoBehaviour
         SettingData keymapData = SettingHandler.instance.LoadSettingData();
         if(keymapData != null)
         {
-            if(keymapData.keymapSO != null)
+            currentKeymapSO = keymapArr[keymapData.keymapIndex];
+            keymapDropdown.value = keymapData.keymapIndex;
+            keymapDiagramArr[keymapDropdown.value].SetActive(true);
+            /*if(keymapData.keymapIndex != 0)
             {
-                currentKeymapSO = keymapData.keymapSO;
-                keymapDropdown.value = keymapData.keymapSO.id;
+                currentKeymapSO = keymapArr[keymapData.keymapIndex];
+                keymapDropdown.value = keymapData.keymapIndex;
                 keymapDiagramArr[keymapDropdown.value].SetActive(true);
             }
             else
@@ -39,9 +42,9 @@ public class Main_ControlSetting : MonoBehaviour
                 currentKeymapSO = keymapArr[0];
                 keymapDiagramArr[0].SetActive(true);
                 keymapDropdown.value = 0;
-            }
+            }*/
         }
-        else if(keymapData == null || keymapData.keymapSO == null)
+        else if(keymapData == null)
         {
             currentKeymapSO = keymapArr[0];
             keymapDiagramArr[0].SetActive(true);

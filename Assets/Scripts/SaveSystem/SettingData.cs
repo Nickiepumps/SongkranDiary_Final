@@ -5,5 +5,5 @@ public class SettingData
     public float bgmVolume;
     public float sfxVolume;
 
-    public KeyMapSO keymapSO;
+    public int keymapIndex;
 }

@@ -129,6 +129,7 @@ public class SideScroll_StageClearDataHandler : MonoBehaviour, IGameObserver, IB
         {
             stageClearData = new StageClearData();
             stageClearData.levelDataSOLists.Add(levelDataSO);
+            stageClearData.levelNameLists.Add(levelDataSO.unitySceneName);
             for(int i = 0; i < levelDataSO.isoLevelBoundaryName.Length; i++)
             {
                 stageClearData.levelBoundaryNameLists.Add(levelDataSO.isoLevelBoundaryName[i]);
@@ -145,7 +146,7 @@ public class SideScroll_StageClearDataHandler : MonoBehaviour, IGameObserver, IB
         {
             for(int i = 0; i < stageClearData.levelDataSOLists.Count; i++)
             {
-                if(stageClearData.levelDataSOLists[i].levelName == levelDataSO.levelName)
+                if (stageClearData.levelNameLists[i] == levelDataSO.levelName)
                 {
                     isFoundLevelData = true;
                     break;
@@ -154,6 +155,7 @@ public class SideScroll_StageClearDataHandler : MonoBehaviour, IGameObserver, IB
             if(isFoundLevelData == false)
             {
                 stageClearData.levelDataSOLists.Add(levelDataSO);
+                stageClearData.levelNameLists.Add(levelDataSO.unitySceneName);
                 stageClearData.levelClearStatus.Add(true);
                 stageClearData.levelFirstClearStatus.Add(true);
             }

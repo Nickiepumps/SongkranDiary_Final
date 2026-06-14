@@ -4,6 +4,7 @@ using System.Collections.Generic;
 public class StageClearData
 {
     public List<LevelDataSO> levelDataSOLists = new List<LevelDataSO>();
+    public List<string> levelNameLists = new List<string>();
     public List<string> levelBoundaryNameLists = new List<string>();
     public List<bool> levelClearStatus = new List<bool>(); // Use order based on level SO list
     public List<bool> levelFirstClearStatus = new List<bool>(); // Use order based on level SO list
